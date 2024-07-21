@@ -3,6 +3,8 @@ import sponsorpacklm from "assets/pics/light mode-2.png";
 import cc2mtl from "assets/icons/cc2-mtl.png";
 import cc2 from "assets/icons/cc2.png";
 import ubi from "assets/icons/ubisoft.png";
+import dotbigbang from "assets/icons/dot-big-bang.jpg"
+import ieee from "assets/icons/ieee-concordia..jpg"
 import "app/css/sponsors.css";
 import type { MetaFunction } from "@remix-run/node";
 
@@ -50,6 +52,29 @@ export default function DashboardSponsor() {
             <p className="py-4">Become a Sponsor!</p>
           </a>
         </div>
+
+        <div className="text-center mb-4">
+        <h1 className="text-5xl sm:text-7xl pb-11">Current Partners</h1>
+          <div className="past-sponsors flex justify-center items-center gap-6">
+            <div className="flex flex-col items-center w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64">
+              <img
+                src={dotbigbang}
+                alt="dot-big-bang icon"
+                className="w-full h-full object-contain"
+              />
+              <span className="sponsortext">DotBigBang</span>
+            </div>
+            <div className="flex flex-col items-center w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64">
+              <img
+                src={ieee}
+                alt="IEEE icon"
+                className="w-full h-full object-contain"
+              />
+              <span className="sponsortext">IEEE Concordia</span>
+            </div>
+          </div>
+        </div>
+
 
         <div className="past-sponsors-container">
           <div className="sponsortext">
