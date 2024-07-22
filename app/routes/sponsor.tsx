@@ -56,20 +56,24 @@ export default function DashboardSponsor() {
         <div className="text-center mb-4">
         <h1 className="text-5xl sm:text-7xl pb-11">Current Partners</h1>
           <div className="past-sponsors flex justify-center items-center gap-6">
-            <div className="flex flex-col items-center w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64">
-              <img
-                src={dotbigbang}
-                alt="dot-big-bang icon"
-                className="w-full h-full object-contain"
-              />
+            <div className="partner-image flex flex-col items-center w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64">
+              <a href="https://dotbigbang.com/">
+                <img
+                  src={dotbigbang}
+                  alt="dot-big-bang icon"
+                  className="w-full h-full object-contain"
+                />
+              </a>
               <span className="sponsortext">DotBigBang</span>
             </div>
-            <div className="flex flex-col items-center w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64">
-              <img
-                src={ieee}
-                alt="IEEE icon"
-                className="w-full h-full object-contain"
-              />
+            <div className="partner-image flex flex-col items-center w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64">
+              <a href="https://www.ieeeconcordia.ca/">
+                <img
+                  src={ieee}
+                  alt="IEEE icon"
+                  className="w-full h-full object-contain"
+                />
+              </a>
               <span className="sponsortext">IEEE Concordia</span>
             </div>
           </div>
@@ -78,7 +82,7 @@ export default function DashboardSponsor() {
 
         <div className="past-sponsors-container">
           <div className="sponsortext">
-            Special thanks to our previous partners & sponsors!
+            <h1 className="text-5xl sm:text-7xl pb-11">Special thanks to our previous partners & sponsors!</h1>
           </div>
           <div className="past-sponsors">
             <img

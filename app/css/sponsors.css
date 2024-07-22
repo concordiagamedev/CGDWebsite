@@ -74,6 +74,17 @@
   transition: scale 0.2s ease-in-out;
 }
 
+.partner-image {
+  object-fit: contain;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-image:hover{
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
 @keyframes sponsor-text {
   0% {
     transform: translateZ(-700px) translateY(50px);
