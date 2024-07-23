@@ -7,6 +7,7 @@ body {
 .page {
   margin: clamp(6rem, 8vw, 10rem) 0 0 0;
   padding: 1rem;
+  min-height: 80vh;
 }
 
 .gameclub,
