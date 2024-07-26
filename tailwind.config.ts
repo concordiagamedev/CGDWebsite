@@ -13,11 +13,13 @@ const config = {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
     },
     extend: {
+      screens: {
+        "2xl": "1400px",
+        "3xl": "1783px",
+        "4xl": "1904px",
+      },
       colors: {
         "cgd-pink": "hsla(343, 61%, 52%, 0.8)",
         "light-pink": "hsla(343, 73%, 68%, 0.8)",

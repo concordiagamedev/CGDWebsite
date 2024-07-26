@@ -17,9 +17,9 @@ export default function DashboardEvents() {
   return (
     <div className="page">
       <h1 className="sm:text-8xl text-6xl align-middle pb-11">Events</h1>
-      <h2 className="ourteam sm:text-7xl text-5xl my-10 ml-80">Past Events</h2>
+      {/* <h2 className="ourteam sm:text-7xl text-5xl my-10 ml-80">Past Events</h2> */}
 
-      <div className="flex flex-col gap-3 items-center w-full mb-10">
+      <div className="flex flex-col gap-3 items-center mb-10 md:mx-8 xl:mx-16 2xl:mx-28 3xl:mx-36 4xl:mx-44 xl:px-12 2xl:px-24 3xl:px-28 4xl:px-36 mx-3">
         <EventCard
           title="Global Game Jam 2024"
           date="Jan 26-28, 2024"
