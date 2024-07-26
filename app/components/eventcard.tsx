@@ -4,24 +4,31 @@ interface EventProps {
   title: string;
   date: string;
   description: string;
-  image: string;
+  imageD: string;
+  imageM?: string;
 }
 
 const EventCard: React.FC<EventProps> = ({
   title,
   date,
   description,
-  image,
+  imageD,
+  imageM,
 }) => {
   return (
-    <div className="flex md:flex-row flex-col bg-wh rounded-xl md:p-10 p-7 h-fit gap-10 w-full items-center">
+    <div className="flex md:flex-row flex-col bg-wh border border-wh/80 rounded-xl md:p-10 p-7 h-fit gap-10 w-full items-center">
       <img
-        src={image}
+        src={imageD}
         alt={title}
-        className="object-contain aspect-{3/2} md:w-44 w-64 rounded-md"
+        className="object-contain aspect-{3/2} hidden md:block md:w-44 w-64 rounded-md"
       />
-      <div className="flex flex-col gap-5 w-full">
-        <div className="flex flex-col md:gap-5 ">
+      <img
+        src={imageM}
+        alt={title}
+        className="object-contain aspect-{3/2} md:hidden rounded-md"
+      />
+      <div className="flex flex-col gap-5 md:gap-7 w-full">
+        <div className="flex flex-col ">
           <h1 className="title md:text-3xl xl:text-4xl 3xl:text-5xl text-xl text-cgd-pink/85 text-left">
             {title}
           </h1>
