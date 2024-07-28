@@ -28,6 +28,8 @@ export default function DashboardEvents() {
           title="Global Game Jam 2024"
           date="Jan 26-28, 2024"
           description="Hosted by Concordia Game Dev Club, Global Game Jam is a 48-hour event where the theme is 'Make me Laugh'."
+          theme="Make me Laugh"
+          location="EV Building, Concordia University, 1515 St-Catherine St W, Montreal, QC H3G 2W1"
           imageD={ggj}
           imageM={ggjM}
         />

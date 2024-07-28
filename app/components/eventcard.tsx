@@ -25,6 +25,9 @@ interface EventProps {
   description: string;
   imageD: string;
   imageM?: string;
+  location?: string;
+  theme?: string;
+  winners?: string[];
 }
 
 const EventCard: React.FC<EventProps> = ({
@@ -33,6 +36,9 @@ const EventCard: React.FC<EventProps> = ({
   description,
   imageD,
   imageM,
+  location,
+  theme,
+  winners,
 }) => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
@@ -55,12 +61,12 @@ const EventCard: React.FC<EventProps> = ({
             <AccordionTrigger className=" text-left ">
               <div className="flex flex-col gap-7">
                 <div>
-                  <h1 className="title md:text-3xl xl:text-4xl 3xl:text-5xl text-xl text-cgd-pink/85 text-left">
+                  <h3 className="title text-3xl 2xl:text-4xl text-cgd-pink/85 text-left">
                     {title}
-                  </h1>
-                  <h3 className="description md:text-xl text-md text-dark-purple/90 font-corbert font-bold">
-                    {description}
                   </h3>
+                  <h4 className="description text-xl text-dark-purple/90 font-corbert font-bold">
+                    {description}
+                  </h4>
                 </div>
                 <p className="date md:text-lg text-sm text-dark-purple/80 font-corbert font-bold">
                   {date}
@@ -86,23 +92,29 @@ const EventCard: React.FC<EventProps> = ({
             {/* Drawer for mobile View */}
             <div className="flex flex-col gap-5">
               <div>
-                <h1 className="title md:text-3xl xl:text-4xl 3xl:text-5xl text-xl text-cgd-pink/85 text-left">
+                <h2 className="title sm:text-2xl text-xl text-cgd-pink/85 text-left">
                   {title}
-                </h1>
-                <h3 className="description md:text-xl text-sm text-dark-purple/90 font-corbert font-bold">
+                </h2>
+                <h4 className="description sm:text-base text-sm text-dark-purple/90 font-corbert font-bold">
                   {description}
-                </h3>
+                </h4>
               </div>
-              <p className="date md:text-lg text-xs text-dark-purple/80 font-corbert font-bold">
+              <p className="date sm:text-sm text-xs text-dark-purple/80 font-corbert font-bold">
                 {date}
               </p>
             </div>
           </DrawerTrigger>
           <DrawerContent>
             <DrawerHeader>
-              <DrawerTitle>{title}</DrawerTitle>
+              <DrawerTitle>
+                <h3 className="text-cgd-pink">{title}</h3>
+              </DrawerTitle>
               <DrawerDescription>
-                This action cannot be undone.
+                <div className="w-full">
+                  <h3 className="text-dark-purple text-sm sm:text-base flex items-center">
+                    Location: <h4 className="font-bold">{location}</h4>
+                  </h3>
+                </div>
               </DrawerDescription>
             </DrawerHeader>
             <DrawerFooter>

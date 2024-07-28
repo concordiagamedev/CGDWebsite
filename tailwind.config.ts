@@ -25,6 +25,7 @@ const config = {
         "cgd-pfull": "hsla(343, 61%, 52%, 1)",
         "light-pink": "hsla(343, 73%, 68%, 0.8)",
         "light-pfull": "hsla(343, 73%, 68%, 1)",
+        pink: "hsl(343, 100%, 92%)",
         "dark-purple": "#4e2f51",
         wh: "#f1f1f1a6",
         "bg-tl": "hsl(343 90% 85%)",
