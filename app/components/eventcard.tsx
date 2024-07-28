@@ -1,5 +1,5 @@
 import React from "react";
-import { useMediaQuery } from "@uidotdev/usehooks";
+import { useMediaQuery } from "@mantine/hooks";
 import {
   Accordion,
   AccordionContent,
@@ -17,6 +17,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Button } from "@/components/ui/button";
+import { ClientOnly } from "remix-utils/client-only";
 
 interface EventProps {
   title: string;
@@ -73,40 +74,46 @@ const EventCard: React.FC<EventProps> = ({
     );
   }
   return (
-    <Drawer>
-      <DrawerTrigger className="flex md:flex-row flex-col bg-wh border border-wh/80 rounded-xl md:p-10 p-7 h-fit gap-10 w-full items-center text-left">
-        <img
-          src={imageM}
-          alt={title}
-          className="object-contain aspect-{3/2} md:hidden rounded-md"
-        />
-        {/* Drawer for mobile View */}
-        <div className="flex flex-col gap-5">
-          <div>
-            <h1 className="title md:text-3xl xl:text-4xl 3xl:text-5xl text-xl text-cgd-pink/85 text-left">
-              {title}
-            </h1>
-            <h3 className="description md:text-xl text-md text-dark-purple/90 font-corbert font-bold">
-              {description}
-            </h3>
-          </div>
-          <p className="date md:text-lg text-sm text-dark-purple/80 font-corbert font-bold">
-            {date}
-          </p>
-        </div>
-      </DrawerTrigger>
-      <DrawerContent>
-        <DrawerHeader>
-          <DrawerTitle>{title}</DrawerTitle>
-          <DrawerDescription>This action cannot be undone.</DrawerDescription>
-        </DrawerHeader>
-        <DrawerFooter>
-          <DrawerClose>
-            <Button variant="outline">Close</Button>
-          </DrawerClose>
-        </DrawerFooter>
-      </DrawerContent>
-    </Drawer>
+    <ClientOnly fallback={null}>
+      {() => (
+        <Drawer>
+          <DrawerTrigger className="flex md:flex-row flex-col bg-wh border border-wh/80 rounded-xl md:p-7 p-5 h-fit gap-5 w-full items-center text-left">
+            <img
+              src={imageM}
+              alt={title}
+              className="object-contain aspect-{3/2} md:hidden rounded-md"
+            />
+            {/* Drawer for mobile View */}
+            <div className="flex flex-col gap-5">
+              <div>
+                <h1 className="title md:text-3xl xl:text-4xl 3xl:text-5xl text-xl text-cgd-pink/85 text-left">
+                  {title}
+                </h1>
+                <h3 className="description md:text-xl text-sm text-dark-purple/90 font-corbert font-bold">
+                  {description}
+                </h3>
+              </div>
+              <p className="date md:text-lg text-xs text-dark-purple/80 font-corbert font-bold">
+                {date}
+              </p>
+            </div>
+          </DrawerTrigger>
+          <DrawerContent>
+            <DrawerHeader>
+              <DrawerTitle>{title}</DrawerTitle>
+              <DrawerDescription>
+                This action cannot be undone.
+              </DrawerDescription>
+            </DrawerHeader>
+            <DrawerFooter>
+              <DrawerClose>
+                <Button variant="outline">Close</Button>
+              </DrawerClose>
+            </DrawerFooter>
+          </DrawerContent>
+        </Drawer>
+      )}
+    </ClientOnly>
   );
 };
 
