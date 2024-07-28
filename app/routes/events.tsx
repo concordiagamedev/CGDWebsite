@@ -19,7 +19,7 @@ export const meta: MetaFunction = () => {
 
 export default function DashboardEvents() {
   return (
-    <div className="px-4 py-32 bg-gradient-to-b from-bg-tl to-bg-br">
+    <div className="px-4 py-32">
       <h1 className="sm:text-7xl text-5xl align-middle pb-11">Events</h1>
 
       <div className="flex flex-col gap-3 items-center mb-10 md:mx-8 xl:mx-16 2xl:mx-28 3xl:mx-36 4xl:mx-44 xl:px-12 2xl:px-24 3xl:px-28 4xl:px-36 mx-2">
