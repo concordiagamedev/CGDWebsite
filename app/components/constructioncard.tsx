@@ -7,6 +7,19 @@ interface ConstructionProps {
 }
 
 const ConstructionCard: React.FC<ConstructionProps> = ({ show }) => {
+  useEffect(() => {
+    //if the overlay is shown, prevent scrolling on the page
+    if (show) document.body.style.overflow = "hidden";
+    //else enable scrolling on the page
+    else document.body.style.overflow = "auto";
+
+    //cleanup statement (for if we make the show prop a use effect on the page where this component is used)
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [show]);
+
+  //return nothing if show is false duhhh
   if (!show) return null;
 
   return (
@@ -17,10 +30,10 @@ const ConstructionCard: React.FC<ConstructionProps> = ({ show }) => {
           alt={"under construction image"}
           className={`object-contain aspect-{3/2} w-4/6 rounded-md`}
         />
-        <div className="flex flex-col gap-5">
-          <h1 className="text-xl text-dark-purple font-corbert font-bold">
+        <div className="flex flex-col gap-5 items-center">
+          <h3 className="text-2xl text-dark-purple font-corbert font-bold">
             Under Construction!
-          </h1>{" "}
+          </h3>
           <p className="text-xl text-dark-purple font-corbert font-bold">
             This page is currently being worked on. Please check again later.
           </p>
