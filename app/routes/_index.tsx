@@ -16,7 +16,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div>
-      <ConstructionCard show={true} />
+      <ConstructionCard show={false} />
       <div className="header-footer">
         <div className="page">
           <h1 className="gameclub sm:text-8xl text-5xl pb-11">
