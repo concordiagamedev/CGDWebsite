@@ -105,9 +105,9 @@ const EventCard: React.FC<EventProps> = ({
             </div>
           </DrawerTrigger>
           <DrawerContent>
-            <DrawerHeader>
+            <DrawerHeader className="py-10 px-5">
               <DrawerTitle>
-                <h3 className="text-cgd-pink">{title}</h3>
+                <h3 className="text-cgd-pink text-2xl">{title}</h3>
               </DrawerTitle>
               <DrawerDescription>
                 <div className="w-full">
