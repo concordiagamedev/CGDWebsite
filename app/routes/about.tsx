@@ -26,7 +26,7 @@ export const meta: MetaFunction = () => {
 export default function DashboardAbout() {
   return (
     <div>
-      <ConstructionCard show={false} />
+      <ConstructionCard show={true} />
       <div className="page">
         <div className="about-us-container ">
           <h1 className="sm:text-8xl text-6xl ">About Us</h1>

@@ -23,7 +23,7 @@ const ConstructionCard: React.FC<ConstructionProps> = ({ show }) => {
   if (!show) return null;
 
   return (
-    <div className="flex backdrop-blur-lg content-center items-center justify-center z-50 w-full h-full fixed">
+    <div className="left-0 top-0 flex content-center items-center justify-center z-50 w-full h-full fixed backdrop-blur-lg">
       <div className="flex flex-col items-center bg-wh rounded-xl p-10 h-fit gap-10 w-auto m-10">
         <img
           src={pic}
