@@ -1,11 +1,12 @@
 import React from "react";
 import "../css/footer.css";
 import bannerLogo from "assets/icons/CGD-Dark-Banner.png";
+import iconLogo from "assets/icons/CGD-Dark-Icon.png";
 
 const Footer = () => {
   return (
     <footer className="footer flex lg:flex-row flex-col py-5 px-10 lg:px-14 justify-between lg:items-center w-full">
-      <div>
+      <div className="">
         <div className="info-wrapper-footer">
           <div className="info">Concordia Game Development</div>
           <a
@@ -23,8 +24,17 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="hidden">
-        <img src={bannerLogo} alt="banner logo" className="w-1/3 rounded-lg" />
+      <div className="hidden md:flex md:justify-center md:items-center lg:max-w-md xl:max-w-2xl lg:shrink-0">
+        <img
+          src={bannerLogo}
+          alt="banner logo"
+          className="hidden xl:block w-2/3 rounded-lg"
+        />
+        <img
+          src={iconLogo}
+          alt="icon logo"
+          className="w-2/6 rounded-lg hidden lg:block xl:hidden"
+        />
       </div>
       <div className="social-wrapper-footer">
         <div className="social">Follow</div>
