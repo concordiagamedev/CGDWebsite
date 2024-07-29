@@ -83,7 +83,7 @@ const EventCard: React.FC<EventProps> = ({
     <ClientOnly fallback={null}>
       {() => (
         <Drawer>
-          <DrawerTrigger className="flex md:flex-row flex-col bg-wh border border-wh/80 rounded-xl md:p-7 p-5 h-fit gap-5 w-full items-center text-left">
+          <DrawerTrigger className="flex md:flex-row flex-col bg-wh-full/90 border border-wh/80 rounded-xl md:p-7 p-5 h-fit gap-5 w-full items-center text-left drop-shadow-md">
             <img
               src={imageM}
               alt={title}
@@ -111,8 +111,9 @@ const EventCard: React.FC<EventProps> = ({
               </DrawerTitle>
               <DrawerDescription>
                 <div className="w-full">
-                  <h3 className="text-dark-purple text-sm sm:text-base flex items-center">
-                    Location: <h4 className="font-bold">{location}</h4>
+                  <h3 className="inline-flex gap-2 items-center text-dark-purple text-sm sm:text-base">
+                    <h3 className="align-middle">Location:</h3>
+                    <h4 className="font-bold align-middle">{location}</h4>
                   </h3>
                 </div>
               </DrawerDescription>
