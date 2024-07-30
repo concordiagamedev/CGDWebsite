@@ -45,12 +45,28 @@ const EventCard: React.FC<EventProps> = ({
   if (isDesktop) {
     // Desktop View
     return (
-      <div className="flex md:flex-row flex-col bg-wh border border-wh/80 rounded-xl md:p-10 p-7 h-fit gap-10 w-full items-center">
-        <img
-          src={imageD}
-          alt={title}
-          className="object-contain aspect-{3/2} hidden md:block md:w-44 w-64 rounded-md"
-        />
+      <div className="flex flex-col bg-wh border border-wh/80 rounded-xl md:p-10 p-7 w-full relative">
+        <div className="flex md:gap-10">
+          <img
+            src={imageD}
+            alt={title}
+            className="object-contain aspect-{3/2} hidden md:block w-36 rounded-md h-fit"
+          />
+          <div className="flex flex-col justify-center gap-4">
+            <div>
+              <h2 className="title text-3xl 2xl:text-4xl text-cgd-pink/85 text-left">
+                {title}
+              </h2>
+              <h4 className="description text-xl text-dark-purple/90 font-corbert font-bold">
+                {description}
+              </h4>
+            </div>
+            <p className="date md:text-lg text-sm text-dark-purple/80 font-corbert font-bold">
+              {date}
+            </p>
+          </div>
+        </div>
+        {/* DROP DOWN PART */}
         <Accordion
           type="single"
           collapsible
@@ -58,22 +74,17 @@ const EventCard: React.FC<EventProps> = ({
           orientation="horizontal"
         >
           <AccordionItem value="item-1">
-            <AccordionTrigger className=" text-left ">
-              <div className="flex flex-col gap-7">
-                <div>
-                  <h3 className="title text-3xl 2xl:text-4xl text-cgd-pink/85 text-left">
-                    {title}
-                  </h3>
-                  <h4 className="description text-xl text-dark-purple/90 font-corbert font-bold">
-                    {description}
-                  </h4>
-                </div>
-                <p className="date md:text-lg text-sm text-dark-purple/80 font-corbert font-bold">
-                  {date}
-                </p>
-              </div>
+            <AccordionTrigger className=" text-left absolute right-10 bottom-5">
+              <div className="flex flex-col gap-7"></div>
             </AccordionTrigger>
-            <AccordionContent></AccordionContent>
+            <AccordionContent className="mt-5">
+              <h3 className="text-dark-purple text-lg font-bold">
+                Location: <span className="font-corbert">{location}</span>
+              </h3>
+              <h3 className="text-dark-purple text-lg font-bold">
+                Theme: <span className="font-corbert">{theme}</span>
+              </h3>
+            </AccordionContent>
           </AccordionItem>
         </Accordion>
       </div>
