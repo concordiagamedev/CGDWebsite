@@ -27,10 +27,10 @@ interface EventProps {
   imageM?: string;
   location?: string;
   theme?: string;
-  winners?: string[];
+  winners?: Array<{ position: string; gamelink: string }>;
 }
 
-const EventCard: React.FC<EventProps> = ({
+const GameJamEvent: React.FC<EventProps> = ({
   title,
   date,
   description,
@@ -74,16 +74,26 @@ const EventCard: React.FC<EventProps> = ({
           orientation="horizontal"
         >
           <AccordionItem value="item-1">
-            <AccordionTrigger className=" text-left absolute right-10 bottom-5">
-              <div className="flex flex-col gap-7"></div>
-            </AccordionTrigger>
-            <AccordionContent className="mt-5">
-              <h3 className="text-dark-purple text-lg font-bold">
-                Location: <span className="font-corbert">{location}</span>
-              </h3>
-              <h3 className="text-dark-purple text-lg font-bold">
-                Theme: <span className="font-corbert">{theme}</span>
-              </h3>
+            <AccordionTrigger className=" text-left absolute right-10 bottom-5"></AccordionTrigger>
+            <AccordionContent className="mt-5 flex gap-2">
+              <div className="flex lg:flex-row flex-col lg:gap-4 lg:flex-wrap">
+                <h3 className="text-dark-purple text-lg font-bold">
+                  Location: <span className="font-corbert">{location}</span>
+                </h3>
+                <h3 className="text-dark-purple text-lg font-bold">
+                  Theme: <span className="font-corbert">{theme}</span>
+                </h3>
+                <h3 className="text-dark-purple text-lg font-bold flex gap-2 ">
+                  Winners:{" "}
+                  <div className="flex flex-col gap-2">
+                    {winners?.map((winner, index) => (
+                      <div key={index} className="font-corbert">
+                        {winner.position}: {winner.gamelink}
+                      </div>
+                    ))}
+                  </div>
+                </h3>
+              </div>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -141,4 +151,4 @@ const EventCard: React.FC<EventProps> = ({
   );
 };
 
-export default EventCard;
+export default GameJamEvent;

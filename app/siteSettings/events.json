@@ -6,21 +6,21 @@
         "location": "EV Building, Concordia University - SGW",
         "description": "Hosted by Concordia Game Dev Club, Global Game Jam is a 48-hour event where the theme is 'Make me Laugh'.",
         "theme": "Make me Laugh",
-        "winner": [
+        "winners": [
             {
-                "team": "Team 1",
+                "position": "1st Place",
                 "gamelink": ""
             },
             {
-                "team": "Team 2",
+                "position": "2nd Place",
                 "gamelink": ""
             },
             {
-                "team": "Team 3",
+                "position": "3rd Place",
                 "gamelink": ""
             },
             {
-                "team": "Team 4",
+                "position": "Community Favourite",
                 "gamelink": ""
             }
 
@@ -34,21 +34,21 @@
         "location": "MB Building, Concordia University - SGW",
         "description": "Organized by Concordia Game Dev, this 48 hour Game Jam event's theme was 'Space Between'.",
         "theme": "Space Between",
-        "winner": [
+        "winners": [
             {
-                "team": "Team 1",
+                "position": "1st Place",
                 "gamelink": ""
             },
             {
-                "team": "Team 2",
+                "position": "2nd Place",
                 "gamelink": ""
             },
             {
-                "team": "Team 3",
+                "position": "3rd Place",
                 "gamelink": ""
             },
             {
-                "team": "Team 4",
+                "position": "Community Favourite",
                 "gamelink": ""
             }
 
@@ -69,21 +69,21 @@
         "location": "FB Building, Concordia University - SGW",
         "description": "The community's never been so alive! Our club was able to organize and host our first in-person event in over 2 years. With over 50 participants and 11 game submissions, the 2022 CGD Game Jam was major success!",
         "theme": "There was... Then there was Not",
-        "winner": [
+        "winners": [
             {
-                "team": "Team 1",
+                "position": "1st Place",
                 "gamelink": ""
             },
             {
-                "team": "Team 2",
+                "position": "2nd Place",
                 "gamelink": ""
             },
             {
-                "team": "Team 3",
+                "position": "3rd Place",
                 "gamelink": ""
             },
             {
-                "team": "Team 4",
+                "position": "Community Favourite",
                 "gamelink": ""
             }
 
