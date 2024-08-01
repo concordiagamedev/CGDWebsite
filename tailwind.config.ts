@@ -18,7 +18,7 @@ const config = {
       screens: {
         "2xl": "1400px",
         "3xl": "1783px",
-        "4xl": "1904px",
+        "4xl": "1928px",
       },
       colors: {
         "cgd-pink": "hsla(343, 61%, 52%, 0.8)",

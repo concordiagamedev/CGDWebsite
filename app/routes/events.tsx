@@ -3,6 +3,8 @@ import type { MetaFunction } from "@remix-run/node";
 import GameJamEvent from "~/components/events/gjcard";
 import EventCard from "~/components/events/eventcard";
 import events from "~/siteSettings/events.json";
+import gjIcon from "assets/icons/cgd-transparent.png";
+import ggjIcon from "assets/icons/ggjIcon.ico";
 import ggj from "assets/icons/ggj2024.png";
 import ggjM from "assets/icons/ggj_banner.png";
 import cgd2023 from "assets/icons/cgdfall2023.png";
@@ -25,7 +27,7 @@ export default function DashboardEvents() {
     <div className="px-4 py-32 bg-gradient-to-b from-bg-tl to-bg-br">
       <h1 className="sm:text-7xl text-5xl align-middle pb-11">Events</h1>
 
-      <div className="flex flex-col gap-3 items-center mb-10 md:mx-8 xl:mx-16 2xl:mx-28 3xl:mx-36 4xl:mx-44 xl:px-12 2xl:px-24 3xl:px-28 4xl:px-36 mx-2">
+      <div className="flex flex-col gap-3 items-center mb-10 md:mx-8 xl:mx-16 2xl:mx-28 3xl:mx-44 4xl:mx-64 xl:px-12 2xl:px-24 3xl:px-32 4xl:px-52 mx-2">
         <GameJamEvent
           title={events[0].title}
           date={events[0].date}
@@ -33,6 +35,7 @@ export default function DashboardEvents() {
           theme={events[0].theme}
           location={events[0].location}
           winners={events[0].winners}
+          icon={ggjIcon}
           imageD={ggj}
           imageM={ggjM}
         />
@@ -43,6 +46,7 @@ export default function DashboardEvents() {
           theme={events[1].theme}
           location={events[1].location}
           winners={events[1].winners}
+          icon={gjIcon}
           imageD={cgd2023}
           imageM={cgd2023M}
         />
@@ -61,6 +65,7 @@ export default function DashboardEvents() {
           theme={events[3].theme}
           location={events[3].location}
           winners={events[3].winners}
+          icon={gjIcon}
           imageD={cgd2022}
           imageM={cgd2022M}
         />

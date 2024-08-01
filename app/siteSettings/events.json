@@ -9,19 +9,23 @@
         "winners": [
             {
                 "position": "1st Place",
-                "gamelink": ""
+                "gamename": "Brainrot",
+                "gamelink": "https://kristiankurk.itch.io/brainrot"
             },
             {
                 "position": "2nd Place",
-                "gamelink": ""
+                "gamename": "Jest for Laughs",
+                "gamelink": "https://artistwanted.itch.io/jest-for-laughs"
             },
             {
                 "position": "3rd Place",
-                "gamelink": ""
+                "gamename": "A Party's Guideline",
+                "gamelink": "https://princessemoee.itch.io/a-partys-guideline"
             },
             {
                 "position": "Community Favourite",
-                "gamelink": ""
+                "gamename": "Cash Clown",
+                "gamelink": "https://kindaokev.itch.io/cash-clown"
             }
 
         ]
@@ -37,18 +41,22 @@
         "winners": [
             {
                 "position": "1st Place",
+                "gamename": "",
                 "gamelink": ""
             },
             {
                 "position": "2nd Place",
+                "gamename": "",
                 "gamelink": ""
             },
             {
                 "position": "3rd Place",
+                "gamename": "",
                 "gamelink": ""
             },
             {
                 "position": "Community Favourite",
+                "gamename": "",
                 "gamelink": ""
             }
 
@@ -72,18 +80,22 @@
         "winners": [
             {
                 "position": "1st Place",
+                "gamename": "",
                 "gamelink": ""
             },
             {
                 "position": "2nd Place",
+                "gamename": "",
                 "gamelink": ""
             },
             {
                 "position": "3rd Place",
+                "gamename": "",
                 "gamelink": ""
             },
             {
                 "position": "Community Favourite",
+                "gamename": "",
                 "gamelink": ""
             }
 

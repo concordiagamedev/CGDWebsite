@@ -24,16 +24,18 @@ interface EventProps {
   date: string;
   description: string;
   imageD: string;
-  imageM?: string;
+  imageM: string;
+  icon: string;
   location?: string;
   theme?: string;
-  winners?: Array<{ position: string; gamelink: string }>;
+  winners?: Array<{ position: string; gamename: string; gamelink: string }>;
 }
 
 const GameJamEvent: React.FC<EventProps> = ({
   title,
   date,
   description,
+  icon,
   imageD,
   imageM,
   location,
@@ -75,25 +77,30 @@ const GameJamEvent: React.FC<EventProps> = ({
         >
           <AccordionItem value="item-1">
             <AccordionTrigger className=" text-left absolute right-10 bottom-5"></AccordionTrigger>
-            <AccordionContent className="mt-5 flex gap-2">
-              <div className="flex lg:flex-row flex-col lg:gap-4 lg:flex-wrap">
+            <AccordionContent className="mt-5 flex gap-2 items-center justify-between 2xl:px-16 lg:px-10 md:px-5 pb-7">
+              <div className="grid xl:grid-cols-2 2xl:gap-7 gap-2">
                 <h3 className="text-dark-purple text-lg font-bold">
                   Location: <span className="font-corbert">{location}</span>
                 </h3>
                 <h3 className="text-dark-purple text-lg font-bold">
                   Theme: <span className="font-corbert">{theme}</span>
                 </h3>
-                <h3 className="text-dark-purple text-lg font-bold flex gap-2 ">
+                <h3 className="text-dark-purple text-lg font-bold ">
                   Winners:{" "}
-                  <div className="flex flex-col gap-2">
+                  <div className="grid">
                     {winners?.map((winner, index) => (
-                      <div key={index} className="font-corbert">
-                        {winner.position}: {winner.gamelink}
-                      </div>
+                      <span key={index} className="font-corbert">
+                        {winner.position}:&nbsp;&nbsp;{winner.gamename}
+                      </span>
                     ))}
                   </div>
                 </h3>
               </div>
+              <img
+                src={imageD}
+                alt={title}
+                className="object-contain aspect-{2/3} hidden md:block md:w-44 xl:w-52 3xl:w-64 rounded-md h-fit"
+              />
             </AccordionContent>
           </AccordionItem>
         </Accordion>
