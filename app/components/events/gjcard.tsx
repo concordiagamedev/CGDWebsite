@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/drawer";
 import { Button } from "@/components/ui/button";
 import { ClientOnly } from "remix-utils/client-only";
+import { Link } from "@remix-run/react";
 
 interface EventProps {
   title: string;
@@ -25,7 +26,7 @@ interface EventProps {
   description: string;
   imageD: string;
   imageM: string;
-  icon: string;
+  placeholder?: string;
   location?: string;
   theme?: string;
   winners?: Array<{ position: string; gamename: string; gamelink: string }>;
@@ -35,7 +36,7 @@ const GameJamEvent: React.FC<EventProps> = ({
   title,
   date,
   description,
-  icon,
+  placeholder,
   imageD,
   imageM,
   location,
@@ -77,7 +78,7 @@ const GameJamEvent: React.FC<EventProps> = ({
         >
           <AccordionItem value="item-1">
             <AccordionTrigger className=" text-left absolute right-10 bottom-5"></AccordionTrigger>
-            <AccordionContent className="mt-5 flex gap-2 items-center justify-between 2xl:px-16 lg:px-10 md:px-5 pb-7">
+            <AccordionContent className="mt-6 xl:mt-10 flex gap-4 xl:gap-6 items-center justify-between 2xl:px-16 lg:px-10 md:px-5 pb-7">
               <div className="grid xl:grid-cols-2 2xl:gap-7 gap-2">
                 <h3 className="text-dark-purple text-lg font-bold">
                   Location: <span className="font-corbert">{location}</span>
@@ -89,17 +90,24 @@ const GameJamEvent: React.FC<EventProps> = ({
                   Winners:{" "}
                   <div className="grid">
                     {winners?.map((winner, index) => (
-                      <span key={index} className="font-corbert">
-                        {winner.position}:&nbsp;&nbsp;{winner.gamename}
-                      </span>
+                      <div className="flex justify-between min-w-80">
+                        <h4 className=" font-black">{winner.position}:</h4>
+                        <Link
+                          key={index}
+                          className="font-corbert hover:text-cgd-pfull transition-colors ease-in-out duration-300"
+                          to={winner.gamelink}
+                        >
+                          &nbsp;&nbsp;{winner.gamename}
+                        </Link>
+                      </div>
                     ))}
                   </div>
                 </h3>
               </div>
               <img
-                src={imageD}
+                src={placeholder}
                 alt={title}
-                className="object-contain aspect-{2/3} hidden md:block md:w-44 xl:w-52 3xl:w-64 rounded-md h-fit"
+                className="object-contain aspect-{2/3} hidden md:block md:w-56 xl:w-64 3xl:w-72 rounded-md h-fit place-self-end"
               />
             </AccordionContent>
           </AccordionItem>
