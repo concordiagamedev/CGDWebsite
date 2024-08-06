@@ -145,11 +145,38 @@ const GameJamEvent: React.FC<EventProps> = ({
               <DrawerTitle>
                 <h3 className="text-cgd-pink text-2xl">{title}</h3>
               </DrawerTitle>
-              <DrawerDescription>
-                <div className="w-full">
-                  <h3 className="inline-flex gap-2 items-center text-dark-purple text-sm sm:text-base">
-                    <h3 className="align-middle">Location:</h3>
-                    <h4 className="font-bold align-middle">{location}</h4>
+              <DrawerDescription className="">
+                <div className="w-full text-left grid gap-4">
+                  <h3 className="text-dark-purple text-xl">
+                    Location:
+                    <span className="font-corbert font-bold">
+                      &nbsp;&nbsp;{location}
+                    </span>
+                  </h3>
+                  <h3 className="text-dark-purple text-xl">
+                    Theme:
+                    <span className="font-corbert font-bold">
+                      &nbsp;&nbsp;{theme}
+                    </span>
+                  </h3>
+                  <h3 className="text-dark-purple text-xl font-bold ">
+                    Winners:{" "}
+                    <div className="grid">
+                      {winners?.map((winner, index) => (
+                        <div className="flex justify-between min-w-80">
+                          <h4 className="font-black">
+                            {winner.position.substring(0, 3)}:
+                          </h4>
+                          <Link
+                            key={index}
+                            className="font-corbert "
+                            to={winner.gamelink}
+                          >
+                            &nbsp;&nbsp;{winner.gamename}
+                          </Link>
+                        </div>
+                      ))}
+                    </div>
                   </h3>
                 </div>
               </DrawerDescription>
