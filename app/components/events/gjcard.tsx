@@ -17,8 +17,10 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import { ClientOnly } from "remix-utils/client-only";
 import { Link } from "@remix-run/react";
+import { Icon } from "@iconify/react";
 
 interface EventProps {
   title: string;
@@ -128,7 +130,7 @@ const GameJamEvent: React.FC<EventProps> = ({
             {/* Drawer for mobile View */}
             <div className="flex flex-col gap-5">
               <div>
-                <h2 className="title sm:text-2xl text-xl text-cgd-pink/85 text-left">
+                <h2 className="title sm:text-2xl text-xl text-cgd-pink/85">
                   {title}
                 </h2>
                 <h4 className="description sm:text-base text-sm text-dark-purple/90 font-corbert font-bold">
@@ -141,43 +143,64 @@ const GameJamEvent: React.FC<EventProps> = ({
             </div>
           </DrawerTrigger>
           <DrawerContent>
-            <DrawerHeader className="py-10 px-5">
+            <DrawerHeader className=" px-5">
               <DrawerTitle>
-                <h3 className="text-cgd-pink text-2xl">{title}</h3>
+                <h3 className="text-cgd-pink text-3xl pt-10 pb-3">{title}</h3>
               </DrawerTitle>
               <DrawerDescription className="">
-                <div className="w-full text-left grid gap-4">
-                  <h3 className="text-dark-purple text-xl">
-                    Location:
-                    <span className="font-corbert font-bold">
-                      &nbsp;&nbsp;{location}
-                    </span>
-                  </h3>
-                  <h3 className="text-dark-purple text-xl">
-                    Theme:
-                    <span className="font-corbert font-bold">
-                      &nbsp;&nbsp;{theme}
-                    </span>
-                  </h3>
-                  <h3 className="text-dark-purple text-xl font-bold ">
-                    Winners:{" "}
-                    <div className="grid">
-                      {winners?.map((winner, index) => (
-                        <div className="flex justify-between min-w-80">
-                          <h4 className="font-black">
-                            {winner.position.substring(0, 3)}:
-                          </h4>
-                          <Link
-                            key={index}
-                            className="font-corbert "
-                            to={winner.gamelink}
-                          >
-                            &nbsp;&nbsp;{winner.gamename}
-                          </Link>
-                        </div>
-                      ))}
+                <div className="w-full grid gap-4">
+                  <div>
+                    <p className="text-left font-ls text-base text-cgd-pink pl-1 pb-1">
+                      Information
+                    </p>
+                    <div className=" flex flex-col gap-2 rounded-md p-3 bg-wh">
+                      <h3 className="text-dark-purple text-base flex items-center gap-4">
+                        <Icon
+                          icon="solar:map-point-bold-duotone"
+                          className="w-10 h-10"
+                        />
+                        <span className="font-corbert font-bold">
+                          {location}
+                        </span>
+                      </h3>
+                      <h3 className="text-dark-purple text-base flex items-center gap-4">
+                        <Icon
+                          icon="solar:pallete-2-bold-duotone"
+                          className="w-10 h-10"
+                        />
+                        <span className="font-corbert font-bold">{theme}</span>
+                      </h3>
                     </div>
-                  </h3>
+                  </div>
+                  <div>
+                    <p className="text-left font-ls text-base text-cgd-pink pl-1 pb-1">
+                      Results
+                    </p>
+                    <h3 className="text-dark-purple text-base font-bold flex flex-col items-center gap-4 rounded-md px-3 py-5 bg-wh">
+                      <Icon
+                        icon="solar:crown-star-bold-duotone"
+                        className="w-10 h-10"
+                      />
+                      <Separator className="bg-dark-purple/30 w-[88%] h-[2px]" />
+
+                      <div className="grid w-80">
+                        {winners?.map((winner, index) => (
+                          <div className="flex justify-between ">
+                            <h4 className="font-black">
+                              {winner.position.substring(0, 3)}:
+                            </h4>
+                            <Link
+                              key={index}
+                              className="font-corbert "
+                              to={winner.gamelink}
+                            >
+                              {winner.gamename}
+                            </Link>
+                          </div>
+                        ))}
+                      </div>
+                    </h3>
+                  </div>
                 </div>
               </DrawerDescription>
             </DrawerHeader>

@@ -3,7 +3,7 @@
         "id": 0,
         "title": "Global Game Jam 2024",
         "date": "Jan 26-28, 2024",
-        "location": "EV Building, Concordia University - SGW",
+        "location": "EV Building, Concordia SGW",
         "description": "Hosted by Concordia Game Dev Club, Global Game Jam is a 48-hour event where the theme is 'Make me Laugh'.",
         "theme": "Make me Laugh",
         "winners": [
@@ -35,7 +35,7 @@
         "id": 1,
         "title": "CGD Jam Fall 2023",
         "date": "Nov 3-5, 2023",
-        "location": "MB Building, Concordia University - SGW",
+        "location": "MB Building, Concordia SGW",
         "description": "Organized by Concordia Game Dev, this 48 hour Game Jam event's theme was 'Space Between'.",
         "theme": "Space Between",
         "winners": [
@@ -74,7 +74,7 @@
         "id": 3,
         "title": "CGD Jam Fall 2022",
         "date": "Oct 14-16, 2022",
-        "location": "FB Building, Concordia University - SGW",
+        "location": "FB Building, Concordia SGW",
         "description": "The community's never been so alive! Our club was able to organize and host our first in-person event in over 2 years. With over 50 participants and 11 game submissions, the 2022 CGD Game Jam was major success!",
         "theme": "There was... Then there was Not",
         "winners": [
