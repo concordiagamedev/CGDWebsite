@@ -183,21 +183,40 @@ const GameJamEvent: React.FC<EventProps> = ({
                       />
                       <Separator className="bg-dark-purple/30 w-[88%] h-[2px]" />
 
-                      <div className="grid w-80">
-                        {winners?.map((winner, index) => (
-                          <div className="flex justify-between ">
-                            <h4 className="font-black">
-                              {winner.position.substring(0, 3)}:
-                            </h4>
-                            <Link
-                              key={index}
-                              className="font-corbert "
-                              to={winner.gamelink}
-                            >
-                              {winner.gamename}
-                            </Link>
-                          </div>
-                        ))}
+                      <div className="grid gap-3 w-80">
+                        {winners?.map((winner, index) => {
+                          let icon = "";
+                          let iconClassName = "w-8 h-8";
+
+                          switch (index) {
+                            case 0:
+                              icon = "solar:cup-star-bold-duotone"; // Customize for the first item
+                              break;
+                            case 1:
+                              icon = "solar:medal-ribbons-star-bold-duotone"; // Customize for the second item
+                              break;
+                            case 2:
+                              icon = "solar:medal-ribbon-star-bold-duotone"; // Customize for the third item
+                              break;
+                            case 3:
+                              icon = "solar:star-circle-bold-duotone";
+                              iconClassName = "ml-1 w-6 h-6";
+                              break;
+                          }
+
+                          return (
+                            <div className="flex gap-2 justify-between mx-12">
+                              <Icon icon={icon} className={iconClassName} />
+                              <Link
+                                key={index}
+                                className="font-corbert "
+                                to={winner.gamelink}
+                              >
+                                {winner.gamename}
+                              </Link>
+                            </div>
+                          );
+                        })}
                       </div>
                     </h3>
                   </div>
