@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 //import the appropriate picture for the popup here
-import pic from "assets/pictures/underconstruction.png";
+import pic from "assets/pictures/under_construction.png";
 
 interface ConstructionProps {
   show: boolean;
