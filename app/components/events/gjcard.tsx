@@ -143,7 +143,7 @@ const GameJamEvent: React.FC<EventProps> = ({
             </div>
           </DrawerTrigger>
           <DrawerContent>
-            <DrawerHeader className=" px-5">
+            <DrawerHeader className="px-5">
               <DrawerTitle>
                 <h3 className="text-cgd-pink text-3xl pt-10 pb-3">{title}</h3>
               </DrawerTitle>
@@ -183,7 +183,7 @@ const GameJamEvent: React.FC<EventProps> = ({
                       />
                       <Separator className="bg-dark-purple/30 w-[88%] h-[2px]" />
 
-                      <div className="grid gap-3 w-80">
+                      <div className="grid gap-3 w-80 max-w-96">
                         {winners?.map((winner, index) => {
                           let icon = "";
                           let iconClassName = "w-8 h-8";
@@ -205,7 +205,7 @@ const GameJamEvent: React.FC<EventProps> = ({
                           }
 
                           return (
-                            <div className="flex gap-2 justify-between mx-12">
+                            <div className="flex gap-2 justify-between mx-10">
                               <Icon icon={icon} className={iconClassName} />
                               <Link
                                 key={index}
@@ -224,8 +224,13 @@ const GameJamEvent: React.FC<EventProps> = ({
               </DrawerDescription>
             </DrawerHeader>
             <DrawerFooter>
-              <DrawerClose>
-                <Button variant="outline">Close</Button>
+              <DrawerClose className="px-1">
+                <Button
+                  variant="outline"
+                  className="w-full rounded-md bg-cgd-pink text-wh-full border border-cgd-pink/80 hover:border-wh/5 hover:bg-wh hover:text-dark-purple font-corbert text-base font-bold"
+                >
+                  Close
+                </Button>
               </DrawerClose>
             </DrawerFooter>
           </DrawerContent>
