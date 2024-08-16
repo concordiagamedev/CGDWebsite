@@ -2,6 +2,7 @@ import React from "react";
 import "../css/footer.css";
 import bannerLogo from "assets/icons/CGD-Dark-Banner.png";
 import iconLogo from "assets/icons/CGD-Dark-Icon.png";
+import smallIcon from "assets/icons/cgd-transparent.png";
 
 const Footer = () => {
   return (
@@ -24,17 +25,8 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="hidden md:flex md:justify-center md:items-center lg:max-w-md xl:max-w-2xl lg:shrink-0">
-        <img
-          src={bannerLogo}
-          alt="banner logo"
-          className="hidden xl:block w-2/3 rounded-lg"
-        />
-        <img
-          src={iconLogo}
-          alt="icon logo"
-          className="w-2/6 rounded-lg hidden lg:block xl:hidden"
-        />
+      <div className="hidden md:flex md:justify-center md:items-center">
+        <img src={smallIcon} alt="cgd logo" className="hidden md:block w-1/6" />
       </div>
       <div className="social-wrapper-footer">
         <div className="social">Follow</div>
