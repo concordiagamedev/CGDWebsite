@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 //import the appropriate picture for the popup here
 import pic from "assets/pictures/under_construction.png";
+import { useNavigate } from "@remix-run/react";
 
 interface ConstructionProps {
   show: boolean;
@@ -38,6 +39,9 @@ const ConstructionCard: React.FC<ConstructionProps> = ({ show }) => {
           <p className="text-xl text-dark-purple font-corbert font-bold">
             This page is currently being worked on. Please check again later.
           </p>
+        </div>
+        <div>
+          <button onClick={() => history.back()}>Return</button>
         </div>
       </div>
     </div>
