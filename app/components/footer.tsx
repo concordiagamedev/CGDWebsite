@@ -1,8 +1,7 @@
 import React from "react";
 import "../css/footer.css";
-import bannerLogo from "assets/icons/CGD-Dark-Banner.png";
-import iconLogo from "assets/icons/CGD-Dark-Icon.png";
 import smallIcon from "assets/icons/cgd-transparent.png";
+import { socials } from "../siteSettings/socials.json";
 
 const Footer = () => {
   return (
@@ -30,34 +29,18 @@ const Footer = () => {
       </div>
       <div className="social-wrapper-footer">
         <div className="social">Follow</div>
-        <a
-          href="https://www.instagram.com/concordiagamedev/?hl=en"
-          className="ig"
-          target="_blank"
-        >
-          Instagram
-        </a>
-        <a
-          href="https://www.facebook.com/concordiagamedev/"
-          target="_blank"
-          className="fb"
-        >
-          Facebook
-        </a>
-        <a
-          href="https://concordiagamedev.itch.io/"
-          className="itch"
-          target="_blank"
-        >
-          Itch
-        </a>
-        <a
-          href="https://www.linkedin.com/company/concordia-game-development/?original_referer="
-          className="linked"
-          target="_blank"
-        >
-          LinkedIn
-        </a>
+        <div className="flex-row gap-x-3 align-middle items-center">
+          {socials.map((social) => (
+            <a
+              key={social.name}
+              href={social.href}
+              target={social.target}
+              className="min-h-10 min-w-10"
+            >
+              <img src={social.img} alt="bruh" className="w-10 h-10" />
+            </a>
+          ))}
+        </div>
       </div>
     </footer>
   );
