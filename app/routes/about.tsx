@@ -34,7 +34,7 @@ export default function DashboardAbout() {
             programming, art, game design, storytelling, sound engineering and
             more.
           </div>
-          <div className="blob w-full flex items-center mt-10">
+          <div className="blob w-full flex items-center md:mt-10 md:p-10">
             {/* <img
               src={blob}
               className="blob absolute"
