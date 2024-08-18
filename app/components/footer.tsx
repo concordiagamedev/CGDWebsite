@@ -33,7 +33,7 @@ const Footer = () => {
       </div>
       <div className="social-wrapper-footer gap-y-4 lg:gap-y-2">
         <div className="social">Follow</div>
-        <div className="flex flex-row justify-between md:justify-evenly lg:justify-between align-middle items-center">
+        <div className="flex flex-row justify-between md:justify-center lg:justify-between align-middle items-center">
           {socials.map((social) => (
             <a
               key={social.name}
@@ -44,7 +44,7 @@ const Footer = () => {
               <img
                 src={social.img}
                 alt="bruh"
-                className="w-12 h-12 footer-svg"
+                className="w-12 h-12 footer-svg md:mx-4 lg:mx-0"
               />
             </a>
           ))}
