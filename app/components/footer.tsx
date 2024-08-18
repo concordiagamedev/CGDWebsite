@@ -22,34 +22,22 @@ const Footer = () => {
       </div>
       <div className="social-wrapper-footer">
         <div className="social">Follow</div>
-        <a
-          href="https://www.instagram.com/concordiagamedev/?hl=en"
-          className="ig"
-          target="_blank"
-        >
-          Instagram
-        </a>
-        <a
-          href="https://www.facebook.com/concordiagamedev/"
-          target="_blank"
-          className="fb"
-        >
-          Facebook
-        </a>
-        <a
-          href="https://concordiagamedev.itch.io/"
-          className="itch"
-          target="_blank"
-        >
-          Itch
-        </a>
-        <a
-          href="https://www.linkedin.com/company/concordia-game-development/?original_referer="
-          className="linked"
-          target="_blank"
-        >
-          LinkedIn
-        </a>
+        <div className="flex flex-row justify-between md:justify-evenly lg:justify-between align-middle items-center">
+          {socials.map((social) => (
+            <a
+              key={social.name}
+              href={social.href}
+              target={social.target}
+              className="min-h-10 min-w-10"
+            >
+              <img
+                src={social.img}
+                alt="bruh"
+                className="w-12 h-12 footer-svg"
+              />
+            </a>
+          ))}
+        </div>
       </div>
     </footer>
   );
