@@ -1,17 +1,13 @@
 import cgdpink from "assets/icons/cgd-transp-pink.png";
 import "app/css/aboutus.css";
 import type { MetaFunction } from "@remix-run/node";
-import blob from "assets/pics/blob-aboutus.svg";
 import controller from "assets/icons/cgd_controller.png";
 import Profile from "app/components/profile";
 import tuana from "assets/pictures/execs/tuana.png";
 import charles from "assets/pictures/execs/charles_resized.png";
-import benedict from "assets/pictures/execs/benedict_resized.png";
-import hugo from "assets/pictures/execs/hugo_resized.png";
 import maxx from "assets/pictures/execs/maxx_resized.png";
 import peter from "assets/pictures/execs/peter_resized.png";
 import nick from "assets/pictures/execs/nick_resized.png";
-import carleen from "assets/pictures/execs/carleen_resized.png";
 import template from "assets/pictures/execs/template.png";
 
 export const meta: MetaFunction = () => {
