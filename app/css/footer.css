@@ -6,25 +6,15 @@
   /* padding-inline: clamp(2rem, 40vw, 10rem); */
 
   .info-wrapper-footer,
-  .contact-wrapper-footer {
-    margin: 1rem;
-    box-sizing: border-box;
-  }
-
+  .contact-wrapper-footer,
   .social-wrapper-footer {
     margin: 1rem;
     box-sizing: border-box;
   }
 
-  .social {
-    color: hsl(320 70% 95%);
-    font-family: "League Spartan", sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-  }
-
   .info,
-  .contact {
+  .contact,
+  .social {
     color: hsl(320 70% 95%);
     font-family: "League Spartan", sans-serif;
     font-size: 20px;
@@ -34,11 +24,6 @@
   .social-wrapper-footer {
     display: flex;
     flex-direction: column;
-    min-width: 280px;
-  }
-
-  .footer-svg:hover {
-    transform: scale(1.1);
   }
 
   .address,
