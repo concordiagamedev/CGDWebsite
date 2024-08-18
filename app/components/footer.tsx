@@ -25,11 +25,15 @@ const Footer = () => {
         </div>
       </div>
       <div className="hidden md:flex md:justify-center md:items-center">
-        <img src={smallIcon} alt="cgd logo" className="hidden md:block w-1/6" />
+        <img
+          src={smallIcon}
+          alt="cgd logo"
+          className="hidden lg:block w-4/12 xl:w-3/12"
+        />
       </div>
-      <div className="social-wrapper-footer">
+      <div className="social-wrapper-footer gap-y-4 lg:gap-y-2">
         <div className="social">Follow</div>
-        <div className="flex-row gap-x-3 align-middle items-center">
+        <div className="flex-row justify-between md:justify-evenly lg:justify-between align-middle items-center">
           {socials.map((social) => (
             <a
               key={social.name}
@@ -37,7 +41,11 @@ const Footer = () => {
               target={social.target}
               className="min-h-10 min-w-10"
             >
-              <img src={social.img} alt="bruh" className="w-10 h-10" />
+              <img
+                src={social.img}
+                alt="bruh"
+                className="w-12 h-12 footer-svg"
+              />
             </a>
           ))}
         </div>
