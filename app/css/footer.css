@@ -11,11 +11,6 @@
     box-sizing: border-box;
   }
 
-  .social-wrapper-footer {
-    margin: 1rem;
-    box-sizing: border-box;
-  }
-
   .social {
     color: hsl(320 70% 95%);
     font-family: "League Spartan", sans-serif;
@@ -32,6 +27,7 @@
   }
 
   .social-wrapper-footer {
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     min-width: 280px;
