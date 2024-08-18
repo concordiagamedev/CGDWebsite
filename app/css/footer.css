@@ -17,9 +17,10 @@
     font-size: 28px;
     font-weight: 700;
   }
-
+    
   .info,
-  .contact {
+  .contact,
+  .social {
     color: hsl(320 70% 95%);
     font-family: "League Spartan", sans-serif;
     font-size: 20px;
@@ -30,11 +31,6 @@
     margin: 1rem;
     display: flex;
     flex-direction: column;
-    min-width: 280px;
-  }
-
-  .footer-svg:hover {
-    transform: scale(1.1);
   }
 
   .address,
