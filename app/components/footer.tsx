@@ -5,7 +5,7 @@ import { socials } from "../siteSettings/socials.json";
 
 const Footer = () => {
   return (
-    <footer className="footer flex lg:flex-row flex-col py-5 px-10 lg:px-14 justify-between lg:items-center w-full">
+    <footer className="footer flex lg:flex-row flex-col py-5 px-10 lg:px-14 xl:px-20 justify-between lg:items-center w-full">
       <div className="">
         <div className="info-wrapper-footer">
           <div className="info">Concordia Game Development</div>
@@ -31,9 +31,14 @@ const Footer = () => {
           className="hidden lg:block w-4/12 xl:w-3/12"
         />
       </div>
-      <div className="social-wrapper-footer gap-y-4 lg:gap-y-2">
-        <div className="social">Follow</div>
+
+      {/* Refer to footer.css for styling in addition to these class names */}
+      <div className="social-wrapper-footer flex content-center gap-y-2 lg:gap-y-4">
+        <div className="social">
+          <div className="follow">Follow</div>
+        </div>
         <div className="flex flex-row justify-between md:justify-center lg:justify-between align-middle items-center">
+          {/* The icons are taken from socials.json in siteSettings */}
           {socials.map((social) => (
             <a
               key={social.name}
@@ -43,7 +48,7 @@ const Footer = () => {
             >
               <img
                 src={social.img}
-                alt="bruh"
+                alt={social.alt}
                 className="w-12 h-12 footer-svg md:mx-4 lg:mx-0"
               />
             </a>
