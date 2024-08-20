@@ -9,12 +9,12 @@ interface ProfileProps {
 
 const Profile: React.FC<ProfileProps> = ({ name, position, image }) => {
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col">
       <div className="overflow-hidden rounded-2xl">
         <img
           src={image}
           alt={name}
-          className="hover:scale-110 transition duration-300 rounded-2xl object-cover object-top profile-img"
+          className="hover:scale-110 transition duration-300 rounded-2xl object-cover object-top aspect-square"
         />
       </div>
 

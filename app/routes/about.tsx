@@ -23,14 +23,14 @@ export default function DashboardAbout() {
     <div className="page">
       <div className="about-us-container ">
         <h1 className="sm:text-8xl text-6xl ">About Us</h1>
-        <div className="aboutus-container flex flex-col-reverse lg:flex-row justify-center items-center md:gap-20 sm:gap-24 gap-6 md:px-20 px-10">
+        <div className="aboutus-container flex flex-col-reverse lg:flex-row justify-center items-center md:gap-0 gap-6 md:px-20 px-10 xl:mx-32">
           <div className="aboutus-text font-bold mt-5 mb-5 md:my-0 md:text-xl 2xl:text-2xl text-lg -z-10">
             We are Concordia's gamedev community and we focus on the technical
             and development aspects of video games in all disciplines, such as,
             programming, art, game design, storytelling, sound engineering and
             more.
           </div>
-          <div className="blob w-full flex items-center md:mt-0 mt-10 md:p-10">
+          <div className="blob flex items-center justify-end md:mt-0 mt-10 md:p-10 w-full">
             {/* <img
               src={blob}
               className="blob absolute"
@@ -38,17 +38,17 @@ export default function DashboardAbout() {
             /> */}
             <img
               src={controller}
-              className="blob"
+              className="blob w-5/6 lg:w-4/6"
               alt="CGD controller icon that represents the club"
             />
           </div>
         </div>
       </div>
       <div className="ourteam-container md:my-20 my-10">
-        <h2 className="ourteam sm:text-7xl text-5xl my-14 mx-10">
+        <h2 className="ourteam sm:text-6xl text-4xl md:my-14 my-6 text-center md:text-left md:mx-10">
           Meet Our Team
         </h2>
-        <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 md:mx-20 md:px-20 px-6">
+        <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 md:mx-32 md:px-24 px-6">
           <Profile
             name="Charles Partous"
             position="President"
