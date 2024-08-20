@@ -11,27 +11,24 @@
     box-sizing: border-box;
   }
 
-  .social-wrapper-footer {
-    margin: 1rem;
-    box-sizing: border-box;
-  }
-
+  .info,
+  .contact,
   .social {
     color: hsl(320 70% 95%);
     font-family: "League Spartan", sans-serif;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 700;
-  }
 
-  .info,
-  .contact {
-    color: hsl(320 70% 95%);
-    font-family: "League Spartan", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
+    /* specific to the 'Follow' label above the social icons at large screen sizes and up */
+    @media (min-width: 1024px) {
+      .follow {
+        font-size: 28px;
+      }
+    }
   }
 
   .social-wrapper-footer {
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     min-width: 280px;
@@ -49,7 +46,7 @@
   .linked {
     color: #532d53;
     font-family: "Corbert", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     text-decoration: none;
   }
