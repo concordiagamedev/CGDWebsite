@@ -48,7 +48,7 @@ export default function DashboardAbout() {
         <h2 className="ourteam sm:text-6xl text-4xl md:my-14 my-6 text-center md:text-left md:mx-10">
           Meet Our Team
         </h2>
-        <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 md:mx-32 md:px-24 px-6">
+        <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 lg:mx-32 lg:px-24 md:mx-20 md:px-20 px-6">
           <Profile
             name="Charles Partous"
             position="President"
