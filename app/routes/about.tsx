@@ -30,7 +30,7 @@ export default function DashboardAbout() {
             programming, art, game design, storytelling, sound engineering and
             more.
           </div>
-          <div className="blob flex items-center justify-end md:mt-0 mt-10 md:p-10 w-full">
+          <div className="blob flex items-center justify-center lg:justify-end md:mt-0 mt-10 md:p-10 w-full">
             {/* <img
               src={blob}
               className="blob absolute"
@@ -38,7 +38,7 @@ export default function DashboardAbout() {
             /> */}
             <img
               src={controller}
-              className="blob w-5/6 lg:w-4/6"
+              className="blob w-5/6 md:w-3/6 lg:w-4/6"
               alt="CGD controller icon that represents the club"
             />
           </div>
