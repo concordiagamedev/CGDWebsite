@@ -13,6 +13,13 @@ import cgd2022M from "assets/icons/cgdfall2022_banner.png";
 import megamigs from "assets/icons/megamigs2022.png";
 import megamigsM from "assets/icons/megamigs2022_banner.jpg";
 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
 export const meta: MetaFunction = () => {
   return [
     { title: "Events | CGD" },
@@ -23,51 +30,72 @@ export const meta: MetaFunction = () => {
 
 export default function DashboardEvents() {
   return (
-    <div className="px-4 py-32 bg-gradient-to-b from-bg-tl to-bg-br">
+    <div className="px-4 py-32 md:bg-none bg-gradient-to-b from-bg-tl to-bg-br flex-grow ">
       <h1 className="sm:text-7xl text-5xl align-middle pb-11">Events</h1>
 
       <div className="flex flex-col gap-3 items-center mb-10 md:mx-8 xl:mx-16 2xl:mx-28 3xl:mx-44 4xl:mx-64 xl:px-12 2xl:px-24 3xl:px-32 4xl:px-52 mx-2">
-        <GameJamEvent
-          title={events[0].title}
-          date={events[0].date}
-          description={events[0].description}
-          theme={events[0].theme}
-          location={events[0].location}
-          winners={events[0].winners}
-          placeholder={gj2024winner}
-          imageD={ggj}
-          imageM={ggjM}
-        />
-        <GameJamEvent
-          title={events[1].title}
-          date={events[1].date}
-          description={events[1].description}
-          theme={events[1].theme}
-          location={events[1].location}
-          winners={events[1].winners}
-          imageD={cgd2023}
-          imageM={cgd2023M}
-        />
-        <EventCard
-          title={events[2].title}
-          date={events[2].date}
-          description={events[2].description}
-          location={events[2].location}
-          imageD={megamigs}
-          imageM={megamigsM}
-        />
-        <GameJamEvent
-          title={events[3].title}
-          date={events[3].date}
-          description={events[3].description}
-          theme={events[3].theme}
-          location={events[3].location}
-          winners={events[3].winners}
-          imageD={cgd2022}
-          imageM={cgd2022M}
-        />
+        <Accordion
+          type="multiple"
+          className="w-full"
+          defaultValue={["upcoming-events"]}
+        >
+          <AccordionItem value="upcoming-events">
+            <AccordionTrigger className="text-3xl md:text-5xl text-dark-purple">
+              Upcoming Events
+            </AccordionTrigger>
+            <AccordionContent className="flex flex-col gap-5 w-full font-corbert font-bold text-cgd-pink text-lg">
+              Upcoming Events are coming soon!
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="past-events">
+            <AccordionTrigger className="text-3xl md:text-5xl text-dark-purple">
+              Past Events
+            </AccordionTrigger>
+            <AccordionContent className="flex flex-col gap-5 w-full">
+              <GameJamEvent
+                title={events[0].title}
+                date={events[0].date}
+                description={events[0].description}
+                theme={events[0].theme}
+                location={events[0].location}
+                winners={events[0].winners}
+                placeholder={gj2024winner}
+                imageD={ggj}
+                imageM={ggjM}
+              />
+              <GameJamEvent
+                title={events[1].title}
+                date={events[1].date}
+                description={events[1].description}
+                theme={events[1].theme}
+                location={events[1].location}
+                winners={events[1].winners}
+                imageD={cgd2023}
+                imageM={cgd2023M}
+              />
+              <EventCard
+                title={events[2].title}
+                date={events[2].date}
+                description={events[2].description}
+                location={events[2].location}
+                imageD={megamigs}
+                imageM={megamigsM}
+              />
+              <GameJamEvent
+                title={events[3].title}
+                date={events[3].date}
+                description={events[3].description}
+                theme={events[3].theme}
+                location={events[3].location}
+                winners={events[3].winners}
+                imageD={cgd2022}
+                imageM={cgd2022M}
+              />
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </div>
-      {/* <div className="background h-full">
+      <div className="background h-full">
         <span>
           <img
             src={cgdpink}
@@ -103,7 +131,7 @@ export default function DashboardEvents() {
             className="floaties"
           />
         </span>
-      </div> */}
+      </div>
     </div>
   );
 }
