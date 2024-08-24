@@ -79,23 +79,23 @@
     "winners": [
       {
         "position": "1st Place",
-        "gamename": "",
-        "gamelink": ""
+        "gamename": "Smoking Kills",
+        "gamelink": "https://hornetwithagun.itch.io/smoking-kills"
       },
       {
         "position": "2nd Place",
-        "gamename": "",
-        "gamelink": ""
+        "gamename": "Blu",
+        "gamelink": "https://daxinvader.itch.io/blu"
       },
       {
         "position": "3rd Place",
-        "gamename": "",
-        "gamelink": ""
+        "gamename": "There was a Garden",
+        "gamelink": "https://miss-mystie.itch.io/there-was-a-garden"
       },
       {
         "position": "Community Favourite",
-        "gamename": "",
-        "gamelink": ""
+        "gamename": "Quantum Cat-Astrophe",
+        "gamelink": "https://armandorusso.itch.io/quantum-cat-astrophe"
       }
     ]
   }
