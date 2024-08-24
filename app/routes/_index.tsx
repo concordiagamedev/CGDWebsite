@@ -7,7 +7,7 @@ import Landing from "~/components/homepage/landing";
 import Stats from "~/components/homepage/stats";
 import GameCollection from "~/components/homepage/gameCollection";
 import JoinUs from "~/components/homepage/joinUs";
-import AboutUs from "~/components/homepage/aboutus";
+import AboutUs from "~/components/homepage/aboutUs";
 
 export const meta: MetaFunction = () => {
   return [
