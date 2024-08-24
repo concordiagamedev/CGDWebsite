@@ -54,6 +54,7 @@ export default function DashboardEvents() {
             <AccordionContent className="flex flex-col gap-5 w-full">
               <GameJamEvent
                 title={events[0].title}
+                jampage={events[0].jampage}
                 date={events[0].date}
                 description={events[0].description}
                 theme={events[0].theme}
@@ -65,6 +66,7 @@ export default function DashboardEvents() {
               />
               <GameJamEvent
                 title={events[1].title}
+                jampage={events[1].jampage}
                 date={events[1].date}
                 description={events[1].description}
                 theme={events[1].theme}
@@ -83,6 +85,7 @@ export default function DashboardEvents() {
               />
               <GameJamEvent
                 title={events[3].title}
+                jampage={events[3].jampage}
                 date={events[3].date}
                 description={events[3].description}
                 theme={events[3].theme}

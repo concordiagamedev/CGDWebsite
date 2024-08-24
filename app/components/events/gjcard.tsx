@@ -21,9 +21,12 @@ import { Separator } from "@/components/ui/separator";
 import { ClientOnly } from "remix-utils/client-only";
 import { Link } from "@remix-run/react";
 import { Icon } from "@iconify/react";
+import { buttonVariants } from "@/components/ui/button";
 
+// The props are taken from siteSettings/events.json imported on the events.tsx page
 interface EventProps {
   title: string;
+  jampage?: string;
   date: string;
   description: string;
   imageD: string;
@@ -36,6 +39,7 @@ interface EventProps {
 
 const GameJamEvent: React.FC<EventProps> = ({
   title,
+  jampage,
   date,
   description,
   placeholder,
@@ -59,8 +63,10 @@ const GameJamEvent: React.FC<EventProps> = ({
           />
           <div className="flex flex-col justify-center gap-4">
             <div>
-              <h2 className="title text-3xl 2xl:text-4xl text-cgd-pink/85 text-left">
-                {title}
+              <h2 className="title text-3xl 2xl:text-4xl text-cgd-pink/85 text-left hover:underline">
+                <a href={jampage} target="_blank">
+                  {title}
+                </a>
               </h2>
               <h4 className="description text-xl text-dark-purple/90 font-corbert font-bold">
                 {description}
@@ -199,10 +205,25 @@ const GameJamEvent: React.FC<EventProps> = ({
                               icon = "solar:medal-ribbon-star-bold-duotone"; // Customize for the third item
                               break;
                             case 3:
-                              icon = "solar:star-circle-bold-duotone";
-                              iconClassName = "ml-1 w-6 h-6";
+                              icon = "solar:heart-bold-duotone";
+                              iconClassName = "ml-0.5 w-7 h-7";
+                              break;
+                            default:
+                              icon = "solar:medal-ribbon-line-duotone";
                               break;
                           }
+
+                          // Add the following to events.json if deciding to keep bonus awards:
+                          // {
+                          //   "position": "Challenger Award",
+                          //   "gamename": "Strung Along",
+                          //   "gamelink": "https://trim-ge2019.itch.io/the-red-line-of-fate"
+                          // },
+                          // {
+                          //   "position": "Solo Dev Award",
+                          //   "gamename": "▶-🔲🔲🔲",
+                          //   "gamelink": "https://jordan-vision.itch.io/triangle-squaresquaresquare"
+                          // }
 
                           return (
                             <div className="flex gap-2 justify-between mx-10">
@@ -219,6 +240,18 @@ const GameJamEvent: React.FC<EventProps> = ({
                         })}
                       </div>
                     </h3>
+                  </div>
+                  <div>
+                    {/* Using Link and button variant from shadcn + additional styling.
+                        Links to the jam page of the event as long as is it defined */}
+                    <Link
+                      className={`${buttonVariants({
+                        variant: "ghost",
+                      })} w-full rounded-md font-corbert text-base font-extrabold text-dark-purple active:bg-wh`}
+                      to={jampage ? jampage : `#`}
+                    >
+                      See more
+                    </Link>
                   </div>
                 </div>
               </DrawerDescription>
