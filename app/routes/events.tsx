@@ -3,7 +3,9 @@ import type { MetaFunction } from "@remix-run/node";
 import GameJamEvent from "~/components/events/gjcard";
 import EventCard from "~/components/events/eventcard";
 import events from "~/siteSettings/events.json";
-import gj2024winner from "assets/icons/gj2024_winner.png";
+import ggj2024winner from "assets/icons/gj2024_winner.png";
+import cgdjam2023winner from "assets/icons/awayback.png";
+import cgdjam2022winner from "assets/icons/smokingkills.png";
 import ggj from "assets/icons/ggj2024.png";
 import ggjM from "assets/icons/ggj_banner.png";
 import cgd2023 from "assets/icons/cgdfall2023.png";
@@ -60,7 +62,7 @@ export default function DashboardEvents() {
                 theme={events[0].theme}
                 location={events[0].location}
                 winners={events[0].winners}
-                placeholder={gj2024winner}
+                placeholder={ggj2024winner}
                 imageD={ggj}
                 imageM={ggjM}
               />
@@ -72,6 +74,7 @@ export default function DashboardEvents() {
                 theme={events[1].theme}
                 location={events[1].location}
                 winners={events[1].winners}
+                placeholder={cgdjam2023winner}
                 imageD={cgd2023}
                 imageM={cgd2023M}
               />
@@ -91,6 +94,7 @@ export default function DashboardEvents() {
                 theme={events[3].theme}
                 location={events[3].location}
                 winners={events[3].winners}
+                placeholder={cgdjam2022winner}
                 imageD={cgd2022}
                 imageM={cgd2022M}
               />
