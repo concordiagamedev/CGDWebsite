@@ -3,6 +3,8 @@ import "app/css/homepage.css";
 import "assets/fonts/fonts.css";
 import "app/css/background-animation.css";
 import cgdpink from "assets/icons/cgd-transp-pink.png";
+import Landing from "~/components/homepage/landing";
+import Stats from "~/components/homepage/stats";
 
 export const meta: MetaFunction = () => {
   return [
@@ -15,10 +17,9 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div className="header-footer">
-      <div className="page">
-        <h1 className="gameclub sm:text-8xl text-5xl pb-11">
-          Concordia Game Development
-        </h1>
+      <div className="md:my-20 my-16">
+        <Landing />
+        <Stats />
       </div>
       <div className="background h-full">
         <span>

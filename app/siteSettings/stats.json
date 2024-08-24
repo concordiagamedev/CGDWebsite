@@ -1,0 +1,8 @@
+{
+    "homeStats":[
+        {"name": "Members", "stat": "950+", "id": 0},
+        {"name": "Game Jams", "stat": "12+", "id": 1},
+        {"name": "Games","stat": "100+", "id": 2},
+        {"name": "Community","stat": "1", "id": 3}
+    ]
+}
