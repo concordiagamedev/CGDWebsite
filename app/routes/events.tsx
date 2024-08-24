@@ -42,15 +42,15 @@ export default function DashboardEvents() {
           defaultValue={["upcoming-events"]}
         >
           <AccordionItem value="upcoming-events">
-            <AccordionTrigger className="text-3xl md:text-5xl text-dark-purple">
+            <AccordionTrigger className="text-3xl md:text-5xl text-dark-purple uppercase">
               Upcoming Events
             </AccordionTrigger>
-            <AccordionContent className="flex flex-col gap-5 w-full font-corbert font-bold text-cgd-pink text-lg">
+            <AccordionContent className="flex flex-col gap-5 w-full font-corbert font-bold text-cgd-pink text-lg text-center">
               Upcoming Events are coming soon!
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="past-events">
-            <AccordionTrigger className="text-3xl md:text-5xl text-dark-purple">
+            <AccordionTrigger className="text-3xl md:text-5xl text-dark-purple uppercase">
               Past Events
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-5 w-full">
