@@ -5,6 +5,9 @@ import "app/css/background-animation.css";
 import cgdpink from "assets/icons/cgd-transp-pink.png";
 import Landing from "~/components/homepage/landing";
 import Stats from "~/components/homepage/stats";
+import GameCollection from "~/components/homepage/gameCollection";
+import JoinUs from "~/components/homepage/joinUs";
+import AboutUs from "~/components/homepage/aboutus";
 
 export const meta: MetaFunction = () => {
   return [
@@ -20,6 +23,9 @@ export default function Index() {
       <div className="md:my-20 my-16">
         <Landing />
         <Stats />
+        <AboutUs />
+        <GameCollection />
+        <JoinUs />
       </div>
       <div className="background h-full">
         <span>
