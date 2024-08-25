@@ -5,17 +5,17 @@
 }
 
 .background {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   top: 0;
   left: 0;
   overflow: hidden;
-  z-index: -50;
+  z-index: -40;
 }
 
 .background span {
   backface-visibility: hidden;
-  position: absolute;
+  position: fixed;
   animation: move;
   animation-duration: 21;
   animation-timing-function: linear;
