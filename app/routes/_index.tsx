@@ -3,6 +3,7 @@ import "app/css/homepage.css";
 import "assets/fonts/fonts.css";
 import "app/css/background-animation.css";
 import cgdpink from "assets/icons/cgd-transp-pink.png";
+import ConstructionCard from "~/components/constructioncard";
 
 export const meta: MetaFunction = () => {
   return [
@@ -14,7 +15,8 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="header-footer flex-grow">
+    <div className="flex-grow">
+      <ConstructionCard show={false} />
       <div className="page">
         <h1 className="gameclub sm:text-8xl text-5xl pb-11">
           Concordia Game Development
