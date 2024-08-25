@@ -4,7 +4,7 @@ import { homeStats } from "~/siteSettings/stats.json";
 const Stats: React.FC = () => {
   return (
     <div className="flex items-center justify-center w-full">
-      <div className="md:mx-10 md:p-5 mx-5 p-3 md:flex grid grid-cols-2 gap-5 justify-center bg-amber-300 md:w-fit w-full rounded-2xl text-center items-center">
+      <div className="md:mx-10 md:p-5 mx-5 p-3 md:flex grid grid-cols-2 gap-5 justify-center bg-wh md:w-fit w-full rounded-2xl text-center items-center">
         {homeStats.map((stat) => (
           <div
             key={stat.id}
