@@ -15,51 +15,49 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div>
+    <div className="flex-grow">
       <ConstructionCard show={false} />
-      <div className="header-footer">
-        <div className="page">
-          <h1 className="gameclub sm:text-8xl text-5xl pb-11">
-            Concordia Game Development
-          </h1>
-        </div>
-        <div className="background h-full">
-          <span>
-            <img
-              src={cgdpink}
-              alt="cgd pink alternate logo"
-              className="floaties"
-            />
-          </span>
-          <span>
-            <img
-              src={cgdpink}
-              alt="cgd pink alternate logo"
-              className="floaties"
-            />
-          </span>
-          <span>
-            <img
-              src={cgdpink}
-              alt="cgd pink alternate logo"
-              className="floaties"
-            />
-          </span>
-          <span>
-            <img
-              src={cgdpink}
-              alt="cgd pink alternate logo"
-              className="floaties"
-            />
-          </span>
-          <span>
-            <img
-              src={cgdpink}
-              alt="cgd pink alternate logo"
-              className="floaties"
-            />
-          </span>
-        </div>
+      <div className="page">
+        <h1 className="gameclub sm:text-8xl text-5xl pb-11">
+          Concordia Game Development
+        </h1>
+      </div>
+      <div className="background h-full">
+        <span>
+          <img
+            src={cgdpink}
+            alt="cgd pink alternate logo"
+            className="floaties"
+          />
+        </span>
+        <span>
+          <img
+            src={cgdpink}
+            alt="cgd pink alternate logo"
+            className="floaties"
+          />
+        </span>
+        <span>
+          <img
+            src={cgdpink}
+            alt="cgd pink alternate logo"
+            className="floaties"
+          />
+        </span>
+        <span>
+          <img
+            src={cgdpink}
+            alt="cgd pink alternate logo"
+            className="floaties"
+          />
+        </span>
+        <span>
+          <img
+            src={cgdpink}
+            alt="cgd pink alternate logo"
+            className="floaties"
+          />
+        </span>
       </div>
     </div>
   );
