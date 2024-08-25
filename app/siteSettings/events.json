@@ -1,0 +1,102 @@
+[
+  {
+    "id": 0,
+    "title": "Global Game Jam 2024",
+    "jampage": "https://itch.io/jam/cgd-jam-2024",
+    "date": "Jan 26-28, 2024",
+    "location": "EV Building, Concordia SGW",
+    "description": "Hosted by Concordia Game Dev Club, Global Game Jam is a 48-hour event where the theme is 'Make me Laugh'.",
+    "theme": "Make me Laugh",
+    "winners": [
+      {
+        "position": "1st Place",
+        "gamename": "Brainrot",
+        "gamelink": "https://kristiankurk.itch.io/brainrot"
+      },
+      {
+        "position": "2nd Place",
+        "gamename": "Jest for Laughs",
+        "gamelink": "https://artistwanted.itch.io/jest-for-laughs"
+      },
+      {
+        "position": "3rd Place",
+        "gamename": "A Party's Guideline",
+        "gamelink": "https://princessemoee.itch.io/a-partys-guideline"
+      },
+      {
+        "position": "Community Favourite",
+        "gamename": "Cash Clown",
+        "gamelink": "https://kindaokev.itch.io/cash-clown"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "CGD Jam Fall 2023",
+    "jampage": "https://itch.io/jam/cgd-jam-2023",
+    "date": "Nov 3-5, 2023",
+    "location": "MB Building, Concordia SGW",
+    "description": "Organized by Concordia Game Dev, this 48 hour Game Jam event's theme was 'Space Between'.",
+    "theme": "Space Between",
+    "winners": [
+      {
+        "position": "1st Place",
+        "gamename": "Away Back",
+        "gamelink": "https://time-moth.itch.io/away-back"
+      },
+      {
+        "position": "2nd Place",
+        "gamename": "YarnBall Z: CatLander",
+        "gamelink": "https://2101.itch.io/catballz"
+      },
+      {
+        "position": "3rd Place",
+        "gamename": "Debbee's in Danger!",
+        "gamelink": "https://armandorusso.itch.io/debbes-in-danger"
+      },
+      {
+        "position": "Community Favourite",
+        "gamename": "Away Back",
+        "gamelink": "https://time-moth.itch.io/away-back"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Megamigs 2022",
+    "date": "Oct 19-22, 2022",
+    "description": "Megamigs is a 4-day event that brings together the video game industry and the public. It is a unique opportunity to meet and exchange with the people who make the video game industry shine.",
+    "location": "Palais des Congrès de Montréal"
+  },
+  {
+    "id": 3,
+    "title": "CGD Jam Fall 2022",
+    "jampage": "https://itch.io/jam/cgd-jam",
+    "date": "Oct 14-16, 2022",
+    "location": "FB Building, Concordia SGW",
+    "description": "The community's never been so alive! Our club was able to organize and host our first in-person event in over 2 years. With over 50 participants and 11 game submissions, the 2022 CGD Game Jam was major success!",
+    "theme": "There was... Then there was Not",
+    "winners": [
+      {
+        "position": "1st Place",
+        "gamename": "Smoking Kills",
+        "gamelink": "https://hornetwithagun.itch.io/smoking-kills"
+      },
+      {
+        "position": "2nd Place",
+        "gamename": "Blu",
+        "gamelink": "https://daxinvader.itch.io/blu"
+      },
+      {
+        "position": "3rd Place",
+        "gamename": "There was a Garden",
+        "gamelink": "https://miss-mystie.itch.io/there-was-a-garden"
+      },
+      {
+        "position": "Community Favourite",
+        "gamename": "Quantum Cat-Astrophe",
+        "gamelink": "https://armandorusso.itch.io/quantum-cat-astrophe"
+      }
+    ]
+  }
+]
