@@ -104,6 +104,7 @@ const GameJamEvent: React.FC<EventProps> = ({
                           key={index}
                           className="font-corbert hover:text-cgd-pfull transition-colors ease-in-out duration-300"
                           to={winner.gamelink}
+                          target="_blank"
                         >
                           &nbsp;&nbsp;{winner.gamename}
                         </Link>
@@ -232,6 +233,7 @@ const GameJamEvent: React.FC<EventProps> = ({
                                 key={index}
                                 className="font-corbert "
                                 to={winner.gamelink}
+                                target="_blank"
                               >
                                 {winner.gamename}
                               </Link>
@@ -249,6 +251,7 @@ const GameJamEvent: React.FC<EventProps> = ({
                         variant: "ghost",
                       })} w-full rounded-md font-corbert text-base font-extrabold text-dark-purple active:bg-wh`}
                       to={jampage ? jampage : `#`}
+                      target="_blank"
                     >
                       See more
                     </Link>
