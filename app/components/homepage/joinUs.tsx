@@ -1,4 +1,5 @@
 import React from "react";
+import { Separator } from "~/components/ui/separator";
 
 const JoinUs: React.FC = () => {
   return (
@@ -10,6 +11,7 @@ const JoinUs: React.FC = () => {
           </h1>
           <div>Button</div>
         </div>
+        <Separator orientation="vertical" className="bg-wh w-0.5 rounded-xl" />
         <div className="md:w-1/2 w-full md:mx-12 px-5 text-center">
           <h1 className="gameclub xl:text-8xl lg:text-6xl md:text-4xl text-2xl">
             Sponsor Us!
