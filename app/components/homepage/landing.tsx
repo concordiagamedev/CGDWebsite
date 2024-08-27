@@ -11,10 +11,10 @@ const Landing: React.FC = () => {
       />
       <div className="flex flex-col gap-2 md:text-left text-right items-end justify-center h-full w-full ">
         <div className="md:w-1/2 w-full md:mx-12 px-5">
-          <p className="gameclub xl:text-8xl lg:text-6xl md:text-5xl text-4xl text-wfull">
+          <p className="gameclub xl:text-8xl lg:text-6xl md:text-5xl text-3xl text-wfull">
             Concordia Game Development
           </p>
-          <p className="xl:text-4xl md:text-2xl text-xl font-corbert font-bold text-wfull/85">
+          <p className="xl:text-4xl md:text-2xl text-lg font-corbert font-bold text-wfull/85">
             Building dreams, level by level
           </p>
           <div>Button</div>
