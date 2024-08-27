@@ -20,7 +20,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div className="header-footer">
-      <div className="md:my-20 my-16">
+      <div className="md:my-18 md:py-2 my-16">
         <Landing />
         <Stats />
         <AboutUs />
