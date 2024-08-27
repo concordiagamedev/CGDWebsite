@@ -13,7 +13,7 @@ body {
 .gameclub,
 h1 {
   font-family: "League Spartan", sans-serif;
-  color: #532d53;
+  /* color: #532d53; */
   text-transform: uppercase;
 
   animation: h1 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
