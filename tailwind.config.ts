@@ -23,6 +23,7 @@ const config = {
         "light-pink": "hsla(343, 73%, 68%, 0.8)",
         "dark-purple": "#4e2f51",
         wh: "#f1f1f1a6",
+        wfull: "#f1f1f1",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
