@@ -1,5 +1,5 @@
 import React from "react";
-import landing from "assets/pics/landing.png";
+import landing from "assets/pics/landing.jpg";
 
 const Landing: React.FC = () => {
   return (
