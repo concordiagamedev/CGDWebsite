@@ -16,7 +16,7 @@ export const meta: MetaFunction = () => {
 export default function DashboardEvents() {
   return (
     <div className="page">
-      <h1 className="sm:text-8xl text-6xl align-middle pb-11 text-center">
+      <h1 className="sm:text-8xl text-6xl align-middle pb-11 text-center text-dark-purple">
         Events
       </h1>
       <h2 className="ourteam sm:text-7xl text-5xl my-10 ml-80">Past Events</h2>
