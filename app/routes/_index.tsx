@@ -2,6 +2,7 @@ import type { MetaFunction } from "@remix-run/node";
 import "app/css/homepage.css";
 import "assets/fonts/fonts.css";
 import "app/css/background-animation.css";
+import "app/css/animations.css";
 import cgdpink from "assets/icons/cgd-transp-pink.png";
 import Landing from "~/components/homepage/landing";
 import Stats from "~/components/homepage/stats";
