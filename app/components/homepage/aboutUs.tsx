@@ -6,13 +6,9 @@ const AboutUs: React.FC = () => {
       <h2 className="font-ls sm:text-6xl text-4xl md:my-14 my-6 text-center md:text-left md:mx-10 text-dark-purple uppercase">
         About Us
       </h2>
-      <div className="grid grid-cols-3 items-center justify-center gap-5 w-full min-h-[40vh]">
-        {/* <div className="w-full h-full rounded-lg bg-wh/100"></div>
-        <div className="w-full h-full rounded-lg bg-wh/100"></div>
-        <div className="w-full h-full rounded-lg bg-wh/100"></div>
-        <div className="w-full h-full rounded-lg bg-wh/100"></div>
-        <div className="w-full h-full rounded-lg bg-wh/100"></div>
-        <div className="w-full h-full rounded-lg bg-wh/100"></div> */}
+      <div className="w-full flex md:flex-row flex-col items-center justify-center gap-5 h-full">
+        <div className="md:w-1/2">picture here</div>
+        <div className="md:w-1/2">text here</div>
       </div>
     </div>
   );
