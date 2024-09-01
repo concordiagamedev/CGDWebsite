@@ -2,6 +2,7 @@ import type { MetaFunction } from "@remix-run/node";
 import "app/css/homepage.css";
 import "assets/fonts/fonts.css";
 import "app/css/background-animation.css";
+import "app/css/animations.css";
 import cgdpink from "assets/icons/cgd-transp-pink.png";
 import Landing from "~/components/homepage/landing";
 import Stats from "~/components/homepage/stats";
@@ -20,7 +21,7 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div className="header-footer">
-      <div className="md:my-20 my-16">
+      <div className="md:my-18 md:py-2 my-16">
         <Landing />
         <Stats />
         <AboutUs />
