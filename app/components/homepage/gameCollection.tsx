@@ -12,7 +12,11 @@ const GameCollection: React.FC = () => {
       </div>
       <div className="grid md:grid-cols-3 grid-cols-2 items-center justify-center gap-5 w-full min-h-[40vh]">
         {homeGames.map((game) => (
-          <div className="w-full h-full rounded-lg bg-wh/100"></div>
+          <div className="w-full h-full rounded-lg bg-wh/100">
+            <div className="m-1 p-1">
+              <img src={game.img} alt={game.alt} />
+            </div>
+          </div>
         ))}
       </div>
     </div>
