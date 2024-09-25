@@ -2,6 +2,7 @@
   "homeGames": [
     {
       "name": "Away Back",
+      "id": "0",
       "info": "CGD Jam Fall '23 - 1st Place",
       "gamelink": "https://time-moth.itch.io/away-back",
       "target": "_blank",
@@ -10,6 +11,7 @@
     },
     {
       "name": "Brainrot",
+      "id": "1",
       "info": "Global Game Jam '24 - 1st Place",
       "gamelink": "https://globalgamejam.org/games/2024/brainrot-0",
       "target": "_blank",
@@ -18,6 +20,7 @@
     },
     {
       "name": "Mandrake Soul Orchestra",
+      "id": "2",
       "info": "Global Game Jam '23 - 1st Place",
       "gamelink": "https://selfmadegoblin.itch.io/mandrake-soul-orchestra",
       "target": "_blank",
@@ -26,6 +29,7 @@
     },
     {
       "name": "The Are Not Real People",
+      "id": "3",
       "info": "CGD Jam Fall '23",
       "gamelink": "https://monsanima.itch.io/these-are-not-real-people",
       "target": "_blank",
@@ -34,6 +38,7 @@
     },
     {
       "name": "CASH CLOWN",
+      "id": "4",
       "info": "Global Game Jam '24",
       "gamelink": "https://kindaokev.itch.io/cash-clown",
       "target": "_blank",
@@ -42,6 +47,7 @@
     },
     {
       "name": "Quantum Cat-Astrophe",
+      "id": "5",
       "info": "CGD Jam Fall '22",
       "gamelink": "https://armandorusso.itch.io/quantum-cat-astrophe",
       "target": "_blank",
