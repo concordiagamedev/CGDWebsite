@@ -13,10 +13,10 @@ const GameCollection: React.FC = () => {
       <div className="grid md:grid-cols-3 grid-cols-2 items-center justify-center gap-5 w-full min-h-[40vh]">
         {homeGames.map((game) => (
           <div
-            className="flex w-full h-full rounded-lg bg-wh/100"
+            className="flex w-full h-full rounded-lg bg-wh/100 border-2 border-wh hover:border-cgd-pink"
             key={game.id}
           >
-            <div className="m-1 p-1 ">
+            <a className="m-1 p-1 " href={game.gamelink} target={game.target}>
               <img className="" src={game.img} alt={game.alt} />
               <div className="justify-start flex-col">
                 <div className="text-dark-purple font-extrabold font-corbert text-md sm:text-lg md:text-xl lg:text-2xl">
@@ -26,7 +26,7 @@ const GameCollection: React.FC = () => {
                   {game.info}
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         ))}
       </div>
