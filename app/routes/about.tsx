@@ -3,13 +3,8 @@ import "app/css/aboutus.css";
 import type { MetaFunction } from "@remix-run/node";
 import controller from "assets/icons/cgd_controller.png";
 import Profile from "app/components/profile";
-import tuana from "assets/pictures/execs/tuana.png";
-import charles from "assets/pictures/execs/charles_resized.png";
-import maxx from "assets/pictures/execs/maxx_resized.png";
-import peter from "assets/pictures/execs/peter_resized.png";
-import nick from "assets/pictures/execs/nick_resized.png";
-import template from "assets/pictures/execs/template.png";
 import ConstructionCard from "~/components/constructioncard";
+import { staff } from "../siteSettings/staff.json";
 
 export const meta: MetaFunction = () => {
   return [
@@ -52,51 +47,14 @@ export default function DashboardAbout() {
             Meet Our Team
           </h2>
           <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 lg:mx-32 lg:px-24 md:mx-20 md:px-20 px-6">
-            <Profile
-              name="Charles Partous"
-              position="President"
-              image={charles}
-            />
-            <Profile
-              name="Aria Tessler"
-              position="VP Internal"
-              image={template}
-            />
-            <Profile
-              name="Rev Nahabedian"
-              position="VP External"
-              image={template}
-            />
-            <Profile name="Nicolas Boyer" position="Treasurer" image={nick} />
-            <Profile name="Peter Tian" position="VP Tech" image={peter} />
-            <Profile
-              name="Tuana Bicakci"
-              position="VP Creative"
-              image={tuana}
-            />
-            <Profile name="Zaid Minhas" position="Internal" image={template} />
-            <Profile name="Adam Farahat" position="External" image={template} />
-            <Profile
-              name="Maxx Freund"
-              position="Lead Developer"
-              image={maxx}
-            />
-            <Profile
-              name="Jordan Bossou"
-              position="Developer"
-              image={template}
-            />
-            <Profile
-              name="Alexander Smagorinski"
-              position="Developer"
-              image={template}
-            />
-            <Profile name="Katrina Frain" position="Artist" image={template} />
-            <Profile
-              name="Keven Vaillancourt"
-              position="Artist"
-              image={template}
-            />
+            {staff.map((staff) => (
+              <Profile
+                key={staff.id}
+                name={staff.name}
+                position={staff.position}
+                image={staff.img}
+              />
+            ))}
           </div>
         </div>
 
