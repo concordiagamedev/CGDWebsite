@@ -89,7 +89,7 @@ const Navbar = () => {
     >
       <div className=" md:flex md:justify-between md:items-center w-full">
         {/* logo */}
-        <div className="flex-shrink-0 flex flex-row justify-between">
+        <div className="flex-shrink-0 flex flex-row justify-between md:basis-1/6 2xl:basis-1/3">
           <a href="/">
             <img
               src={CGDLogo}
@@ -111,7 +111,7 @@ const Navbar = () => {
         </div>
         {/* nav-links */}
         <ul
-          className={`page-links flex-col md:flex-row justify-center gap-3 md:gap-2 mx-16 md:mx-1 md:flex hidden ${
+          className={`page-links flex-col md:flex-row justify-center gap-3 md:gap-2 mx-16 md:mx-1 md:flex md:basis-4/6 2xl:basis-1/3 hidden ${
             open ? "menu-open" : ""
           }`}
         >
@@ -129,7 +129,7 @@ const Navbar = () => {
         </ul>
         {/* socials-links */}
         <div
-          className={`socials-menu flex-shrink-0 md:items-center flex-row justify-center my-6 hidden md:flex ${
+          className={`socials-menu flex-shrink-0 md:items-center flex-row justify-center gap-x-5 md:justify-end my-6 hidden md:flex md:basis-1/6 md:pr-4 md:gap-x-2 lg:gap-x-4 2xl:basis-1/3 ${
             open ? "menu-open" : ""
           }`}
         >
