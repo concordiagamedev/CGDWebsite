@@ -1,0 +1,88 @@
+{
+  "staff": [
+    {
+      "name": "Charles Partous",
+      "position": "President",
+      "id": "1",
+      "img": "assets/staff/charles.png"
+    },
+    {
+      "name": "Aria Tessler",
+      "position": "VP Internal",
+      "id": "2",
+      "img": "assets/staff/template.png"
+    },
+    {
+      "name": "Rev Nahabedian",
+      "position": "VP External",
+      "id": "3",
+      "img": "assets/staff/template.png"
+    },
+    {
+      "name": "Peter Tian",
+      "position": "VP Tech",
+      "id": "4",
+      "img": "assets/staff/peter.png"
+    },
+    {
+      "name": "Tuana Bicakci",
+      "position": "VP Creative",
+      "id": "5",
+      "img": "assets/staff/tuana.png"
+    },
+    {
+      "name": "Nicolas Boyer",
+      "position": "Treasurer",
+      "id": "6",
+      "img": "assets/staff/nick.png"
+    },
+    {
+      "name": "Zaid Minhas",
+      "position": "Internal",
+      "id": "7",
+      "img": "assets/staff/template.png"
+    },
+    {
+      "name": "Adam Farahat",
+      "position": "External",
+      "id": "8",
+      "img": "assets/staff/template.png"
+    },
+    {
+      "name": "Sam Dalwood",
+      "position": "External",
+      "id": "9",
+      "img": "assets/staff/template.png"
+    },
+    {
+      "name": "Maxx Freund",
+      "position": "Lead Developer",
+      "id": "10",
+      "img": "assets/staff/maxx.png"
+    },
+    {
+      "name": "Jordan Bossou",
+      "position": "Developer",
+      "id": "11",
+      "img": "assets/staff/template.png"
+    },
+    {
+      "name": "Alexander Smagorinski",
+      "position": "Developer",
+      "id": "12",
+      "img": "assets/staff/template.png"
+    },
+    {
+      "name": "Katrina Frain",
+      "position": "Artist",
+      "id": "13",
+      "img": "assets/staff/template.png"
+    },
+    {
+      "name": "Keven Vaillancourt",
+      "position": "Artist",
+      "id": "14",
+      "img": "assets/staff/template.png"
+    }
+  ]
+}
