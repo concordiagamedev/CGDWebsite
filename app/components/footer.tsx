@@ -13,6 +13,7 @@ const Footer = () => {
             href="https://goo.gl/maps/22J1SBAVLrBCwsHk7"
             className="address"
             target="_blank"
+            rel="noreferrer"
           >
             2020 Mackay St, Unit P-105, Montreal, QC H3G 2M2
           </a>
