@@ -67,9 +67,6 @@
   }
 }
 .socials-menu {
-  gap: 1rem;
-  padding: 0 1rem;
-
   .menu-svg {
     aspect-ratio: 1;
     width: 24px;
