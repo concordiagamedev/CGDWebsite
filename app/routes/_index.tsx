@@ -4,6 +4,7 @@ import "assets/fonts/fonts.css";
 import "app/css/background-animation.css";
 import "app/css/animations.css";
 import cgdpink from "assets/icons/cgd-transp-pink.png";
+import ConstructionCard from "~/components/constructioncard";
 import Landing from "~/components/homepage/landing";
 import Stats from "~/components/homepage/stats";
 import GameCollection from "~/components/homepage/gameCollection";
@@ -20,7 +21,8 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="header-footer">
+    <div className="flex-grow">
+      <ConstructionCard show={false} />
       <div className="md:my-18 md:py-2 my-16">
         <Landing />
         <Stats />
