@@ -1,0 +1,29 @@
+.r1 {
+    animation: r1 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.18s both;
+  }
+
+.r2 {
+  animation: r1 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.28s both;
+}
+
+.r3 {
+  animation: r1 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.38s both;
+}
+
+.r4 {
+  animation: r1 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.48s both;
+}
+  
+@keyframes r1 {
+    0% {
+      transform: translateZ(-700px) translateY(50px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }

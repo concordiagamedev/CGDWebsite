@@ -19,7 +19,9 @@ export default function DashboardSponsor() {
     <div>
       <ConstructionCard show={false} />
       <div className="page">
-        <h1 className="sm:text-8xl text-6xl pb-11">Our Sponsors</h1>
+        <h1 className="sm:text-8xl text-6xl pb-11 text-center text-dark-purple">
+          Our Sponsors
+        </h1>
         <div className="sponsor-container">
           {/* <div className="sponsor-text">Thank you for our sponsors!</div> */}
           <div className="sponsortext flex text-lg">

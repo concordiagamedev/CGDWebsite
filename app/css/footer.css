@@ -27,7 +27,6 @@
   }
 
   .social-wrapper-footer {
-    margin: 1rem;
     display: flex;
     flex-direction: column;
     min-width: 280px;

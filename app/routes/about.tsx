@@ -19,8 +19,10 @@ export default function DashboardAbout() {
     <div>
       <ConstructionCard show={false} />
       <div className="page">
-        <div className="about-us-container ">
-          <h1 className="sm:text-8xl text-6xl ">About Us</h1>
+        <div className="about-us-container">
+          <h1 className="sm:text-8xl text-6xl text-center text-dark-purple">
+            About Us
+          </h1>
           <div className="aboutus-container flex flex-col-reverse lg:flex-row justify-center items-center md:gap-0 gap-6 md:px-20 px-10 xl:mx-32">
             <div className="aboutus-text font-bold mt-5 mb-5 md:my-0 md:text-xl 2xl:text-2xl text-lg -z-10">
               We are Concordia's gamedev community and we focus on the technical

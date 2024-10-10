@@ -28,6 +28,7 @@ const config = {
         pink: "hsl(343, 100%, 92%)",
         "dark-purple": "#4e2f51",
         wh: "#f1f1f1a6",
+        wfull: "#f1f1f1",
         "wh-full": "#f1f1f1",
         "bg-tl": "hsl(343 90% 85%)",
         "bg-br": "hsl(320 45% 95%)",

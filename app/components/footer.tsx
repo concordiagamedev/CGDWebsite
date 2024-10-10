@@ -34,7 +34,7 @@ const Footer = () => {
       </div>
 
       {/* Refer to footer.css for styling in addition to these class names */}
-      <div className="social-wrapper-footer flex content-center gap-y-2 lg:gap-y-4 lg:basis-1/3">
+      <div className="social-wrapper-footer m-4 lg:m-0 flex content-center gap-y-2 lg:gap-y-4 lg:basis-1/3">
         <div className="social">
           <div className="follow 2xl:float-right">Follow</div>
         </div>

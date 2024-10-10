@@ -1,0 +1,8 @@
+{
+    "homeStats":[
+        {"name": "Members", "stat": "950+", "id": 0, "icon": "solar:users-group-two-rounded-bold-duotone"},
+        {"name": "Game Jams", "stat": "12+", "id": 1, "icon": "solar:cup-bold-duotone"},
+        {"name": "Games","stat": "100+", "id": 2, "icon": "solar:gamepad-bold-duotone"},
+        {"name": "Community","stat": "1", "id": 3, "icon": "solar:hand-heart-bold-duotone"}
+    ]
+}
