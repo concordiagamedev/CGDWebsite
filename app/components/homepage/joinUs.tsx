@@ -24,7 +24,11 @@ const JoinUs: React.FC = () => {
             variant="link"
             className="font-ls uppercase 2xl:text-7xl lg:text-6xl md:text-4xl text-2xl text-wfull/95 drop-shadow-xl"
           >
-            <Link to={"https://discord.gg/NfRhdRX66P"} className="text-wrap">
+            <Link
+              to={"https://discord.gg/NfRhdRX66P"}
+              target="_blank"
+              className="text-wrap"
+            >
               Join our Discord!
             </Link>
           </Button>

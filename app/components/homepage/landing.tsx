@@ -9,7 +9,7 @@ const Landing: React.FC = () => {
     <div className="md:m-7 md:p-7 m-5 p-5 xl:h-[90vh] md:h-[60vh] h-[40vh] relative max-w-screen rounded-2xl">
       <img
         src={landing}
-        alt="shows image of RDIA"
+        alt="RDIA"
         className="-z-10 absolute object-cover h-full w-full inset-0 object-top rounded-2xl border border-blue-900/70 "
       />
       <div className="flex flex-col gap-2 md:text-left text-right items-end justify-center h-full w-full ">
@@ -30,6 +30,7 @@ const Landing: React.FC = () => {
             >
               <Link
                 to={"https://discord.gg/NfRhdRX66P"}
+                target="_blank"
                 className="flex gap-2 items-center"
               >
                 <Icon
