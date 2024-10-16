@@ -12,6 +12,7 @@ const JoinUs: React.FC = () => {
         src={joinus}
         alt="Join us"
         className="rounded-2xl -z-10 absolute object-cover h-full w-full object-center "
+        loading="lazy"
       />
       <div className="flex gap-2 md:text-left h-full w-full items-center justify-center backdrop-blur-sm rounded-2xl">
         <div className="md:w-1/2 w-full md:mx-12 px-5 py-10 my-5 text-center flex flex-col items-center h-full justify-center md:gap-14 gap-4">

@@ -15,6 +15,7 @@ const Profile: React.FC<ProfileProps> = ({ name, position, image }) => {
           src={image}
           alt={name}
           className="hover:scale-110 transition duration-300 rounded-2xl object-cover object-top aspect-square"
+          loading="lazy"
         />
       </div>
 

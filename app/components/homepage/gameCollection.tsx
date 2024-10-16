@@ -21,6 +21,7 @@ const GameCollection: React.FC = () => {
                 className="w-full h-[32vw] md:h-[20vw] xl:h-[15vw] 2xl:h-[20vw] object-cover rounded-md"
                 src={game.img}
                 alt={game.alt}
+                loading="lazy"
               />
               <div className="justify-start flex-col xl:m-2">
                 <div className="text-dark-purple font-extrabold font-corbert text-md sm:text-lg md:text-xl lg:text-2xl">
