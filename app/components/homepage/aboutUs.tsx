@@ -11,8 +11,9 @@ const AboutUs: React.FC = () => {
         <div className="md:w-1/2 flex justify-center xl:ml-14 xl:pl-10 md:ml-5 w-full">
           <img
             src={aboutus}
-            alt="image of the club event"
+            alt="club event"
             className=" rounded-xl"
+            loading="lazy"
           />
         </div>
         <div className=" md:w-1/2 flex xl:text-3xl md:text-xl text-lg md:text-left text-center font-corbert font-bold text-dark-purple xl:mr-14 xl:pr-10 md:mr-5">
