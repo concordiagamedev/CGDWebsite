@@ -25,6 +25,16 @@
     animation: past-sponsors 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.24s both;
   }
 
+  .current-sponsors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+
+    animation: past-sponsors 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) 0.24s both;
+  }
+
   .past-sponsor-img {
     aspect-ratio: 3/4;
     width: 15%;

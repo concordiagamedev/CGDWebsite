@@ -1,11 +1,10 @@
 import cgdpink from "assets/icons/cgd-transp-pink.png";
 import sponsorpacklm from "assets/pics/light mode-2.png";
-import cc2mtl from "assets/icons/cc2-mtl.png";
-import cc2 from "assets/icons/cc2.png";
-import ubi from "assets/icons/ubisoft.png";
 import "app/css/sponsors.css";
 import type { MetaFunction } from "@remix-run/node";
 import ConstructionCard from "~/components/constructioncard";
+import PreviousSponsors from "~/components/sponsor/previousSponsors";
+import CurrentSponsors from "~/components/sponsor/currentSponsors";
 
 export const meta: MetaFunction = () => {
   return [
@@ -55,29 +54,8 @@ export default function DashboardSponsor() {
               <p className="py-4">Become a Sponsor!</p>
             </a>
           </div>
-
-          <div className="past-sponsors-container">
-            <div className="sponsortext">
-              Special thanks to our previous partners & sponsors!
-            </div>
-            <div className="past-sponsors">
-              <img
-                src={cc2mtl}
-                alt="concordia gamedev club's past sponsor cyberconnect2 montreal logo"
-                className="past-sponsor-img"
-              />
-              <img
-                src={cc2}
-                alt="concordia gamedev club's past sponsor cyberconnect2 logo"
-                className="past-sponsor-img"
-              />
-              <img
-                src={ubi}
-                alt="concordia game dev club's past partner ubisoft logo"
-                className="past-sponsor-img"
-              />
-            </div>
-          </div>
+          <CurrentSponsors />
+          <PreviousSponsors />
         </div>
 
         <div className="background h-full">
