@@ -6,6 +6,9 @@ import ubi from "assets/icons/ubisoft.png";
 import "app/css/sponsors.css";
 import type { MetaFunction } from "@remix-run/node";
 import ConstructionCard from "~/components/constructioncard";
+import { Icon } from "@iconify/react";
+import { Button } from "@/components/ui/button";
+import { Link } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -39,7 +42,7 @@ export default function DashboardSponsor() {
             className="sponsor-img"
           />
           <div className="riseup flex flex-col lg:flex-row gap-5">
-            <a
+            {/* <a
               className="button-container"
               target="_blank"
               href="/uploads/CGD_sponsorship_package_2023.pdf"
@@ -53,7 +56,39 @@ export default function DashboardSponsor() {
               href="mailto:game.development@concordia.ca"
             >
               <p className="py-4">Become a Sponsor!</p>
-            </a>
+            </a> */}
+            <div className="flex md:gap-5 gap-3 md:justify-normal justify-end r2">
+              <Button
+                asChild
+                variant={"default"}
+                className="text-wfull/85 bg-cgd-pink/85 hover:bg-cgd-pink/100 font-bold font-corbert xl:text-2xl md:text-xl text-base xl:py-8 md:pt-5 md:pb-6 pt-4 pb-5 rounded-full active:scale-95 transition-transform ease-in-out "
+              >
+                <Link
+                  to={"https://discord.gg/NfRhdRX66P"}
+                  target="_blank"
+                  className="flex gap-2 items-center"
+                >
+                  <Icon
+                    icon="ic:baseline-discord"
+                    className="text-wfull/85 xl:text-5xl md:text-3xl text-2xl"
+                  />
+                  Join Us
+                </Link>
+              </Button>
+              <Button
+                asChild
+                variant={"secondary"}
+                className="text-cgd-pink/85 hover:text-cgd-pink bg-wfull/85 hover:bg-wfull font-bold font-corbert xl:text-2xl md:text-xl text-base xl:py-8 md:pt-5 md:pb-6 pt-4 pb-5 rounded-full active:scale-95 transition-transform ease-in-out"
+              >
+                <Link to={"/sponsor"} className="flex gap-2 items-center">
+                  <Icon
+                    icon="solar:hand-stars-bold"
+                    className="text-cgd-pink/85 xl:text-5xl md:text-3xl text-2xl"
+                  />
+                  Sponsor Us
+                </Link>
+              </Button>
+            </div>
           </div>
 
           <div className="past-sponsors-container">
