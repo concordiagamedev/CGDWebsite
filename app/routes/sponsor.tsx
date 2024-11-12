@@ -6,6 +6,8 @@ import ubi from "assets/icons/ubisoft.png";
 import "app/css/sponsors.css";
 import type { MetaFunction } from "@remix-run/node";
 import ConstructionCard from "~/components/constructioncard";
+import { Button } from "@/components/ui/button";
+import { Link } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -38,22 +40,28 @@ export default function DashboardSponsor() {
             alt="concordia gamedev club sponsorship package overview light mode"
             className="sponsor-img"
           />
-          <div className="riseup flex flex-col lg:flex-row gap-5">
-            <a
-              className="button-container"
-              target="_blank"
-              href="/uploads/CGD_sponsorship_package_2023.pdf"
+          <div className="riseup flex flex-col lg:flex-row gap-5 max-w-sm lg:max-w-3xl">
+            <Button
+              asChild
+              variant={"secondary"}
+              className="text-wfull/85 bg-cgd-pink/85 hover:bg-cgd-pink/100 font-bold font-corbert xl:text-2xl md:text-xl text-base xl:py-8 md:pt-5 md:pb-6 pt-4 pb-5 rounded-full active:scale-95 transition-transform ease-in-out"
             >
-              <p className="py-4 align-middle w-full lg:w-80 text-center">
-                Click here for the detailed sponsorship package PDF
-              </p>
-            </a>
-            <a
-              className="button-container flex items-center justify-center"
-              href="mailto:game.development@concordia.ca"
+              <Link
+                to={"/uploads/CGD_sponsorship_package_2023.pdf"}
+                target="_blank"
+              >
+                Detailed sponsorship package PDF
+              </Link>
+            </Button>
+            <Button
+              asChild
+              variant={"default"}
+              className="text-cgd-pink/85 hover:text-cgd-pink bg-wfull/85 hover:bg-wfull font-bold font-corbert xl:text-2xl md:text-xl text-base xl:py-8 md:pt-5 md:pb-6 pt-4 pb-5 rounded-full active:scale-95 transition-transform ease-in-out"
             >
-              <p className="py-4">Become a Sponsor!</p>
-            </a>
+              <Link to={"mailto:game.development@concordia.ca"}>
+                Become a Sponsor!
+              </Link>
+            </Button>
           </div>
 
           <div className="past-sponsors-container">
