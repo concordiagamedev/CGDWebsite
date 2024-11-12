@@ -4,19 +4,19 @@
       "name": "Charles Partous",
       "position": "President",
       "id": "1",
-      "img": "assets/staff/charles.png"
-    },
-    {
-      "name": "Aria Tessler",
-      "position": "VP Internal",
-      "id": "2",
-      "img": "assets/staff/aria.jpg"
+      "img": "assets/staff/charles.jpg"
     },
     {
       "name": "Rev Nahabedian",
       "position": "VP External",
       "id": "3",
       "img": "assets/staff/pawelC-pink1.jpg"
+    },
+    {
+      "name": "Aria Tessler",
+      "position": "VP Internal",
+      "id": "2",
+      "img": "assets/staff/aria.jpg"
     },
     {
       "name": "Peter Tian",
@@ -31,28 +31,34 @@
       "img": "assets/staff/tuana.png"
     },
     {
-      "name": "Nicolas Boyer",
-      "position": "Treasurer",
-      "id": "6",
-      "img": "assets/staff/nick.png"
-    },
-    {
-      "name": "Zaid Minhas",
-      "position": "Internal",
-      "id": "7",
-      "img": "assets/staff/zaid.jpg"
-    },
-    {
       "name": "Adam Farahat",
-      "position": "External",
+      "position": "VP Events",
       "id": "8",
       "img": "assets/staff/pawelC-pink2.jpg"
+    },
+    {
+      "name": "Marsh Di Libero",
+      "position": "Treasurer",
+      "id": "6",
+      "img": "assets/staff/marsh.jpg"
     },
     {
       "name": "Sam Dalwood",
       "position": "External",
       "id": "9",
       "img": "assets/staff/pawelC-pink3.jpg"
+    },
+    {
+      "name": "Sudhansu Mohanty",
+      "position": "Internal Affairs",
+      "id": "12",
+      "img": "assets/staff/pawelC-pink4.jpg"
+    },
+    {
+      "name": "Gift Ayibiouw",
+      "position": "Internal Affairs",
+      "id": "15",
+      "img": "assets/staff/pawelC-pink5.jpg"
     },
     {
       "name": "Maxx Freund",
@@ -67,12 +73,6 @@
       "img": "assets/staff/jo.jpg"
     },
     {
-      "name": "Alexander Smagorinski",
-      "position": "Developer",
-      "id": "12",
-      "img": "assets/staff/pawelC-pink4.jpg"
-    },
-    {
       "name": "Katrina Frain",
       "position": "Artist",
       "id": "13",
@@ -82,7 +82,13 @@
       "name": "Keven Vaillancourt",
       "position": "Artist",
       "id": "14",
-      "img": "assets/staff/pawelC-pink5.jpg"
+      "img": "assets/staff/keven.png"
+    },
+    {
+      "name": "Zaid Minhas",
+      "position": "Events",
+      "id": "7",
+      "img": "assets/staff/zaid.jpg"
     }
   ]
 }
