@@ -40,31 +40,28 @@ export default function DashboardSponsor() {
             alt="concordia gamedev club sponsorship package overview light mode"
             className="sponsor-img"
           />
-          <div className="riseup flex flex-col lg:flex-row gap-5">
-            <div className="flex md:gap-5 gap-3 md:justify-normal justify-end r2">
-              <Button
-                asChild
-                variant={"secondary"}
-                className="text-wfull/85 bg-cgd-pink/85 hover:bg-cgd-pink/100 font-bold font-corbert xl:text-2xl md:text-xl text-base xl:py-8 md:pt-5 md:pb-6 pt-4 pb-5 rounded-full active:scale-95 transition-transform ease-in-out"
+          <div className="riseup flex flex-col lg:flex-row gap-5 max-w-sm lg:max-w-3xl">
+            <Button
+              asChild
+              variant={"secondary"}
+              className="text-wfull/85 bg-cgd-pink/85 hover:bg-cgd-pink/100 font-bold font-corbert xl:text-2xl md:text-xl text-base xl:py-8 md:pt-5 md:pb-6 pt-4 pb-5 rounded-full active:scale-95 transition-transform ease-in-out"
+            >
+              <Link
+                to={"/uploads/CGD_sponsorship_package_2023.pdf"}
+                target="_blank"
               >
-                <Link
-                  to={"/uploads/CGD_sponsorship_package_2023.pdf"}
-                  target="_blank"
-                  className="flex gap-2 items-center"
-                >
-                  Click here for the detailed sponsorship package PDF
-                </Link>
-              </Button>
-              <Button
-                asChild
-                variant={"default"}
-                className="text-cgd-pink/85 hover:text-cgd-pink bg-wfull/85 hover:bg-wfull font-bold font-corbert xl:text-2xl md:text-xl text-base xl:py-8 md:pt-5 md:pb-6 pt-4 pb-5 rounded-full active:scale-95 transition-transform ease-in-out"
-              >
-                <Link to={"mailto:game.development@concordia.ca"} className="flex gap-2 items-center">
-                  Become a Sponsor!
-                </Link>
-              </Button>
-            </div>
+                Detailed sponsorship package PDF
+              </Link>
+            </Button>
+            <Button
+              asChild
+              variant={"default"}
+              className="text-cgd-pink/85 hover:text-cgd-pink bg-wfull/85 hover:bg-wfull font-bold font-corbert xl:text-2xl md:text-xl text-base xl:py-8 md:pt-5 md:pb-6 pt-4 pb-5 rounded-full active:scale-95 transition-transform ease-in-out"
+            >
+              <Link to={"mailto:game.development@concordia.ca"}>
+                Become a Sponsor!
+              </Link>
+            </Button>
           </div>
 
           <div className="past-sponsors-container">
