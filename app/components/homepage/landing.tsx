@@ -11,6 +11,7 @@ const Landing: React.FC = () => {
         src={landing}
         alt="RDIA"
         className="-z-10 absolute object-cover h-full w-full inset-0 object-top rounded-2xl border border-blue-900/70 "
+        loading="eager"
       />
       <div className="flex flex-col gap-2 md:text-left text-right items-end justify-center h-full w-full ">
         <div className="md:w-1/2 w-full md:mx-12 px-5 flex flex-col md:gap-5 gap-3">
