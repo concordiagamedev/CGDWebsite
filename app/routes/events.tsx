@@ -4,6 +4,7 @@ import GameJamEvent from "~/components/events/gjcard";
 import EventCard from "~/components/events/eventcard";
 import events from "~/siteSettings/events.json";
 import ggj2024winner from "assets/icons/gj2024_winner.png";
+import ggj2025 from "assets/icons/ggj2025_copy.png";
 import cgdjam2023winner from "assets/icons/awayback.png";
 import cgdjam2022winner from "assets/icons/smokingkills.png";
 import ggj from "assets/icons/ggj2024.png";
@@ -66,7 +67,7 @@ export default function DashboardEvents() {
                 location={events[4].location}
                 winners={events[4].winners}
                 placeholder={tbd}
-                imageD={ggj}
+                imageD={ggj2025}
                 imageM={ggjM}
               />
             </AccordionContent>
