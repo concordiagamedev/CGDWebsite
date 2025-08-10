@@ -31,6 +31,14 @@
       "target": "_blank",
       "img": "assets/socials/linked.svg",
       "alt": "ln icon that brings you to game dev concordia linkedin"
+    },
+    {
+      "name": "LinkTree",
+      "class": "linktree-icon",
+      "href": "https://linktr.ee/concordiagamedevelopment",
+      "target": "_blank",
+      "img": "assets/socials/linktree.svg",
+      "alt": "ln icon that brings you to game dev concordia linktree"
     }
   ]
 }

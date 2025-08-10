@@ -9,19 +9,19 @@ const Footer = () => {
       <div className="lg:basis-1/3">
         <div className="info-wrapper-footer">
           <div className="info">Concordia Game Development</div>
-          <a
+          {/* <a
             href="https://goo.gl/maps/22J1SBAVLrBCwsHk7"
             className="address"
             target="_blank"
             rel="noreferrer"
           >
             2020 Mackay St, Unit P-105, Montreal, QC H3G 2M2
-          </a>
+          </a> */}
         </div>
         <div className="contact-wrapper-footer">
           <div className="contact">Contact Us</div>
-          <a href="mailto:game.development@concordia.ca" className="email">
-            game.development@concordia.ca
+          <a href="mailto:concordiagamedev@csu.qc.ca" className="email">
+            concordiagamedev@csu.qc.ca
           </a>
         </div>
       </div>
