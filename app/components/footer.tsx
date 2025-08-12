@@ -9,14 +9,14 @@ const Footer = () => {
       <div className="lg:basis-1/3">
         <div className="info-wrapper-footer">
           <div className="info">Concordia Game Development</div>
-          {/* <a
-            href="https://goo.gl/maps/22J1SBAVLrBCwsHk7"
+          <a
+            href="https://www.google.com/maps/place/H+Building+Concordia+University/@45.4973223,-73.5816037,670m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4cc91a6a51180f2b:0xc677cc2bed91570!8m2!3d45.4973223!4d-73.5790288!16s%2Fg%2F11clt8_gzw?entry=ttu&g_ep=EgoyMDI1MDgxMC4wIKXMDSoASAFQAw%3D%3D"
             className="address"
             target="_blank"
             rel="noreferrer"
           >
-            2020 Mackay St, Unit P-105, Montreal, QC H3G 2M2
-          </a> */}
+            1455 De Maisonneuve Blvd. West, Montreal, Quebec, Canada, H3G 1M8
+          </a>
         </div>
         <div className="contact-wrapper-footer">
           <div className="contact">Contact Us</div>

@@ -9,6 +9,7 @@ import ig from "assets/icons/IG.svg";
 import fb from "assets/icons/facebook.svg";
 import itch from "assets/icons/itch.svg";
 import ln from "assets/icons/linked.svg";
+import linktree from "assets/icons/linktree.svg";
 import { RiMenuFill } from "@react-icons/all-files/ri/RiMenuFill.js";
 import { RiCloseFill } from "@react-icons/all-files/ri/RiCloseFill.js";
 import { useState } from "react";
@@ -42,37 +43,45 @@ const Navbar = () => {
     },
   ];
   let socials = [
+    // {
+    //   name: "Instagram",
+    //   class: "ig-icon",
+    //   href: "https://www.instagram.com/concordiagamedev/?hl=en",
+    //   target: "_blank",
+    //   img: ig,
+    //   alt: "ig icon that brings you to game dev concordia instagram",
+    // },
+    // {
+    //   name: "Facebook",
+    //   class: "fb-icon",
+    //   href: "https://www.facebook.com/concordiagamedev/",
+    //   target: "_blank",
+    //   img: fb,
+    //   alt: "fb icon that brings you to game dev concordia facebook",
+    // },
+    // {
+    //   name: "Itch.io",
+    //   class: "itch-icon",
+    //   href: "https://concordiagamedev.itch.io/",
+    //   target: "_blank",
+    //   img: itch,
+    //   alt: "itch icon that brings you to game dev concordia itch.io",
+    // },
+    // {
+    //   name: "LinkedIn",
+    //   class: "linked-icon",
+    //   href: "https://www.linkedin.com/company/concordia-game-development/?original_referer=",
+    //   target: "_blank",
+    //   img: ln,
+    //   alt: "ln icon that brings you to game dev concordia linkedin",
+    // },
     {
-      name: "Instagram",
-      class: "ig-icon",
-      href: "https://www.instagram.com/concordiagamedev/?hl=en",
+      name: "LinkTree",
+      class: "linktree-icon",
+      href: "https://linktr.ee/concordiagamedevelopment",
       target: "_blank",
-      img: ig,
-      alt: "ig icon that brings you to game dev concordia instagram",
-    },
-    {
-      name: "Facebook",
-      class: "fb-icon",
-      href: "https://www.facebook.com/concordiagamedev/",
-      target: "_blank",
-      img: fb,
-      alt: "fb icon that brings you to game dev concordia facebook",
-    },
-    {
-      name: "Itch.io",
-      class: "itch-icon",
-      href: "https://concordiagamedev.itch.io/",
-      target: "_blank",
-      img: itch,
-      alt: "itch icon that brings you to game dev concordia itch.io",
-    },
-    {
-      name: "LinkedIn",
-      class: "linked-icon",
-      href: "https://www.linkedin.com/company/concordia-game-development/?original_referer=",
-      target: "_blank",
-      img: ln,
-      alt: "ln icon that brings you to game dev concordia linkedin",
+      img: linktree,
+      alt: "ln icon that brings you to game dev concordia linktree",
     },
   ];
   const [open, setOpen] = useState(false);
