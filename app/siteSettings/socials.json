@@ -1,36 +1,12 @@
 {
   "socials": [
     {
-      "name": "Instagram",
-      "class": "ig-icon",
-      "href": "https://www.instagram.com/concordiagamedev/?hl=en",
+      "name": "LinkTree",
+      "class": "linktree-icon",
+      "href": "https://linktr.ee/concordiagamedevelopment",
       "target": "_blank",
-      "img": "assets/socials/IG.svg",
-      "alt": "ig icon that brings you to game dev concordia instagram"
-    },
-    {
-      "name": "Facebook",
-      "class": "fb-icon",
-      "href": "https://www.facebook.com/concordiagamedev/",
-      "target": "_blank",
-      "img": "assets/socials/facebook.svg",
-      "alt": "fb icon that brings you to game dev concordia facebook"
-    },
-    {
-      "name": "Itch.io",
-      "class": "itch-icon",
-      "href": "https://concordiagamedev.itch.io/",
-      "target": "_blank",
-      "img": "assets/socials/itch.svg",
-      "alt": "itch icon that brings you to game dev concordia itch.io"
-    },
-    {
-      "name": "LinkedIn",
-      "class": "linked-icon",
-      "href": "https://www.linkedin.com/company/concordia-game-development/?original_referer=",
-      "target": "_blank",
-      "img": "assets/socials/linked.svg",
-      "alt": "ln icon that brings you to game dev concordia linkedin"
+      "img": "assets/socials/linktree.svg",
+      "alt": "ln icon that brings you to game dev concordia linktree"
     }
   ]
 }
