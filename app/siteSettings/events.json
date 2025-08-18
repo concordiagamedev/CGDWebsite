@@ -98,5 +98,36 @@
         "gamelink": "https://armandorusso.itch.io/quantum-cat-astrophe"
       }
     ]
+  },
+  {
+    "id": 4,
+    "title": "Global Game Jam 2025",
+    "jampage": "https://itch.io/jam/cgd-ggj-25",
+    "date": "Jan 24-27, 2025",
+    "location": "Hall Building, Concordia SGW",
+    "description": "Hosted by Concordia Game Dev Club, Global Game Jam is a 48-hour event where the theme is 'Bubbles'.",
+    "theme": "Bubbles",
+    "winners": [
+      {
+        "position": "1st Place",
+        "gamename": "TBA",
+        "gamelink": ""
+      },
+      {
+        "position": "2nd Place",
+        "gamename": "TBA",
+        "gamelink": ""
+      },
+      {
+        "position": "3rd Place",
+        "gamename": "TBA",
+        "gamelink": ""
+      },
+      {
+        "position": "Community Favourite",
+        "gamename": "TBA",
+        "gamelink": ""
+      }
+    ]
   }
 ]

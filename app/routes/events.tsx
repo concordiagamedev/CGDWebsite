@@ -4,6 +4,7 @@ import GameJamEvent from "~/components/events/gjcard";
 import EventCard from "~/components/events/eventcard";
 import events from "~/siteSettings/events.json";
 import ggj2024winner from "assets/icons/gj2024_winner.png";
+import ggj2025 from "assets/icons/ggj2025_copy.png";
 import cgdjam2023winner from "assets/icons/awayback.png";
 import cgdjam2022winner from "assets/icons/smokingkills.png";
 import ggj from "assets/icons/ggj2024.png";
@@ -14,6 +15,7 @@ import cgd2022 from "assets/icons/cgdfall2022.png";
 import cgd2022M from "assets/icons/cgdfall2022_banner.png";
 import megamigs from "assets/icons/megamigs2022.png";
 import megamigsM from "assets/icons/megamigs2022_banner.jpg";
+import tbd from "assets/icons/TBD.jpg";
 
 import {
   Accordion,
@@ -49,6 +51,25 @@ export default function DashboardEvents() {
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-5 w-full font-corbert font-bold text-cgd-pink text-lg text-center">
               Upcoming Events are coming soon!
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="in-progress-events">
+            <AccordionTrigger className="text-3xl md:text-5xl text-dark-purple uppercase">
+              In-Progress
+            </AccordionTrigger>
+            <AccordionContent className="flex flex-col gap-5 w-full">
+              <GameJamEvent
+                title={events[4].title}
+                jampage={events[4].jampage}
+                date={events[4].date}
+                description={events[4].description}
+                theme={events[4].theme}
+                location={events[4].location}
+                winners={events[4].winners}
+                placeholder={tbd}
+                imageD={ggj2025}
+                imageM={ggjM}
+              />
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="past-events">

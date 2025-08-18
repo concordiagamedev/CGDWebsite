@@ -59,7 +59,7 @@ const GameJamEvent: React.FC<EventProps> = ({
           <img
             src={imageD}
             alt={title}
-            className="object-contain aspect-{3/2} hidden md:block w-36 rounded-md h-fit"
+            className="object-contain aspect-{3/2} hidden md:block w-36 rounded-md h-fit drop-shadow-sm"
           />
           <div className="flex flex-col justify-center gap-4">
             <div>
