@@ -1,0 +1,34 @@
+{
+    "tech": [
+        {
+            "name": "Peter Tian",
+            "position": "VP Tech",
+            "id": "4",
+            "img": "assets/staff/peter.jpg"
+        },
+        {
+            "name": "Maxx Freund",
+            "position": "Lead Developer",
+            "id": "10",
+            "img": "assets/staff/maxx.png"
+        },
+        {
+            "name": "Jordan Bossou",
+            "position": "Developer",
+            "id": "11",
+            "img": "assets/staff/jo.jpg"
+        },
+        {
+            "name": "Sudhansu Mohanty",
+            "position": "Developer",
+            "id": "12",
+            "img": "assets/staff/Sudhansu.jpg"
+        },
+        {
+            "name": "Ana",
+            "position": "Developer",
+            "id": "12",
+            "img": "assets/staff/ana.jpg"
+        }
+    ]
+}

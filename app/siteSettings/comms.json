@@ -1,0 +1,46 @@
+{
+    "comms": [
+        {
+            "name": "Sudhansu Mohanty",
+            "position": "Internal Affairs",
+            "id": "1",
+            "img": "assets/staff/Sudhansu.jpg"
+        },
+        {
+            "name": "Gift Ayibiouw",
+            "position": "LinkedIn Moderator",
+            "id": "15",
+            "img": "assets/staff/gift.jpg"
+        },
+        {
+            "name": "Keven Vaillancourt",
+            "position": "LinkedIn Moderator",
+            "id": "14",
+            "img": "assets/staff/ough.png"
+        },
+        {
+            "name": "Rimaza",
+            "position": "Instagram Moderator/ Graphic Designer",
+            "id": "14",
+            "img": "assets/staff/rimaza.jpeg"
+        },
+        {
+            "name": "Ny Isabelle Huynh",
+            "position": "Instagram Moderator/ Graphic Designer",
+            "id": "14",
+            "img": "assets/staff/pawelC-pink5.jpg"
+        },
+        {
+            "name": "You Ran Wang",
+            "position": "Discord Moderator",
+            "id": "14",
+            "img": "assets/staff/pawelC-pink5.jpg"
+        },
+        {
+            "name": "Nomaan",
+            "position": "Discord Moderator",
+            "id": "14",
+            "img": "assets/staff/nomaan.jpg"
+        }
+    ]
+}

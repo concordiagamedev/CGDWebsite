@@ -35,12 +35,12 @@ export default function DashboardSponsor() {
               helping us support the game developers of tomorrow!
             </p>
           </div>
-          <img
+          {/* <img
             src={sponsorpacklm}
             alt="concordia gamedev club sponsorship package overview light mode"
             className="sponsor-img"
           />
-          <div className="riseup flex flex-col lg:flex-row gap-5 max-w-sm lg:max-w-3xl">
+          <div className="riseup flex flex-col lg:flex-row gap-5 max-w-sm lg:max-w-3xl"> */}
             <Button
               asChild
               variant={"secondary"}
@@ -58,13 +58,13 @@ export default function DashboardSponsor() {
               variant={"default"}
               className="text-cgd-pink/85 hover:text-cgd-pink bg-wfull/85 hover:bg-wfull font-bold font-corbert xl:text-2xl md:text-xl text-base xl:py-8 md:pt-5 md:pb-6 pt-4 pb-5 rounded-full active:scale-95 transition-transform ease-in-out"
             >
-              <Link to={"mailto:game.development@concordia.ca"}>
+              <Link to={"mailto:concordiagamedev@csu.qc.ca"}>
                 Become a Sponsor!
               </Link>
             </Button>
           </div>
 
-          <div className="past-sponsors-container">
+          {/* <div className="past-sponsors-container">
             <div className="sponsortext">
               Special thanks to our previous partners & sponsors!
             </div>
@@ -86,7 +86,7 @@ export default function DashboardSponsor() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="background h-full">
           <span>
