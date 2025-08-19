@@ -1,8 +1,26 @@
 {
   "staff": [
     {
-      "name": "Charles Partous",
+      "name": "Adam Farahat",
       "position": "President",
+      "id": "8",
+      "img": "assets/staff/adam.jpg"
+    },
+    {
+      "name": "Marsh Di Libero",
+      "position": "Vice-President",
+      "id": "6",
+      "img": "assets/staff/marsh.jpeg"
+    },
+    {
+      "name": "Angelica",
+      "position": "Secretary",
+      "id": "6",
+      "img": "assets/staff/pawelC-pink1.jpg"
+    },
+    {
+      "name": "Charles Partous",
+      "position": "Chair",
       "id": "1",
       "img": "assets/staff/charles.jpg"
     },
@@ -19,68 +37,8 @@
       "img": "assets/staff/aria.jpg"
     },
     {
-      "name": "Peter Tian",
-      "position": "VP Tech",
-      "id": "4",
-      "img": "assets/staff/peter.jpg"
-    },
-    {
-      "name": "Tuana Bicakci",
-      "position": "VP Creative",
-      "id": "5",
-      "img": "assets/staff/tuana.png"
-    },
-    {
-      "name": "Adam Farahat",
-      "position": "VP Events",
-      "id": "8",
-      "img": "assets/staff/pawelC-pink2.jpg"
-    },
-    {
-      "name": "Marsh Di Libero",
-      "position": "Treasurer",
-      "id": "6",
-      "img": "assets/staff/marsh.jpg"
-    },
-    {
-      "name": "Sam Dalwood",
-      "position": "External",
-      "id": "9",
-      "img": "assets/staff/pawelC-pink3.jpg"
-    },
-    {
-      "name": "Sudhansu Mohanty",
-      "position": "Internal Affairs",
-      "id": "12",
-      "img": "assets/staff/pawelC-pink4.jpg"
-    },
-    {
-      "name": "Gift Ayibiouw",
-      "position": "Internal Affairs",
-      "id": "15",
-      "img": "assets/staff/pawelC-pink5.jpg"
-    },
-    {
-      "name": "Maxx Freund",
-      "position": "Lead Developer",
-      "id": "10",
-      "img": "assets/staff/maxx.png"
-    },
-    {
-      "name": "Jordan Bossou",
-      "position": "Developer",
-      "id": "11",
-      "img": "assets/staff/jo.jpg"
-    },
-    {
-      "name": "Katrina Frain",
-      "position": "Artist",
-      "id": "13",
-      "img": "assets/staff/kat.jpg"
-    },
-    {
       "name": "Keven Vaillancourt",
-      "position": "Artist",
+      "position": "Chair",
       "id": "14",
       "img": "assets/staff/ough.png"
     }

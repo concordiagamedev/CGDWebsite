@@ -5,6 +5,9 @@ import controller from "assets/icons/cgd_controller.png";
 import Profile from "app/components/profile";
 import ConstructionCard from "~/components/constructioncard";
 import { staff } from "../siteSettings/staff.json";
+import { comms } from "../siteSettings/comms.json";
+import { tech } from "../siteSettings/tech.json";
+import { eventsteam } from "../siteSettings/events-team.json";
 
 export const meta: MetaFunction = () => {
   return [
@@ -46,8 +49,11 @@ export default function DashboardAbout() {
         </div>
         <div className="ourteam-container md:my-20 my-10">
           <h2 className="ourteam sm:text-6xl text-4xl md:my-14 my-6 text-center md:text-left md:mx-10">
-            Meet Our Team
+            Meet Our Team: 2025-26
           </h2>
+          <h3 className="ourteam sm:text-2xl text-2xl md:my-14 my-6 text-center md:text-left md:mx-10">
+            The Final Bosses 👾
+          </h3>
           <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 lg:mx-32 lg:px-24 md:mx-20 md:px-20 px-6">
             {staff.map((staff) => (
               <Profile
@@ -58,8 +64,49 @@ export default function DashboardAbout() {
               />
             ))}
           </div>
+          {/* Comms teams below */}
+          <h3 className="ourteam sm:text-2xl text-2xl md:my-14 my-6 text-center md:text-left md:mx-10">
+            The Comms Team 🎨
+          </h3>
+          <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 lg:mx-32 lg:px-24 md:mx-20 md:px-20 px-6">
+            {comms.map((comms) => (
+              <Profile
+                key={comms.id}
+                name={comms.name}
+                position={comms.position}
+                image={comms.img}
+              />
+            ))}
+          </div>
+            {/* Event teams below */}
+          <h3 className="ourteam sm:text-2xl text-2xl md:my-14 my-6 text-center md:text-left md:mx-10">
+            The Events Team 💼
+          </h3>
+          <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 lg:mx-32 lg:px-24 md:mx-20 md:px-20 px-6">
+            {eventsteam.map((eventsteam) => (
+              <Profile
+                key={eventsteam.id}
+                name={eventsteam.name}
+                position={eventsteam.position}
+                image={eventsteam.img}
+              />
+            ))}
+          </div>
+          {/* Comms teams below */}
+          <h3 className="ourteam sm:text-2xl text-2xl md:my-14 my-6 text-center md:text-left md:mx-10">
+            The Tech Team 💻
+          </h3>
+          <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 lg:mx-32 lg:px-24 md:mx-20 md:px-20 px-6">
+            {tech.map((tech) => (
+              <Profile
+                key={tech.id}
+                name={tech.name}
+                position={tech.position}
+                image={tech.img}
+              />
+            ))}
+          </div>
         </div>
-
         <div className="background h-full">
           <span>
             <img
