@@ -16,7 +16,7 @@
       "name": "Angelica",
       "position": "Secretary",
       "id": "6",
-      "img": "assets/staff/pawelC-pink1.jpg"
+      "img": "assets/staff/angelica.jpeg"
     },
     {
       "name": "Charles Partous",
@@ -25,20 +25,14 @@
       "img": "assets/staff/charles.jpg"
     },
     {
-      "name": "Rev Nahabedian",
-      "position": "VP External",
-      "id": "3",
-      "img": "assets/staff/pawelC-pink1.jpg"
-    },
-    {
       "name": "Aria Tessler",
-      "position": "VP Internal",
+      "position": "Chair",
       "id": "2",
       "img": "assets/staff/aria.jpg"
     },
     {
       "name": "Keven Vaillancourt",
-      "position": "Chair",
+      "position": "Chair & LinkedIn Moderator",
       "id": "14",
       "img": "assets/staff/ough.png"
     }

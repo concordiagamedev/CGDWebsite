@@ -66,11 +66,11 @@ export default function DashboardAbout() {
           </div>
           {/* Comms teams below */}
           <h3 className="ourteam sm:text-2xl text-2xl md:my-14 my-6 text-center md:text-left md:mx-10">
-            The Comms Team 🎨
+            The Comms Team - Socials 🎨
           </h3>
           <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 lg:mx-32 lg:px-24 md:mx-20 md:px-20 px-6">
             {comms.map((comms) => (
-              <Profile
+              <Profile     
                 key={comms.id}
                 name={comms.name}
                 position={comms.position}
@@ -80,7 +80,7 @@ export default function DashboardAbout() {
           </div>
             {/* Event teams below */}
           <h3 className="ourteam sm:text-2xl text-2xl md:my-14 my-6 text-center md:text-left md:mx-10">
-            The Events Team 💼
+            The Comms Team - Events 💼
           </h3>
           <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 lg:mx-32 lg:px-24 md:mx-20 md:px-20 px-6">
             {eventsteam.map((eventsteam) => (

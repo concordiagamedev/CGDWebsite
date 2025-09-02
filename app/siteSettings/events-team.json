@@ -7,13 +7,7 @@
             "img": "assets/staff/hyhy.jpg"
         },
         {
-            "name": "Kumaran",
-            "position": "Events Coordinator",
-            "id": "15",
-            "img": "assets/staff/pawelC-pink5.jpg"
-        },
-        {
-            "name": "Alexander “Sallugi” Salucci",
+            "name": "Alexander “Saluggi” Salucci",
             "position": "Events Coordinator",
             "id": "14",
             "img": "assets/staff/salluci.jpg"
@@ -23,6 +17,12 @@
             "position": "Events Coordinator",
             "id": "14",
             "img": "assets/staff/Minh_le.jpeg"
+        },
+        {
+            "name": "Zaid Minhas",
+            "position": "Events Coordinator",
+            "id": "14",
+            "img": "assets/staff/zaid.jpg"
         }
     ]
 }

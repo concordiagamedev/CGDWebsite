@@ -19,16 +19,16 @@
             "img": "assets/staff/jo.jpg"
         },
         {
-            "name": "Sudhansu Mohanty",
-            "position": "Developer",
-            "id": "12",
-            "img": "assets/staff/Sudhansu.jpg"
-        },
-        {
-            "name": "Ana",
+            "name": "Ana Rostam",
             "position": "Developer",
             "id": "12",
             "img": "assets/staff/ana.jpg"
+        },
+        {
+            "name": "Youssef Dammak",
+            "position": "Developer",
+            "id": "12",
+            "img": "assets/staff/youssef_dammak.jpg"
         }
     ]
 }

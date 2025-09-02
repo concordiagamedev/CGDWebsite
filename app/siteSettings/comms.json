@@ -2,25 +2,13 @@
     "comms": [
         {
             "name": "Sudhansu Mohanty",
-            "position": "Internal Affairs",
+            "position": "Head of Comms - Socials & Developer",
             "id": "1",
             "img": "assets/staff/Sudhansu.jpg"
         },
         {
-            "name": "Gift Ayibiouw",
-            "position": "LinkedIn Moderator",
-            "id": "15",
-            "img": "assets/staff/gift.jpg"
-        },
-        {
-            "name": "Keven Vaillancourt",
-            "position": "LinkedIn Moderator",
-            "id": "14",
-            "img": "assets/staff/ough.png"
-        },
-        {
             "name": "Rimaza",
-            "position": "Instagram Moderator/ Graphic Designer",
+            "position": "Head of Comms - Socials",
             "id": "14",
             "img": "assets/staff/rimaza.jpeg"
         },
@@ -31,10 +19,16 @@
             "img": "assets/staff/pawelC-pink5.jpg"
         },
         {
+            "name": "Gift Ayibiouw",
+            "position": "LinkedIn Moderator",
+            "id": "15",
+            "img": "assets/staff/gift.jpg"
+        },
+        {
             "name": "You Ran Wang",
             "position": "Discord Moderator",
             "id": "14",
-            "img": "assets/staff/pawelC-pink5.jpg"
+            "img": "assets/staff/you_ran.jpeg"
         },
         {
             "name": "Nomaan",
