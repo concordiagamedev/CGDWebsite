@@ -16,6 +16,7 @@ import megamigs from "assets/icons/megamigs2022.png";
 import megamigsM from "assets/icons/megamigs2022_banner.jpg";
 import ggj25 from "assets/icons/ggj25.png";
 import ggj2025winner from "assets/icons/ggj25winner.png";
+import gamenightaugust25 from "assets/icons/gamenightaugust25.jpg";
 
 import {
   Accordion,
@@ -58,17 +59,13 @@ export default function DashboardEvents() {
               Past Events
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-5 w-full">
-              <GameJamEvent
+              <EventCard
                 title={events[0].title}
-                jampage={events[0].jampage}
                 date={events[0].date}
                 description={events[0].description}
-                theme={events[0].theme}
                 location={events[0].location}
-                winners={events[0].winners}
-                placeholder={ggj2025winner}
-                imageD={ggj25}
-                imageM={ggjM}
+                imageD={gamenightaugust25}
+                imageM={gamenightaugust25}
               />
               <GameJamEvent
                 title={events[1].title}
@@ -78,8 +75,8 @@ export default function DashboardEvents() {
                 theme={events[1].theme}
                 location={events[1].location}
                 winners={events[1].winners}
-                placeholder={ggj2024winner}
-                imageD={ggj}
+                placeholder={ggj2025winner}
+                imageD={ggj25}
                 imageM={ggjM}
               />
               <GameJamEvent
@@ -90,26 +87,38 @@ export default function DashboardEvents() {
                 theme={events[2].theme}
                 location={events[2].location}
                 winners={events[2].winners}
+                placeholder={ggj2024winner}
+                imageD={ggj}
+                imageM={ggjM}
+              />
+              <GameJamEvent
+                title={events[3].title}
+                jampage={events[3].jampage}
+                date={events[3].date}
+                description={events[3].description}
+                theme={events[3].theme}
+                location={events[3].location}
+                winners={events[3].winners}
                 placeholder={cgdjam2023winner}
                 imageD={cgd2023}
                 imageM={cgd2023M}
               />
               <EventCard
-                title={events[3].title}
-                date={events[3].date}
-                description={events[3].description}
-                location={events[3].location}
+                title={events[4].title}
+                date={events[4].date}
+                description={events[4].description}
+                location={events[4].location}
                 imageD={megamigs}
                 imageM={megamigsM}
               />
               <GameJamEvent
-                title={events[4].title}
-                jampage={events[4].jampage}
-                date={events[4].date}
-                description={events[4].description}
-                theme={events[4].theme}
-                location={events[4].location}
-                winners={events[4].winners}
+                title={events[5].title}
+                jampage={events[5].jampage}
+                date={events[5].date}
+                description={events[5].description}
+                theme={events[5].theme}
+                location={events[5].location}
+                winners={events[5].winners}
                 placeholder={cgdjam2022winner}
                 imageD={cgd2022}
                 imageM={cgd2022M}
