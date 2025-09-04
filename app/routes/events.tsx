@@ -3,6 +3,7 @@ import type { MetaFunction } from "@remix-run/node";
 import GameJamEvent from "~/components/events/gjcard";
 import EventCard from "~/components/events/eventcard";
 import events from "~/siteSettings/events.json";
+import upcomingevents from "~/siteSettings/upcomingevents.json";
 import ggj2024winner from "assets/icons/gj2024_winner.png";
 import cgdjam2023winner from "assets/icons/awayback.png";
 import cgdjam2022winner from "assets/icons/smokingkills.png";
@@ -17,7 +18,9 @@ import megamigsM from "assets/icons/megamigs2022_banner.jpg";
 import ggj25 from "assets/icons/ggj25.png";
 import ggj2025winner from "assets/icons/ggj25winner.png";
 import gamenightaugust25 from "assets/icons/gamenightaugust25.jpg";
-
+import learnathon25 from "assets/icons/learnathon25.png";
+import gamenights from "assets/icons/gamenights.png";
+import ggj26 from "assets/icons/ggj26.png";
 import {
   Accordion,
   AccordionContent,
@@ -51,7 +54,30 @@ export default function DashboardEvents() {
               Upcoming Events
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-5 w-full font-corbert font-bold text-cgd-pink text-lg text-center">
-              Upcoming Events are coming soon!
+              <EventCard
+                title={upcomingevents[0].title}
+                date={upcomingevents[0].date}
+                description={upcomingevents[0].description}
+                location={upcomingevents[0].location}
+                imageD={gamenights}
+                imageM={gamenights}
+              />
+              <EventCard
+                title={upcomingevents[1].title}
+                date={upcomingevents[1].date}
+                description={upcomingevents[1].description}
+                location={upcomingevents[1].location}
+                imageD={learnathon25}
+                imageM={learnathon25}
+              />
+              <EventCard
+                title={upcomingevents[2].title}
+                date={upcomingevents[2].date}
+                description={upcomingevents[2].description}
+                location={upcomingevents[2].location}
+                imageD={ggj26}
+                imageM={ggj26}
+              />
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="past-events">

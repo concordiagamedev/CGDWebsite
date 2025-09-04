@@ -1,0 +1,24 @@
+[
+    {
+    "id": 0,
+    "title": "Game Nights",
+    "date": "September, October, November 2025",
+    "location": "Visualization studio, Webster Library 3rd floor, Concordia SGW",
+    "description": "Hosted by Concordia Game Dev Club and SCS Concordia, Game Night is an event where students can come together to play games, meet new people, and have fun! All are welcome to join us for an evening of fun and games!"
+  },
+  {
+    "id": 1,
+    "title": "Learnathon ",
+    "date": "November 7-9, 2025",
+    "description": "Hosted by Concordia Game Dev Club, Learnathon is a hands-on event where participants can explore the basics of game development and start building their own projects.",
+    "location": "To be Announced"
+  },
+  {
+    "id": 2,
+    "title": "Global Game Jam 2026",
+    "date": "Winter, 2026",
+    "description": "Hosted by Concordia Game Dev Club, Global Game Jam is a 48-hour event",
+    "location": "To be Announced"
+  }
+
+]
