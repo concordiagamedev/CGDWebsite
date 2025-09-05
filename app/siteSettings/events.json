@@ -1,6 +1,45 @@
 [
   {
     "id": 0,
+    "title": "Game Night",
+    "date": "August 31st, 2025",
+    "location": "Visualization studio, Webster Library 3rd floor, Concordia SGW",
+    "description": "Hosted by Concordia Game Dev Club and SCS Concordia, Game Night is an event where students can come together to play games, meet new people, and have fun! All are welcome to join us for an evening of fun and games!",
+    "theme": "Mario Kart World - race, drift, and dodge those shells!, /nSuper Smash Bros. Ultimate - battle it out for glory!"
+  },
+  {
+    "id": 1,
+    "title": "Global Game Jam 2025",
+    "jampage": "https://itch.io/jam/cgd-ggj-25",
+    "date": "Jan 20-26, 2025",
+    "location": "Hall Building, Concordia SGW",
+    "description": "Hosted by Concordia Game Dev Club, Global Game Jam is a 48-hour event where the theme is 'Bubbles'.",
+    "theme": "BUBBLES",
+    "winners": [
+      {
+        "position": "1st Place",
+        "gamename": "BOBABOMBA!!!",
+        "gamelink": "https://l86o.itch.io/bobabomba"
+      },
+      {
+        "position": "2nd Place",
+        "gamename": "Bubble Castle",
+        "gamelink": "https://dimble.itch.io/ggj-2025"
+      },
+      {
+        "position": "3rd Place",
+        "gamename": "Spongetacular",
+        "gamelink": "https://sgtmoustache.itch.io/spongetacular"
+      },
+      {
+        "position": "Community Favourite",
+        "gamename": "BOBABOMBA!!!",
+        "gamelink": "https://l86o.itch.io/bobabomba"
+      }
+    ]
+  },
+  {
+    "id": 2,
     "title": "Global Game Jam 2024",
     "jampage": "https://itch.io/jam/cgd-jam-2024",
     "date": "Jan 26-28, 2024",
@@ -31,7 +70,7 @@
     ]
   },
   {
-    "id": 1,
+    "id": 3,
     "title": "CGD Jam Fall 2023",
     "jampage": "https://itch.io/jam/cgd-jam-2023",
     "date": "Nov 3-5, 2023",
@@ -62,14 +101,14 @@
     ]
   },
   {
-    "id": 2,
+    "id": 4,
     "title": "Megamigs 2022",
     "date": "Oct 19-22, 2022",
     "description": "Megamigs is a 4-day event that brings together the video game industry and the public. It is a unique opportunity to meet and exchange with the people who make the video game industry shine.",
     "location": "Palais des Congrès de Montréal"
   },
   {
-    "id": 3,
+    "id": 5,
     "title": "CGD Jam Fall 2022",
     "jampage": "https://itch.io/jam/cgd-jam",
     "date": "Oct 14-16, 2022",
