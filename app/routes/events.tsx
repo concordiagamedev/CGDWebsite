@@ -53,7 +53,7 @@ export default function DashboardEvents() {
             <AccordionTrigger className="text-3xl md:text-5xl text-dark-purple uppercase">
               Upcoming Events
             </AccordionTrigger>
-            <AccordionContent className="flex flex-col gap-5 w-full font-corbert font-bold text-cgd-pink text-lg text-center">
+            <AccordionContent className="flex flex-col gap-5 w-full">
               <EventCard
                 title={upcomingevents[0].title}
                 date={upcomingevents[0].date}
