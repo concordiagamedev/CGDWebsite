@@ -47,7 +47,7 @@ export default function DashboardEvents() {
         <Accordion
           type="multiple"
           className="w-full "
-          defaultValue={["upcoming-events"]}
+          defaultValue={["upcoming-events", "past-events"]}
         >
           <AccordionItem value="upcoming-events">
             <AccordionTrigger className="text-3xl md:text-5xl text-dark-purple uppercase">
