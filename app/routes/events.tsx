@@ -20,7 +20,7 @@ import ggj2025winner from "assets/icons/ggj25winner.png";
 import gamenightaugust25 from "assets/icons/gamenightaugust25.jpg";
 import learnathon25 from "assets/icons/learnathon25.png";
 import gamenights from "assets/icons/gamenights.png";
-import ggj26 from "assets/icons/ggj26.png";
+import wgj26 from "assets/icons/wgj26.png";
 import {
   Accordion,
   AccordionContent,
@@ -75,8 +75,8 @@ export default function DashboardEvents() {
                 date={upcomingevents[2].date}
                 description={upcomingevents[2].description}
                 location={upcomingevents[2].location}
-                imageD={ggj26}
-                imageM={ggj26}
+                imageD={wgj26}
+                imageM={wgj26}
               />
             </AccordionContent>
           </AccordionItem>
