@@ -22,17 +22,16 @@ export default function DashboardSponsor() {
       <ConstructionCard show={false} />
       <div className="page">
         <h1 className="sm:text-8xl text-6xl pb-11 text-center text-dark-purple">
-          Our Sponsors
+        Sponsorship at CGD
         </h1>
         <div className="sponsor-container">
           {/* <div className="sponsor-text">Thank you for our sponsors!</div> */}
           <div className="sponsortext flex text-lg">
             <p>
-              We've set out to establish an environment which promotes
-              interactions between club members and the game development
-              industry at large. To better serve the CGD community, we have
-              created a sponsorship package for any organization interested in
-              helping us support the game developers of tomorrow!
+
+              At CGD, we’re committed to creating an environment that connects our members with one another and with the wider game development industry.
+              We’re currently preparing a new sponsorship package to better support our community and the game developers of tomorrow.
+              If you’re interested in sponsoring CGD, feel free to reach out — we’d love to hear from you!
             </p>
           </div>
           {/* <img
@@ -41,7 +40,7 @@ export default function DashboardSponsor() {
             className="sponsor-img"
           />
           <div className="riseup flex flex-col lg:flex-row gap-5 max-w-sm lg:max-w-3xl"> */}
-            <Button
+            {/* <Button
               asChild
               variant={"secondary"}
               className="text-wfull/85 bg-cgd-pink/85 hover:bg-cgd-pink/100 font-bold font-corbert xl:text-2xl md:text-xl text-base xl:py-8 md:pt-5 md:pb-6 pt-4 pb-5 rounded-full active:scale-95 transition-transform ease-in-out"
@@ -52,14 +51,14 @@ export default function DashboardSponsor() {
               >
                 Detailed sponsorship package PDF
               </Link>
-            </Button>
+            </Button> */}
             <Button
               asChild
               variant={"default"}
               className="text-cgd-pink/85 hover:text-cgd-pink bg-wfull/85 hover:bg-wfull font-bold font-corbert xl:text-2xl md:text-xl text-base xl:py-8 md:pt-5 md:pb-6 pt-4 pb-5 rounded-full active:scale-95 transition-transform ease-in-out"
             >
               <Link to={"mailto:concordiagamedev@csu.qc.ca"}>
-                Become a Sponsor!
+                Click here to Become a Sponsor!
               </Link>
             </Button>
           </div>
