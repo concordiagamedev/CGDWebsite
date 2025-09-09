@@ -35,6 +35,18 @@
       "position": "Chair & LinkedIn Moderator",
       "id": "14",
       "img": "assets/staff/ough.png"
+    },
+    {
+      "name": "Peter Tian",
+      "position": "Chair",
+      "id": "4",
+      "img": "assets/staff/peter.jpg"
+    },
+    {
+      "name": "Maxx Freund",
+      "position": "Chair",
+      "id": "10",
+      "img": "assets/staff/maxx.png"
     }
   ]
 }
