@@ -3,6 +3,7 @@ import type { MetaFunction } from "@remix-run/node";
 import GameJamEvent from "~/components/events/gjcard";
 import EventCard from "~/components/events/eventcard";
 import events from "~/siteSettings/events.json";
+import upcomingevents from "~/siteSettings/upcomingevents.json";
 import ggj2024winner from "assets/icons/gj2024_winner.png";
 import cgdjam2023winner from "assets/icons/awayback.png";
 import cgdjam2022winner from "assets/icons/smokingkills.png";
@@ -14,7 +15,12 @@ import cgd2022 from "assets/icons/cgdfall2022.png";
 import cgd2022M from "assets/icons/cgdfall2022_banner.png";
 import megamigs from "assets/icons/megamigs2022.png";
 import megamigsM from "assets/icons/megamigs2022_banner.jpg";
-
+import ggj25 from "assets/icons/ggj25.png";
+import ggj2025winner from "assets/icons/ggj25winner.png";
+import gamenightaugust25 from "assets/icons/gamenightaugust25.jpg";
+import learnathon25 from "assets/icons/learnathon25.png";
+import gamenights from "assets/icons/gamenights.png";
+import ggj26 from "assets/icons/ggj26.png";
 import {
   Accordion,
   AccordionContent,
@@ -41,14 +47,37 @@ export default function DashboardEvents() {
         <Accordion
           type="multiple"
           className="w-full "
-          defaultValue={["upcoming-events"]}
+          defaultValue={["upcoming-events", "past-events"]}
         >
           <AccordionItem value="upcoming-events">
             <AccordionTrigger className="text-3xl md:text-5xl text-dark-purple uppercase">
               Upcoming Events
             </AccordionTrigger>
-            <AccordionContent className="flex flex-col gap-5 w-full font-corbert font-bold text-cgd-pink text-lg text-center">
-              Upcoming Events are coming soon!
+            <AccordionContent className="flex flex-col gap-5 w-full">
+              <EventCard
+                title={upcomingevents[0].title}
+                date={upcomingevents[0].date}
+                description={upcomingevents[0].description}
+                location={upcomingevents[0].location}
+                imageD={gamenights}
+                imageM={gamenights}
+              />
+              <EventCard
+                title={upcomingevents[1].title}
+                date={upcomingevents[1].date}
+                description={upcomingevents[1].description}
+                location={upcomingevents[1].location}
+                imageD={learnathon25}
+                imageM={learnathon25}
+              />
+              <EventCard
+                title={upcomingevents[2].title}
+                date={upcomingevents[2].date}
+                description={upcomingevents[2].description}
+                location={upcomingevents[2].location}
+                imageD={ggj26}
+                imageM={ggj26}
+              />
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="past-events">
@@ -56,17 +85,13 @@ export default function DashboardEvents() {
               Past Events
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-5 w-full">
-              <GameJamEvent
+              <EventCard
                 title={events[0].title}
-                jampage={events[0].jampage}
                 date={events[0].date}
                 description={events[0].description}
-                theme={events[0].theme}
                 location={events[0].location}
-                winners={events[0].winners}
-                placeholder={ggj2024winner}
-                imageD={ggj}
-                imageM={ggjM}
+                imageD={gamenightaugust25}
+                imageM={gamenightaugust25}
               />
               <GameJamEvent
                 title={events[1].title}
@@ -76,17 +101,21 @@ export default function DashboardEvents() {
                 theme={events[1].theme}
                 location={events[1].location}
                 winners={events[1].winners}
-                placeholder={cgdjam2023winner}
-                imageD={cgd2023}
-                imageM={cgd2023M}
+                placeholder={ggj2025winner}
+                imageD={ggj25}
+                imageM={ggjM}
               />
-              <EventCard
+              <GameJamEvent
                 title={events[2].title}
+                jampage={events[2].jampage}
                 date={events[2].date}
                 description={events[2].description}
+                theme={events[2].theme}
                 location={events[2].location}
-                imageD={megamigs}
-                imageM={megamigsM}
+                winners={events[2].winners}
+                placeholder={ggj2024winner}
+                imageD={ggj}
+                imageM={ggjM}
               />
               <GameJamEvent
                 title={events[3].title}
@@ -96,6 +125,26 @@ export default function DashboardEvents() {
                 theme={events[3].theme}
                 location={events[3].location}
                 winners={events[3].winners}
+                placeholder={cgdjam2023winner}
+                imageD={cgd2023}
+                imageM={cgd2023M}
+              />
+              <EventCard
+                title={events[4].title}
+                date={events[4].date}
+                description={events[4].description}
+                location={events[4].location}
+                imageD={megamigs}
+                imageM={megamigsM}
+              />
+              <GameJamEvent
+                title={events[5].title}
+                jampage={events[5].jampage}
+                date={events[5].date}
+                description={events[5].description}
+                theme={events[5].theme}
+                location={events[5].location}
+                winners={events[5].winners}
                 placeholder={cgdjam2022winner}
                 imageD={cgd2022}
                 imageM={cgd2022M}
