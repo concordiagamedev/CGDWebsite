@@ -1,0 +1,28 @@
+{
+    "eventsteam": [
+        {
+            "name": "Hỷ “HyHy” Khang Trần",
+            "position": "Head of Events",
+            "id": "1",
+            "img": "assets/staff/hyhy.jpg"
+        },
+        {
+            "name": "Alexander “Saluggi” Salucci",
+            "position": "Events Coordinator",
+            "id": "14",
+            "img": "assets/staff/salluci.jpg"
+        },
+        {
+            "name": "Minh Le",
+            "position": "Events Coordinator",
+            "id": "14",
+            "img": "assets/staff/Minh_le.jpeg"
+        },
+        {
+            "name": "Zaid Minhas",
+            "position": "Events Coordinator",
+            "id": "14",
+            "img": "assets/staff/zaid.jpg"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "tech": [
+        {
+            "name": "Jordan Bossou",
+            "position": "VP Tech",
+            "id": "11",
+            "img": "assets/staff/jo.jpg"
+        },
+        {
+            "name": "Ana Rostam",
+            "position": "Developer",
+            "id": "12",
+            "img": "assets/staff/ana.jpg"
+        },
+        {
+            "name": "Youssef Dammak",
+            "position": "Developer",
+            "id": "12",
+            "img": "assets/staff/youssef_dammak.jpg"
+        }
+    ]
+}
