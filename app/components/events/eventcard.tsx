@@ -156,7 +156,8 @@ const EventCard: React.FC<EventProps> = ({
                         key={index}
                         src={pic}
                         alt={`Event picture ${index + 1}`}
-                        className="rounded-md object-cover w-full h-28 sm:h-36" />))} </div>
+                        className="rounded-md object-cover w-full h-28 sm:h-36" 
+                        onClick={() => { setPhotoIndex(index); setIsOpen(true); }}/>))} </div>
                         {isOpen && (
                         <Lightbox
                           open={isOpen}
