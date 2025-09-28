@@ -23,9 +23,6 @@ import gamenights from "assets/icons/gamenights.png";
 import wgj26 from "assets/icons/wgj26.png";
 import lizard25 from "assets/icons/lizardlounge25.png";
 import meetgeek25 from "assets/icons/meetgeek25.png";
-import gn1sep25 from "public/assets/events/gnsep25-1.jpg";
-import gn2sep25 from "public/assets/events/gnsep25-2.jpg";
-import gn3sep25 from "public/assets/events/gnsep25-3.jpg";
 import {
   Accordion,
   AccordionContent,
@@ -113,7 +110,7 @@ export default function DashboardEvents() {
                 location={events[1].location}
                 imageD={gamenightaugust25}
                 imageM={gamenightaugust25}
-                eventpictures={[gn1sep25, gn2sep25, gn3sep25]}
+                eventpictures={["assets/events/gnsep25-1.jpg", "assets/events/gnsep25-2.jpg", "assets/events/gnsep25-3.jpg"]}
               />
               <GameJamEvent
                 title={events[2].title}
