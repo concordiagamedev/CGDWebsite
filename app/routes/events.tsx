@@ -23,9 +23,9 @@ import gamenights from "assets/icons/gamenights.png";
 import wgj26 from "assets/icons/wgj26.png";
 import lizard25 from "assets/icons/lizardlounge25.png";
 import meetgeek25 from "assets/icons/meetgeek25.png";
-import gn1sep25 from "assets/pictures/events/gnsep25-1.jpg";
-import gn2sep25 from "assets/pictures/events/gnsep25-2.jpg";
-import gn3sep25 from "assets/pictures/events/gnsep25-3.jpg";
+import gn1sep25 from "public/assets/events/gnsep25-1.jpg";
+import gn2sep25 from "public/assets/events/gnsep25-2.jpg";
+import gn3sep25 from "public/assets/events/gnsep25-3.jpg";
 import {
   Accordion,
   AccordionContent,
