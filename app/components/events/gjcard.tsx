@@ -77,13 +77,9 @@ const GameJamEvent: React.FC<EventProps> = ({
             </p>
           </div>
         </div>
-        {/* DROP DOWN PART */}
-        <Accordion
-          type="single"
-          collapsible
-          className="flex flex-col w-full"
-          orientation="horizontal"
-        >
+
+        {/* Winners Accordion */}
+        <Accordion type="single" collapsible className="flex flex-col w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger className=" text-left absolute right-10 bottom-5"></AccordionTrigger>
             <AccordionContent className="mt-6 xl:mt-10 flex gap-4 xl:gap-6 items-center justify-between 2xl:px-16 lg:px-10 md:px-5 pb-7">
@@ -98,10 +94,12 @@ const GameJamEvent: React.FC<EventProps> = ({
                   Winners:{" "}
                   <div className="grid">
                     {winners?.map((winner, index) => (
-                      <div className="flex justify-between min-w-80">
+                      <div
+                        key={winner.gamename + index} // <-- unique key
+                        className="flex justify-between min-w-80"
+                      >
                         <h4 className=" font-black">{winner.position}:</h4>
                         <Link
-                          key={index}
                           className="font-corbert hover:text-cgd-pfull transition-colors ease-in-out duration-300"
                           to={winner.gamelink}
                           target="_blank"
@@ -124,6 +122,8 @@ const GameJamEvent: React.FC<EventProps> = ({
       </div>
     );
   }
+
+  // Mobile Drawer
   return (
     <ClientOnly fallback={null}>
       {() => (
@@ -134,7 +134,6 @@ const GameJamEvent: React.FC<EventProps> = ({
               alt={title}
               className="object-contain aspect-{3/2} md:hidden rounded-md"
             />
-            {/* Drawer for mobile View */}
             <div className="flex flex-col gap-5">
               <div>
                 <h2 className="title sm:text-2xl text-xl text-cgd-pink/85">
@@ -149,6 +148,7 @@ const GameJamEvent: React.FC<EventProps> = ({
               </p>
             </div>
           </DrawerTrigger>
+
           <DrawerContent>
             <DrawerHeader className="px-5">
               <DrawerTitle>
@@ -166,9 +166,7 @@ const GameJamEvent: React.FC<EventProps> = ({
                           icon="solar:map-point-bold-duotone"
                           className="w-10 h-10"
                         />
-                        <span className="font-corbert font-bold">
-                          {location}
-                        </span>
+                        <span className="font-corbert font-bold">{location}</span>
                       </h3>
                       <h3 className="text-dark-purple text-base flex items-center gap-4">
                         <Icon
@@ -214,24 +212,14 @@ const GameJamEvent: React.FC<EventProps> = ({
                               break;
                           }
 
-                          // Add the following to events.json if deciding to keep bonus awards:
-                          // {
-                          //   "position": "Challenger Award",
-                          //   "gamename": "Strung Along",
-                          //   "gamelink": "https://trim-ge2019.itch.io/the-red-line-of-fate"
-                          // },
-                          // {
-                          //   "position": "Solo Dev Award",
-                          //   "gamename": "▶-🔲🔲🔲",
-                          //   "gamelink": "https://jordan-vision.itch.io/triangle-squaresquaresquare"
-                          // }
-
                           return (
-                            <div className="flex gap-2 justify-between mx-10">
+                            <div
+                              key={winner.gamename + index} // <-- unique key here too
+                              className="flex gap-2 justify-between mx-10"
+                            >
                               <Icon icon={icon} className={iconClassName} />
                               <Link
-                                key={index}
-                                className="font-corbert "
+                                className="font-corbert"
                                 to={winner.gamelink}
                                 target="_blank"
                               >
@@ -244,8 +232,6 @@ const GameJamEvent: React.FC<EventProps> = ({
                     </h3>
                   </div>
                   <div>
-                    {/* Using Link and button variant from shadcn + additional styling.
-                        Links to the jam page of the event as long as is it defined */}
                     <Link
                       className={`${buttonVariants({
                         variant: "ghost",
