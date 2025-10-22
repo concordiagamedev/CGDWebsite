@@ -4,10 +4,8 @@ import type { MetaFunction } from "@remix-run/node";
 import controller from "assets/icons/cgd_controller.png";
 import Profile from "app/components/profile";
 import ConstructionCard from "~/components/constructioncard";
-import { staff } from "../siteSettings/staff.json";
-import { comms } from "../siteSettings/comms.json";
-import { tech } from "../siteSettings/tech.json";
-import { eventsteam } from "../siteSettings/events-team.json";
+import { getStaffList } from "../utils/api";
+import { useEffect, useState } from "react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -17,7 +15,64 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+const TEAM_TITLES = [
+  "The Final Bosses 👾",
+  "The Comms Team - Socials 🎨",
+  "The Comms Team - Events 💼",
+  "The Tech Team 💻",
+];
+
 export default function DashboardAbout() {
+  const [groupedStaff, setGroupedStaff] = useState<Record<string, any[]>>({});
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function fetchStaff() {
+      setLoading(true);
+      setError(null);
+      try {
+        const response = await getStaffList();
+        if (response?.staff) {
+          // Group staff by team
+          const grouped: Record<string, any[]> = {};
+          response.staff.forEach((member) => {
+            const team = member.team || "Other";
+            if (!grouped[team]) grouped[team] = [];
+            grouped[team].push(member);
+          });
+
+          // Sort members in each team by id ascending
+          Object.keys(grouped).forEach((team) => {
+            grouped[team].sort((a, b) => a.id - b.id);
+          });
+
+          setGroupedStaff(grouped);
+        } else {
+          setGroupedStaff({});
+        }
+      } catch (err: any) {
+        setError("Failed to fetch staff data.");
+        setGroupedStaff({});
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchStaff();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="p-10 text-center text-dark-purple">Loading staff...</div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="p-10 text-center text-dark-purple">{error}</div>
+    );
+  }
+
   return (
     <div>
       <ConstructionCard show={false} />
@@ -30,15 +85,10 @@ export default function DashboardAbout() {
             <div className="aboutus-text font-bold mt-5 mb-5 md:my-0 md:text-xl 2xl:text-2xl text-lg -z-10">
               We are Concordia's gamedev community and we focus on the technical
               and development aspects of video games in all disciplines, such
-              as, programming, art, game design, storytelling, sound engineering
+              as programming, art, game design, storytelling, sound engineering
               and more.
             </div>
             <div className="blob flex items-center justify-center lg:justify-end md:mt-0 mt-10 md:p-10 w-full">
-              {/* <img
-              src={blob}
-              className="blob absolute"
-              alt="about us blob that holds a picture of the staff team"
-            /> */}
               <img
                 src={controller}
                 className="blob w-5/6 md:w-3/6 lg:w-4/6"
@@ -47,102 +97,47 @@ export default function DashboardAbout() {
             </div>
           </div>
         </div>
+
+        {/* Team sections */}
         <div className="ourteam-container md:my-20 my-10">
           <h2 className="ourteam sm:text-6xl text-4xl md:my-14 my-6 text-center md:text-left md:mx-10">
             Meet Our Team: 2025-26
           </h2>
-          <h3 className="ourteam sm:text-2xl text-2xl md:my-14 my-6 text-center md:text-left md:mx-10">
-            The Final Bosses 👾
-          </h3>
-          <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 lg:mx-32 lg:px-24 md:mx-20 md:px-20 px-6">
-            {staff.map((staff) => (
-              <Profile
-                key={staff.id}
-                name={staff.name}
-                position={staff.position}
-                image={staff.img}
-              />
-            ))}
-          </div>
-          {/* Comms teams below */}
-          <h3 className="ourteam sm:text-2xl text-2xl md:my-14 my-6 text-center md:text-left md:mx-10">
-            The Comms Team - Socials 🎨
-          </h3>
-          <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 lg:mx-32 lg:px-24 md:mx-20 md:px-20 px-6">
-            {comms.map((comms) => (
-              <Profile     
-                key={comms.id}
-                name={comms.name}
-                position={comms.position}
-                image={comms.img}
-              />
-            ))}
-          </div>
-            {/* Event teams below */}
-          <h3 className="ourteam sm:text-2xl text-2xl md:my-14 my-6 text-center md:text-left md:mx-10">
-            The Comms Team - Events 💼
-          </h3>
-          <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 lg:mx-32 lg:px-24 md:mx-20 md:px-20 px-6">
-            {eventsteam.map((eventsteam) => (
-              <Profile
-                key={eventsteam.id}
-                name={eventsteam.name}
-                position={eventsteam.position}
-                image={eventsteam.img}
-              />
-            ))}
-          </div>
-          {/* Comms teams below */}
-          <h3 className="ourteam sm:text-2xl text-2xl md:my-14 my-6 text-center md:text-left md:mx-10">
-            The Tech Team 💻
-          </h3>
-          <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 lg:mx-32 lg:px-24 md:mx-20 md:px-20 px-6">
-            {tech.map((tech) => (
-              <Profile
-                key={tech.id}
-                name={tech.name}
-                position={tech.position}
-                image={tech.img}
-              />
-            ))}
-          </div>
+
+          {TEAM_TITLES.map((team) => {
+            const members = groupedStaff[team];
+            if (!members || members.length === 0) return null; // skip empty teams
+            return (
+              <div key={team}>
+                <h3 className="ourteam sm:text-2xl text-2xl md:my-14 my-6 text-center md:text-left md:mx-10">
+                  {team}
+                </h3>
+                <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 lg:mx-32 lg:px-24 md:mx-20 md:px-20 px-6">
+                  {members.map((m) => (
+                    <Profile
+                      key={m.id}
+                      name={m.name}
+                      position={m.role}
+                      image={m.avatar}
+                    />
+                  ))}
+                </div>
+              </div>
+            );
+          })}
         </div>
+
+        {/* Background floaties */}
         <div className="background h-full">
-          <span>
-            <img
-              src={cgdpink}
-              alt="cgd pink alternate logo"
-              className="floaties"
-            />
-          </span>
-          <span>
-            <img
-              src={cgdpink}
-              alt="cgd pink alternate logo"
-              className="floaties"
-            />
-          </span>
-          <span>
-            <img
-              src={cgdpink}
-              alt="cgd pink alternate logo"
-              className="floaties"
-            />
-          </span>
-          <span>
-            <img
-              src={cgdpink}
-              alt="cgd pink alternate logo"
-              className="floaties"
-            />
-          </span>
-          <span>
-            <img
-              src={cgdpink}
-              alt="cgd pink alternate logo"
-              className="floaties"
-            />
-          </span>
+          {[...Array(5)].map((_, i) => (
+            <span key={i}>
+              <img
+                src={cgdpink}
+                alt="cgd pink alternate logo"
+                className="floaties"
+              />
+            </span>
+          ))}
         </div>
       </div>
     </div>
