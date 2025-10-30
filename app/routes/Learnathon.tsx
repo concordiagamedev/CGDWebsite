@@ -3,6 +3,7 @@ import cgdpink from "assets/icons/cgd-transp-pink.png";
 import learnathonBanner from "public/assets/Learnathon/learnathon.png";
 import { useState } from "react";
 import MentorsSection from "~/components/Learnathon/MentorCard";
+import ShadowerSection from "~/components/Learnathon/ShadowerCard";
 
 export const meta: MetaFunction = () => {
   return [
@@ -102,28 +103,23 @@ export default function Learnathon25() {
 </section>
 <MentorsSection />
 
-      
-      {/* <section className="max-w-5xl mx-auto mb-32 text-center md:text-left">
-        <h2 className="text-3xl md:text-4xl font-bold text-dark-purple mb-6">
-           Shadowers
-        </h2>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <li className="bg-white bg-opacity-60 backdrop-blur-md p-6 rounded-2xl shadow-lg">
-            <h3 className="text-xl font-semibold text-dark-purple">1</h3>
-            <p className="text-gray-700">1</p>
-          </li>
-          <li className="bg-white bg-opacity-60 backdrop-blur-md p-6 rounded-2xl shadow-lg">
-            <h3 className="text-xl font-semibold text-dark-purple">2</h3>
-            <p className="text-gray-700">2</p>
-          </li>
-          <li className="bg-white bg-opacity-60 backdrop-blur-md p-6 rounded-2xl shadow-lg">
-            <h3 className="text-xl font-semibold text-dark-purple">3</h3>
-            <p className="text-gray-700">
-              3
-            </p>
-          </li>
-        </ul>
-      </section> */}
+
+      <section className="max-w-5xl mx-auto mb-32 text-center md:text-left">
+  <h2 className="text-3xl md:text-4xl font-bold text-dark-purple mb-6">
+    Shadowers
+  </h2>
+
+  <p className="text-lg text-gray-700 leading-relaxed mb-12">
+    Shadowers are people who will assist you with your technical problems, 
+    as well as your game ideas. If you have an idea on how to make your 
+    game even more exciting, but you are not sure how you should approach it, 
+    or you want to make sure it is viable, then asking shadowers should be the 
+    way to go.
+
+  </p>
+</section>
+<ShadowerSection/>
+
 
 <section className="max-w-5xl mx-auto mb-32 text-center md:text-left">
   <h2 className="text-4xl font-bold text-dark-purple mb-12">TIME TABLE</h2>
@@ -154,7 +150,7 @@ export default function Learnathon25() {
 
               
               <div className="flex justify-center relative">
-                <span className="z-10 w-3 h-3 bg-white border-[3px] border-dark-purple rounded-full"></span>
+                <span className="z-10 w-3 h-3 bg-white border-[3px] border-dark-purple rounded-full z-0"></span>
               </div>
 
               
@@ -187,7 +183,7 @@ export default function Learnathon25() {
             >
               <div className="text-right pr-4 text-gray-800 font-medium">{time}</div>
               <div className="flex justify-center relative">
-                <span className="z-10 w-3 h-3 bg-white border-[3px] border-dark-purple rounded-full"></span>
+                <span className="z-10 w-3 h-3 bg-white border-[3px] border-dark-purple rounded-full z-0"></span>
               </div>
               <div className="pl-4 text-gray-700">{label}</div>
             </li>
@@ -225,10 +221,10 @@ export default function Learnathon25() {
         To make sure everyone has space to build and collaborate, we’ll also have several lab rooms open throughout the event:
       </p>
       <ul className="space-y-2 text-gray-800">
-        <li>• Lab Room 1</li>
+        {/* <li>• Lab Room 1</li>
         <li>• Lab Room 2</li>
         <li>• Lab Room 3</li>
-        <li>• Lab Room 4</li>
+        <li>• Lab Room 4</li> */}
       </ul>
     </div>
 

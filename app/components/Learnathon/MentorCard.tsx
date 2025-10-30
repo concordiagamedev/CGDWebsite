@@ -52,8 +52,6 @@ const MentorCard: React.FC<MentorCardProps> = ({
 const MentorsSection = () => {
   return (
     <section className="max-w-6xl mx-auto mb-24 text-center md:text-left">
-      
-
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
         {mentors.map((mentor, index) => (
           <MentorCard key={index} {...mentor} />
