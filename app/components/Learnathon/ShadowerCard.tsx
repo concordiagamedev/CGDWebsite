@@ -1,36 +1,55 @@
 import React from "react";
 import shadowers from "app/siteSettings/shadowers.json";
+
 interface ShadowerCardProps {
-    name: string;
-    role: string;
-    image: string;
+  name: string;
+  image: string;
 }
 
-const ShadowerCard: React.FC<ShadowerCardProps> = ({ name, role, image }) => {
-    return (
-        <div className="flex items-center gap-6 p-6 bg-white/10 backdrop-blur-md rounded-2xl shadow-md transition">
+const ShadowerCard: React.FC<ShadowerCardProps> = ({ name, image }) => {
+  return (
+    <li
+      className="
+        group flex flex-col items-center justify-center
+        rounded-3xl
+        p-6
+        bg-white/5 backdrop-blur-lg
+        border border-white/15
+        shadow-[0_4px_12px_rgba(0,0,0,0.12)]
+        transition-all duration-300
+        
+      "
+    >
       <img
         src={image}
         alt={name}
-        className="w-28 h-28 rounded-xl object-cover shadow transition-transform duration-300 hover:scale-105"
+        className="
+          w-32 h-32 
+          rounded-2xl object-cover
+          border-[3px] border-white/40
+          shadow-md
+          transition-transform duration-300
+          group-hover:rotate-1 group-hover:scale-105
+        "
       />
-      <div className="text-left">
-        <h3 className="text-2xl font-semibold text-dark-purple">{name}</h3>
-        <p className="text-gray-600 font-medium">{role}</p>
-      </div>
-    </div>
+
+      <h3 className="mt-3 text-lg font-semibold text-dark-purple text-center">
+        {name}
+      </h3>
+    </li>
   );
 };
+
 const ShadowerSection = () => {
-    return(
-    <section className="max-w-6xl mx-auto mb-32 text-center md:text-left">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+  return (
+    <section className="max-w-6xl mx-auto mb-32 px-4">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {shadowers.map((person, index) => (
           <ShadowerCard key={index} {...person} />
         ))}
-      </div>
+      </ul>
     </section>
-    );
+  );
 };
 
 export default ShadowerSection;

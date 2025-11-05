@@ -1,17 +1,14 @@
 [
     {
-        "name": "",
-        "role": "",
-        "image": ""
+        "name": "Ramy",
+        "image": "assets/Learnathon/ramy.jpg"
     },
     {
-        "name": "",
-        "role": "",
-        "image": ""
+        "name": "Zaid",
+        "image": "assets/staff/zaid.jpg"
     },
     {
-        "name": "",
-        "role": "",
-        "image": ""
+        "name": "Kelly",
+        "image": "assets/Learnathon/kelly.png"
     }
 ]
