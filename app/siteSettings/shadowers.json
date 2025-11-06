@@ -10,5 +10,9 @@
     {
         "name": "Kelly",
         "image": "assets/Learnathon/kelly.png"
+    },
+    {
+        "name": "Brandon",
+        "image": "assets/Learnathon/brandon.jpg"
     }
 ]
