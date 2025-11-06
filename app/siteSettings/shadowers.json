@@ -14,5 +14,17 @@
     {
         "name": "Brandon",
         "image": "assets/Learnathon/brandon.jpg"
+    },
+    {
+        "name": "Youssef",
+        "image": "assets/Learnathon/youssef.JPG"
+    },
+    {
+        "name": "Thomas"
+
+    },
+    {
+        "name": "Taief"
     }
+
 ]

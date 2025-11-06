@@ -209,7 +209,7 @@ export default function Learnathon25() {
     </p>
 
     <p className="text-center md:text-left">
-      On <strong>Saturday afternoon</strong>, we’ll switch to 
+      On <strong>Saturday Morning</strong>, we’ll be at 
       <span className="text-dark-purple font-semibold"> Room H443</span> for a portion of the event.
     </p>
 

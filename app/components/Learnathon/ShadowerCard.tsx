@@ -1,5 +1,6 @@
 import React from "react";
 import shadowers from "app/siteSettings/shadowers.json";
+import shadower from "assets/icons/shadower.svg";
 
 interface ShadowerCardProps {
   name: string;
@@ -21,7 +22,7 @@ const ShadowerCard: React.FC<ShadowerCardProps> = ({ name, image }) => {
       "
     >
       <img
-        src={image}
+        src={image || shadower}
         alt={name}
         className="
           w-32 h-32 
