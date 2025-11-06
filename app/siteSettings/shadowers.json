@@ -20,11 +20,13 @@
         "image": "assets/Learnathon/youssef.JPG"
     },
     {
-        "name": "Thomas"
-
+        "name": "Taief",
+        "image": "assets/Learnathon/taief.png"
     },
     {
-        "name": "Taief"
+        "name": "Thomas"
+
     }
+    
 
 ]
