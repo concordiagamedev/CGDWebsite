@@ -10,6 +10,7 @@ import Stats from "~/components/homepage/stats";
 import GameCollection from "~/components/homepage/gameCollection";
 import JoinUs from "~/components/homepage/joinUs";
 import AboutUs from "~/components/homepage/aboutUs";
+import NewEventsSection from "~/components/homepage/newevents";
 
 export const meta: MetaFunction = () => {
   return [
@@ -27,6 +28,7 @@ export default function Index() {
         <Landing />
         <Stats />
         <AboutUs />
+        <NewEventsSection />
         <GameCollection />
         <JoinUs />
       </div>

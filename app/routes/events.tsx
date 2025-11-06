@@ -1,5 +1,6 @@
 import cgdpink from "assets/icons/cgd-transp-pink.png";
 import type { MetaFunction } from "@remix-run/node";
+import { Link } from "@remix-run/react";
 import GameJamEvent from "~/components/events/gjcard";
 import EventCard from "~/components/events/eventcard";
 import events from "~/siteSettings/events.json";
@@ -57,6 +58,7 @@ export default function DashboardEvents() {
               Upcoming Events
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-5 w-full">
+              <Link to = "/learnathon">
               <EventCard
                 title={upcomingevents[0].title}
                 date={upcomingevents[0].date}
@@ -64,7 +66,7 @@ export default function DashboardEvents() {
                 location={upcomingevents[0].location}
                 imageD={learnathon25}
                 imageM={learnathon25}
-              />
+              /></Link>
 
               <EventCard
                 title={upcomingevents[1].title}
@@ -99,10 +101,10 @@ export default function DashboardEvents() {
                 imageM={gamenightoct2025}
               />
               <EventCard
-                title={upcomingevents[1].title}
-                date={upcomingevents[1].date}
-                description={upcomingevents[1].description}
-                location={upcomingevents[1].location}
+                title={events[1].title}
+                date={events[1].date}
+                description={events[1].description}
+                location={events[1].location}
                 imageD={lizard25}
                 imageM={lizard25}
               />

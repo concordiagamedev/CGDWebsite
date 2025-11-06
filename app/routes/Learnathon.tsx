@@ -201,16 +201,19 @@ export default function Learnathon25() {
   <div className="text-lg text-gray-700 leading-relaxed space-y-8">
 
     <p className="text-center md:text-left">
-      The Learnathon will take place at <strong>Concordia University</strong> — in 
-      <span className="text-dark-purple font-semibold"> Room H937</span>, our 
-      <em> main creative hub</em> for the weekend! 🎮  
-      This space will host the <strong>opening ceremony</strong>, 
-      <strong> workshops</strong>, and <strong>closing session</strong>.
-    </p>
+  The Learnathon will take place at <strong>Concordia University</strong> — 
+  our <em>main creative hubs</em> for the weekend! 🎮  
+  These spaces will host the <strong>opening ceremony</strong>, 
+  <strong>workshops</strong>, and <strong>closing session</strong>.
+</p>
+
 
     <p className="text-center md:text-left">
-      On <strong>Saturday Morning</strong>, we’ll be at 
-      <span className="text-dark-purple font-semibold"> Room H443</span> for a portion of the event.
+      On <strong>Saturday</strong>, we’ll be at 
+      <span className="text-dark-purple font-semibold"> Room H411</span> for the opening ceremony.
+    <br/>
+      On <strong>Sunday</strong>, we’ll be at 
+      <span className="text-dark-purple font-semibold"> Room H937</span> for the event.
     </p>
 
     <div className="relative border-l-4 border-dark-purple pl-6 ml-2">
@@ -221,10 +224,15 @@ export default function Learnathon25() {
         To make sure everyone has space to build and collaborate, we’ll also have several lab rooms open throughout the event:
       </p>
       <ul className="space-y-2 text-gray-800">
-        {/* <li>• Lab Room 1</li>
-        <li>• Lab Room 2</li>
-        <li>• Lab Room 3</li>
-        <li>• Lab Room 4</li> */}
+        <p><strong>Game Maker Lab Rooms</strong></p>
+        <li>• Lab Room 817</li>
+        <li>• Lab Room 819</li>
+        <li>• Lab Room 847</li>
+        <li>• Lab Room 849</li>
+
+        <p><strong>Unity Lab Rooms</strong></p>
+        <li>• Lab Room 962</li>
+        <li>• Lab Room 966</li>
       </ul>
     </div>
 
