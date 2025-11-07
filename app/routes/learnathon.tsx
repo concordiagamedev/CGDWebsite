@@ -147,7 +147,7 @@ export default function Learnathon25() {
                     </div>
 
                     <div className="flex justify-center relative">
-                      <span className="z-10 w-3 h-3 bg-white border-[3px] border-dark-purple rounded-full"></span>
+                      <span className="z-0 w-3 h-3 bg-white border-[3px] border-dark-purple rounded-full"></span>
                     </div>
 
                     <div className="pl-4 text-gray-700">{label}</div>
@@ -182,7 +182,7 @@ export default function Learnathon25() {
                       {time}
                     </div>
                     <div className="flex justify-center relative">
-                      <span className="z-10 w-3 h-3 bg-white border-[3px] border-dark-purple rounded-full"></span>
+                      <span className="z-0 w-3 h-3 bg-white border-[3px] border-dark-purple rounded-full"></span>
                     </div>
                     <div className="pl-4 text-gray-700">{label}</div>
                   </li>
