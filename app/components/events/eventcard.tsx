@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { useMediaQuery } from "@mantine/hooks";
 import {
   Accordion,
@@ -21,7 +21,6 @@ import { ClientOnly } from "remix-utils/client-only";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-
 interface EventProps {
   title: string;
   date: string;
@@ -30,6 +29,7 @@ interface EventProps {
   imageM?: string;
   location?: string;
   eventpictures?: string[];
+  link?: string;
 }
 const EventCard: React.FC<EventProps> = ({
   title,
@@ -39,6 +39,7 @@ const EventCard: React.FC<EventProps> = ({
   imageM,
   location,
   eventpictures,
+  link,
 }) => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
   const [photoIndex, setPhotoIndex] = useState(0);
@@ -56,9 +57,15 @@ const EventCard: React.FC<EventProps> = ({
           />
           <div className="flex flex-col justify-center gap-4">
             <div>
-              <h2 className="title text-3xl 2xl:text-4xl text-cgd-pink/85 text-left">
-                {title}
-              </h2>
+              {link ? (
+                <h2 className="title text-3xl 2xl:text-4xl text-cgd-pink/85 text-left hover:underline decoration-[6px]">
+                  <a href={link}>{title}</a>
+                </h2>
+              ) : (
+                <h2 className="title text-3xl 2xl:text-4xl text-cgd-pink/85 text-left">
+                  {title}
+                </h2>
+              )}
               <h4 className="description text-xl text-dark-purple/90 font-corbert font-bold">
                 {description}
               </h4>
@@ -85,26 +92,30 @@ const EventCard: React.FC<EventProps> = ({
               </h3>
               {eventpictures && eventpictures.length > 0 && (
                 <>
-                <div className="mt-4 grid grid-cols-2 md:grid-cols-3 gap-4">
-                  {eventpictures.map((pic, index) => (
-                    <img
-                      key={index}
-                      src={pic}
-                      alt={`Event picture ${index + 1}`}
-                      onClick={() => { setPhotoIndex(index); setIsOpen(true); }}
-                      className="cursor-pointer rounded-lg object-cover w-full h-32 md:h-40" />
-                      ))} </div>
-                      {isOpen && (
-                        <Lightbox
-                          open={isOpen}
-                          close={() => setIsOpen(false)}
-                          slides={eventpictures.map((pic) => ({ src: pic }))}
-                          index={photoIndex}
-                        />
-                      )}
-                      </>
+                  <div className="mt-4 grid grid-cols-2 md:grid-cols-3 gap-4">
+                    {eventpictures.map((pic, index) => (
+                      <img
+                        key={index}
+                        src={pic}
+                        alt={`Event picture ${index + 1}`}
+                        onClick={() => {
+                          setPhotoIndex(index);
+                          setIsOpen(true);
+                        }}
+                        className="cursor-pointer rounded-lg object-cover w-full h-32 md:h-40"
+                      />
+                    ))}{" "}
+                  </div>
+                  {isOpen && (
+                    <Lightbox
+                      open={isOpen}
+                      close={() => setIsOpen(false)}
+                      slides={eventpictures.map((pic) => ({ src: pic }))}
+                      index={photoIndex}
+                    />
+                  )}
+                </>
               )}
-              
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -150,23 +161,30 @@ const EventCard: React.FC<EventProps> = ({
                 </div>
                 {eventpictures && eventpictures.length > 0 && (
                   <>
-                  <div className="mt-4 grid grid-cols-2 gap-3">
-                    {eventpictures.map((pic, index) => (
-                      <img
-                        key={index}
-                        src={pic}
-                        alt={`Event picture ${index + 1}`}
-                        className="rounded-md object-cover w-full h-28 sm:h-36" 
-                        onClick={() => { setPhotoIndex(index); setIsOpen(true); }}/>))} </div>
-                        {isOpen && (
-                        <Lightbox
-                          open={isOpen}
-                          close={() => setIsOpen(false)}
-                          slides={eventpictures.map((pic) => ({ src: pic }))}
-                          index={photoIndex}
+                    <div className="mt-4 grid grid-cols-2 gap-3">
+                      {eventpictures.map((pic, index) => (
+                        <img
+                          key={index}
+                          src={pic}
+                          alt={`Event picture ${index + 1}`}
+                          className="rounded-md object-cover w-full h-28 sm:h-36"
+                          onClick={() => {
+                            setPhotoIndex(index);
+                            setIsOpen(true);
+                          }}
                         />
-                      )}</>
-)}
+                      ))}{" "}
+                    </div>
+                    {isOpen && (
+                      <Lightbox
+                        open={isOpen}
+                        close={() => setIsOpen(false)}
+                        slides={eventpictures.map((pic) => ({ src: pic }))}
+                        index={photoIndex}
+                      />
+                    )}
+                  </>
+                )}
               </DrawerDescription>
             </DrawerHeader>
             <DrawerFooter>

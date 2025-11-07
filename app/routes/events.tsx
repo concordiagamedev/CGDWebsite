@@ -58,7 +58,7 @@ export default function DashboardEvents() {
               Upcoming Events
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-5 w-full">
-              <Link to = "/learnathon">
+              {/* <Link to = "/learnathon"> */}
               <EventCard
                 title={upcomingevents[0].title}
                 date={upcomingevents[0].date}
@@ -66,7 +66,9 @@ export default function DashboardEvents() {
                 location={upcomingevents[0].location}
                 imageD={learnathon25}
                 imageM={learnathon25}
-              /></Link>
+                link="/learnathon"
+              />
+              {/* </Link> */}
 
               <EventCard
                 title={upcomingevents[1].title}
@@ -76,7 +78,7 @@ export default function DashboardEvents() {
                 imageD={gamenights}
                 imageM={gamenights}
               />
-              
+
               <EventCard
                 title={upcomingevents[2].title}
                 date={upcomingevents[2].date}
@@ -123,7 +125,11 @@ export default function DashboardEvents() {
                 location={events[3].location}
                 imageD={gamenightaugust25}
                 imageM={gamenightaugust25}
-                eventpictures={["assets/events/gnsep25-1.jpg", "assets/events/gnsep25-2.jpg", "assets/events/gnsep25-3.jpg"]}
+                eventpictures={[
+                  "assets/events/gnsep25-1.jpg",
+                  "assets/events/gnsep25-2.jpg",
+                  "assets/events/gnsep25-3.jpg",
+                ]}
               />
               <GameJamEvent
                 title={events[4].title}

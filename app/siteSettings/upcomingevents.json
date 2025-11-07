@@ -1,11 +1,10 @@
 [
-  
   {
     "id": 0,
     "title": "Learnathon ",
     "date": "November 7-9, 2025",
-    "description": "Hosted by Concordia Game Dev Club, Learnathon is a hands-on event where participants can explore the basics of game development and start building their own projects.",
-    "location": "To be Announced"
+    "description": "Hosted by Concordia Game Dev Club, Learnathon is a hands-on event where participants can explore the basics of game development and start building their own projects. Click on the title for more info.",
+    "location": "Click on the title for more information."
   },
   {
     "id": 1,
@@ -21,5 +20,4 @@
     "description": "Hosted by Concordia Game Dev Club, Winter Game Jam is a 48-hour event",
     "location": "To be Announced"
   }
-
 ]
