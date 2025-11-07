@@ -203,22 +203,24 @@ export default function Learnathon25() {
         <div className="text-lg text-gray-700 leading-relaxed space-y-8">
           <p className="text-center md:text-left">
             The Learnathon will take place at{" "}
-            <strong className="underline text-dark-purple font-extrabold">Concordia University</strong> — our{" "}
-            <em>main creative hubs</em> for the weekend! 🎮 These spaces will
-            host the <strong>opening ceremony</strong>,
+            <strong className="underline text-dark-purple font-extrabold decoration-2 underline-offset-2">
+              Concordia University
+            </strong>{" "}
+            — our <em>main creative hubs</em> for the weekend! 🎮 These spaces
+            will host the <strong>opening ceremony</strong>,
             <strong>workshops</strong>, and <strong>closing session</strong>.
           </p>
 
           <p className="text-center md:text-left">
             On <strong>Saturday</strong>, we’ll be at
-            <span className="text-dark-purple underline font-semibold">
+            <span className="text-dark-purple underline font-semibold decoration-2 underline-offset-2">
               {" "}
               Room H411
             </span>{" "}
             for the opening ceremony.
             <br />
             On <strong>Sunday</strong>, we’ll be at
-            <span className="text-dark-purple underline font-semibold">
+            <span className="text-dark-purple underline font-semibold decoration-2 underline-offset-2">
               {" "}
               Room H937
             </span>{" "}
@@ -235,7 +237,9 @@ export default function Learnathon25() {
             </p>
             <ul className="space-y-2 text-gray-800">
               <p>
-                <strong className="underline text-dark-purple font-extrabold">Game Maker Lab Rooms</strong>
+                <strong className="underline text-dark-purple font-black decoration-2 underline-offset-2">
+                  Game Maker Lab Rooms
+                </strong>
               </p>
               <li>• Lab Room 817</li>
               <li>• Lab Room 819</li>
@@ -243,7 +247,9 @@ export default function Learnathon25() {
               <li>• Lab Room 849</li>
 
               <p>
-                <strong className="underline text-dark-purple font-extrabold">Unity Lab Rooms</strong>
+                <strong className="underline text-dark-purple font-black decoration-2 underline-offset-2">
+                  Unity Lab Rooms
+                </strong>
               </p>
               <li>• Lab Room 962</li>
               <li>• Lab Room 966</li>
