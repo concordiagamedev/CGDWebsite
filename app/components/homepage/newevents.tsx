@@ -6,7 +6,7 @@ const NewEventsSection: React.FC = () => {
   return (
     <section className="md:mx-20 mx-6 my-24">
       <h2 className="font-ls sm:text-6xl text-4xl font-bold text-dark-purple uppercase md:mx-10 text-center md:text-left">
-        New Events
+        Spotlight Events
       </h2>
 
       <p className="text-md sm:text-xl mt-4 font-corbert font-semibold text-dark-purple/80 text-center md:text-left md:mx-10">
@@ -22,7 +22,7 @@ const NewEventsSection: React.FC = () => {
             className="
               relative
               w-full max-w-4xl
-              flex items-center gap-4
+              flex items-center gap-4 md:flex-row flex-col
               rounded-3xl overflow-hidden
 
               bg-white/35 backdrop-blur-xl
@@ -36,7 +36,6 @@ const NewEventsSection: React.FC = () => {
               px-4 py-4
             "
           >
-
             <div
               className="
                 absolute inset-0
@@ -49,7 +48,7 @@ const NewEventsSection: React.FC = () => {
               "
               style={{
                 background:
-                  'radial-gradient(circle at center, rgba(242,197,211,0.4), transparent 70%)',
+                  "radial-gradient(circle at center, rgba(242,197,211,0.4), transparent 70%)",
               }}
             />
 
@@ -58,17 +57,18 @@ const NewEventsSection: React.FC = () => {
                 src={event.img}
                 alt={event.title}
                 className="
-                  w-24 h-24
-                  rounded-2xl object-cover
-                  flex-shrink-0
+                  w-full md:w-56 lg:w-64 xl:w-96 aspect-[4/3] xl:aspect-[5/3]
+                  rounded-2xl object-cover object-top
+                  flex-shrink-0 relative
                   ring-1 ring-white/50
                   shadow-md
                 "
                 loading="lazy"
+                sizes="(min-width:1280px) 18rem, (min-width:1024px) 16rem, (min-width:768px) 14rem, 100vw"
               />
             )}
 
-            <div className="flex flex-col justify-center relative z-10">
+            <div className="flex flex-col justify-start self-start relative z-10 gap-2 md:py-4">
               <h3 className="text-dark-purple font-extrabold font-corbert text-3xl sm:text-4xl">
                 {event.title}
               </h3>
@@ -76,7 +76,7 @@ const NewEventsSection: React.FC = () => {
               {event.date && (
                 <span
                   className="
-                    inline-block w-fit mt-2
+                    inline-block w-fit
                     px-3 py-1 rounded-full
                     text-xs sm:text-sm font-corbert font-semibold
                     bg-[#f2c5d3]/50 text-dark-purple/85
