@@ -1,0 +1,10 @@
+[
+    {
+        "id": 0,
+        "title": "Learnathon 2025",
+        "date": "November 8-9, 2025",
+        "img": "assets/Learnathon/learnathon.png",
+        "link": "/learnathon",
+        "target": "_self"
+    }
+]
