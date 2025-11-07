@@ -30,7 +30,7 @@ export default function Learnathon25() {
           />
         </div>
 
-        <div className="text-center md:text-left">
+        <div className="text-center md:text-left font-corbert font-bold">
           <h1 className="text-5xl sm:text-6xl font-bold text-dark-purple mb-4">
             Learnathon 2025
           </h1>
@@ -70,7 +70,7 @@ export default function Learnathon25() {
           </button>
         </div>
       )}
-      <section className="max-w-5xl mx-auto mb-20 text-center md:text-left">
+      <section className="max-w-5xl mx-auto mb-20 text-center md:text-left font-corbert font-bold">
         <h2 className="text-3xl md:text-4xl font-bold text-dark-purple mb-6">
           Description
         </h2>
@@ -85,7 +85,7 @@ export default function Learnathon25() {
         </p>
       </section>
 
-      <section className="max-w-5xl mx-auto mb-24 text-center md:text-left">
+      <section className="max-w-5xl mx-auto mb-24 text-center md:text-left font-corbert font-bold">
         <h2 className="text-3xl md:text-4xl font-bold text-dark-purple mb-6">
           Mentors
         </h2>
@@ -100,7 +100,7 @@ export default function Learnathon25() {
       </section>
       <MentorsSection />
 
-      <section className="max-w-5xl mx-auto mb-32 text-center md:text-left">
+      <section className="max-w-5xl mx-auto mb-32 text-center md:text-left font-corbert font-bold">
         <h2 className="text-3xl md:text-4xl font-bold text-dark-purple mb-6">
           Shadowers
         </h2>
@@ -115,7 +115,7 @@ export default function Learnathon25() {
       </section>
       <ShadowerSection />
 
-      <section className="max-w-5xl mx-auto mb-32 text-center md:text-left">
+      <section className="max-w-5xl mx-auto mb-32 text-center md:text-left font-corbert font-bold">
         <h2 className="text-4xl font-bold text-dark-purple mb-12">
           TIME TABLE
         </h2>
@@ -194,7 +194,7 @@ export default function Learnathon25() {
       </section>
       <section
         id="venue"
-        className="max-w-5xl mx-auto mb-28 text-center md:text-left"
+        className="max-w-5xl mx-auto mb-28 text-center md:text-left font-corbert font-bold"
       >
         <h2 className="text-4xl font-bold text-dark-purple mb-10">
           Venue & Labs
@@ -203,7 +203,7 @@ export default function Learnathon25() {
         <div className="text-lg text-gray-700 leading-relaxed space-y-8">
           <p className="text-center md:text-left">
             The Learnathon will take place at{" "}
-            <strong>Concordia University</strong> — our{" "}
+            <strong className="underline text-dark-purple font-extrabold">Concordia University</strong> — our{" "}
             <em>main creative hubs</em> for the weekend! 🎮 These spaces will
             host the <strong>opening ceremony</strong>,
             <strong>workshops</strong>, and <strong>closing session</strong>.
@@ -211,14 +211,14 @@ export default function Learnathon25() {
 
           <p className="text-center md:text-left">
             On <strong>Saturday</strong>, we’ll be at
-            <span className="text-dark-purple font-semibold">
+            <span className="text-dark-purple underline font-semibold">
               {" "}
               Room H411
             </span>{" "}
             for the opening ceremony.
             <br />
             On <strong>Sunday</strong>, we’ll be at
-            <span className="text-dark-purple font-semibold">
+            <span className="text-dark-purple underline font-semibold">
               {" "}
               Room H937
             </span>{" "}
@@ -235,7 +235,7 @@ export default function Learnathon25() {
             </p>
             <ul className="space-y-2 text-gray-800">
               <p>
-                <strong>Game Maker Lab Rooms</strong>
+                <strong className="underline text-dark-purple font-extrabold">Game Maker Lab Rooms</strong>
               </p>
               <li>• Lab Room 817</li>
               <li>• Lab Room 819</li>
@@ -243,7 +243,7 @@ export default function Learnathon25() {
               <li>• Lab Room 849</li>
 
               <p>
-                <strong>Unity Lab Rooms</strong>
+                <strong className="underline text-dark-purple font-extrabold">Unity Lab Rooms</strong>
               </p>
               <li>• Lab Room 962</li>
               <li>• Lab Room 966</li>
