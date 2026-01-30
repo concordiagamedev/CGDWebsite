@@ -1,22 +1,28 @@
 {
     "tech": [
         {
-            "name": "Jordan Bossou",
-            "position": "VP Tech",
-            "id": "11",
-            "img": "assets/staff/jo.jpg"
-        },
-        {
             "name": "Ana Rostam",
-            "position": "Developer",
+            "position": "Head of Tech",
             "id": "12",
             "img": "assets/staff/ana.jpg"
         },
         {
-            "name": "Youssef Dammak",
+            "name": "Arman Emami",
             "position": "Developer",
-            "id": "12",
-            "img": "assets/staff/youssef_dammak.jpg"
+            "id": "13",
+            "img": "assets/staff/arman.jpg"
+        },
+        {
+            "name": "Nicolas Boyer",
+            "position": "Developer",
+            "id": "14",
+            "img": "assets/staff/nicolas.jpg"
+        },
+        {
+            "name": "Alyssa Garofalo",
+            "position": "Developer",
+            "id": "15",
+            "img": "assets/staff/pawelC-pink5.jpg"
         }
     ]
 }
