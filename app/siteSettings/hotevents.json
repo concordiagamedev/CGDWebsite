@@ -1,10 +1,42 @@
 [
     {
-        "id": 0,
+        "id": 6,
         "title": "Learnathon 2025",
         "date": "November 8-9, 2025",
         "img": "assets/Learnathon/learnathon.png",
         "link": "/learnathon",
         "target": "_self"
+    },
+    {
+        "id": 0,
+        "title": "Workshop: DaxInvader",
+        "date": "Febuary 4, 2026",
+        "img": "assets/pics/placeholderEvents.png",
+        "link": "",
+        "target": ""
+    },
+    {
+        "id": 1,
+        "title": "Workshop: Zach",
+        "date": "Febuary 11, 2026",
+        "img": "assets/pics/placeholderEvents.png",
+        "link": "",
+        "target": ""
+    },
+    {
+        "id": 2,
+        "title": "Shrekathon",
+        "date": "March 2, 2026",
+        "img": "assets/pics/placeholderEvents.png",
+        "link": "",
+        "target": ""
+    },
+    {
+        "id": 3,
+        "title": "Workshop: Rosie",
+        "date": "March 4, 2026",
+        "img": "assets/pics/placeholderEvents.png",
+        "link": "",
+        "target": ""
     }
 ]
