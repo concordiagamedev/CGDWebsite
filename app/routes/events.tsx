@@ -25,6 +25,7 @@ import wgj26 from "assets/icons/wgj26.png";
 import lizard25 from "assets/icons/lizardlounge25.png";
 import meetgeek25 from "assets/icons/meetgeek25.png";
 import gamenightoct2025 from "assets/icons/gamenightoct.jpg";
+import ZaidWorkshop from "assets/events/zaidworkshop.png";
 import {
   Accordion,
   AccordionContent,
@@ -86,6 +87,14 @@ export default function DashboardEvents() {
                 location={upcomingevents[2].location}
                 imageD={wgj26}
                 imageM={wgj26}
+              />
+              <EventCard
+                title={upcomingevents[3].title}
+                date={upcomingevents[3].date}
+                description={upcomingevents[3].description}
+                location={upcomingevents[3].location}
+                imageD={ZaidWorkshop}
+                imageM={ZaidWorkshop}
               />
             </AccordionContent>
           </AccordionItem>
