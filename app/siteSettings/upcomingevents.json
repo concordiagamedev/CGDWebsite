@@ -19,5 +19,12 @@
     "date": "Winter, 2026",
     "description": "Hosted by Concordia Game Dev Club, Winter Game Jam is a 48-hour event",
     "location": "To be Announced"
+  },
+  {
+    "id": 3,
+    "title": "Zaid Workshop: Introduction to Shaders",
+    "date": "Feb 6 | 5 to 8 PM ",
+    "description": " In this workshop, we will cover the fundamentals of shaders, including how to write and implement them in your projects. By the end of the workshop, you will have a solid understanding of shaders and be able to create your own custom effects.",
+    "location": "H962 Hall building, Sir George William Campus, 1455 Boul. de Maissoneuve O."
   }
 ]
