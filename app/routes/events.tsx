@@ -25,7 +25,7 @@ import wgj26 from "assets/icons/wgj26.png";
 import lizard25 from "assets/icons/lizardlounge25.png";
 import meetgeek25 from "assets/icons/meetgeek25.png";
 import gamenightoct2025 from "assets/icons/gamenightoct.jpg";
-import ZaidWorkshop from "assets/events/zaidworkshop.png";
+import ZaidWorkshop from "assets/icons/zaidworkshop.png";
 import {
   Accordion,
   AccordionContent,
