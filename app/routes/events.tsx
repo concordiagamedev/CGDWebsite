@@ -61,38 +61,39 @@ export default function DashboardEvents() {
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-5 w-full">
               <EventCard
+                title={upcomingevents[0].title}
+                date={upcomingevents[0].date}
+                description={upcomingevents[0].description}
+                location={upcomingevents[0].location}
+                imageD={ZaidWorkshop}
+                imageM={ZaidWorkshop}
+              />
+              <EventCard
                 title={upcomingevents[1].title}
                 date={upcomingevents[1].date}
                 description={upcomingevents[1].description}
                 location={upcomingevents[1].location}
-                imageD={gamenights}
-                imageM={gamenights}
+                imageD={zacharyworkshop}
+                imageM={zacharyworkshop}
               />
-
               <EventCard
                 title={upcomingevents[2].title}
                 date={upcomingevents[2].date}
                 description={upcomingevents[2].description}
                 location={upcomingevents[2].location}
-                imageD={wgj26}
-                imageM={wgj26}
+                imageD={gamenights}
+                imageM={gamenights}
               />
+
               <EventCard
                 title={upcomingevents[3].title}
                 date={upcomingevents[3].date}
                 description={upcomingevents[3].description}
                 location={upcomingevents[3].location}
-                imageD={ZaidWorkshop}
-                imageM={ZaidWorkshop}
+                imageD={wgj26}
+                imageM={wgj26}
               />
-              <EventCard
-                title={upcomingevents[4].title}
-                date={upcomingevents[4].date}
-                description={upcomingevents[4].description}
-                location={upcomingevents[4].location}
-                imageD={zacharyworkshop}
-                imageM={zacharyworkshop}
-              />
+
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="past-events">
