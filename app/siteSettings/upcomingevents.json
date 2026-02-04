@@ -15,13 +15,27 @@
   },
   {
     "id": 2,
+    "title": "Workshop wtih Dario",
+    "date": "February 2026",
+    "description": "Upcoming Workshop",
+    "location": "To be Announced"
+  },
+  {
+    "id": 3,
+    "title": "Worshop with Rosie",
+    "date": "March 2026",
+    "description": "Upcoming Workshop",
+    "location": "To be Announced"
+  },
+  {
+    "id": 4,
     "title": "Game Nights",
     "date": "November 2025",
     "location": "Visualization studio, Webster Library 3rd floor, Concordia SGW",
     "description": "Hosted by Concordia Game Dev Club and SCS Concordia, Game Night is an event where students can come together to play games, meet new people, and have fun! All are welcome to join us for an evening of fun and games!"
   },
   {
-    "id": 3,
+    "id": 5,
     "title": "Winter Game Jam 2026",
     "date": "Winter, 2026",
     "description": "Hosted by Concordia Game Dev Club, Winter Game Jam is a 48-hour event",
