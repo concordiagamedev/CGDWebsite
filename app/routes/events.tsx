@@ -27,6 +27,8 @@ import meetgeek25 from "assets/icons/meetgeek25.png";
 import gamenightoct2025 from "assets/icons/gamenightoct.jpg";
 import ZaidWorkshop from "assets/icons/zaidworkshop.png";
 import zacharyworkshop from "assets/icons/zackaryworkshop.jpg";
+import darioworkshop from "assets/icons/Workshopwithdario.png";
+import rosieworkshop from "assets/icons/workshopwithrosie.png";
 import {
   Accordion,
   AccordionContent,
@@ -81,15 +83,31 @@ export default function DashboardEvents() {
                 date={upcomingevents[2].date}
                 description={upcomingevents[2].description}
                 location={upcomingevents[2].location}
-                imageD={gamenights}
-                imageM={gamenights}
+                imageD={darioworkshop}
+                imageM={darioworkshop}
               />
-
               <EventCard
                 title={upcomingevents[3].title}
                 date={upcomingevents[3].date}
                 description={upcomingevents[3].description}
                 location={upcomingevents[3].location}
+                imageD={rosieworkshop}
+                imageM={rosieworkshop}
+              />
+              <EventCard
+                title={upcomingevents[4].title}
+                date={upcomingevents[4].date}
+                description={upcomingevents[4].description}
+                location={upcomingevents[4].location}
+                imageD={gamenights}
+                imageM={gamenights}
+              />
+
+              <EventCard
+                title={upcomingevents[5].title}
+                date={upcomingevents[5].date}
+                description={upcomingevents[5].description}
+                location={upcomingevents[5].location}
                 imageD={wgj26}
                 imageM={wgj26}
               />
