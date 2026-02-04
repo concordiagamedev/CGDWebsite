@@ -29,6 +29,7 @@ import ZaidWorkshop from "public/assets/Events/zaidworkshop.jpg";
 import zacharyworkshop from "assets/icons/zackaryworkshop.jpg";
 import darioworkshop from "assets/icons/Workshopwithdario.png";
 import rosieworkshop from "assets/icons/workshopwithrosie.png";
+import logozaidworkshop from "assets/icons/zaidworkshop.png";
 import {
   Accordion,
   AccordionContent,
@@ -67,8 +68,8 @@ export default function DashboardEvents() {
                 date={upcomingevents[0].date}
                 description={upcomingevents[0].description}
                 location={upcomingevents[0].location}
-                imageD={ZaidWorkshop}
-                imageM={ZaidWorkshop}
+                imageD={logozaidworkshop}
+                imageM={logozaidworkshop}
               />
               <EventCard
                 title={upcomingevents[1].title}
