@@ -25,7 +25,7 @@ import wgj26 from "assets/icons/wgj26.png";
 import lizard25 from "assets/icons/lizardlounge25.png";
 import meetgeek25 from "assets/icons/meetgeek25.png";
 import gamenightoct2025 from "assets/icons/gamenightoct.jpg";
-import ZaidWorkshop from "assets/icons/zaidworkshop.png";
+import ZaidWorkshop from "public/assets/Events/zaidworkshop.jpg";
 import zacharyworkshop from "assets/icons/zackaryworkshop.jpg";
 import darioworkshop from "assets/icons/Workshopwithdario.png";
 import rosieworkshop from "assets/icons/workshopwithrosie.png";
