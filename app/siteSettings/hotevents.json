@@ -1,10 +1,44 @@
+ 
+
 [
-    {
+     {
         "id": 0,
-        "title": "Zaid Workshop: Introduction to Shaders",
-        "date": "February 6, 2026",
-        "img": "assets/Events/zaidworkshop.jpg",
-        "link": "/Events",
-        "target": "_self"
+        "title": "Introduction to Shaders: Zaid's Workshop",
+        "date": "Febuary 6, 2026",
+        "img": "assets/NewEvents/Zaid-workshop.jpg",
+        "link": "",
+        "target": ""
+    },
+    {
+        "id": 1,
+        "title": "Procedural Environment Generation: Zachary's Workshop",
+        "date": "Febuary 11-18-25, 2026",
+        "img": "assets/NewEvents/Zach-workshop.jpg",
+        "link": "",
+        "target": ""
+    },
+    {
+        "id": 2,
+        "title": "Workshop with Dario",
+        "date": "Febuary 27, 2026",
+        "img": "assets/NewEvents/Dario-workshop.png",
+        "link": "",
+        "target": ""
+    },
+    {
+        "id": 3,
+        "title": "Shrekathon",
+        "date": "March 2, 2026",
+        "img": "",
+        "link": "",
+        "target": ""
+    },
+    {
+        "id": 4,
+        "title": "Workshop with Rosie",
+        "date": "March 18, 2026",
+        "img": "assets/NewEvents/Rosie-workshop.png",
+        "link": "",
+        "target": ""
     }
 ]
