@@ -29,6 +29,7 @@ import ZaidWorkshop from "assets/icons/zaidworkshop.png";
 import zacharyworkshop from "assets/icons/zackaryworkshop.jpg";
 import darioworkshop from "assets/icons/Workshopwithdario.png";
 import rosieworkshop from "assets/icons/workshopwithrosie.png";
+import shrekathon from "assets/icons/Shrekathon.png";
 import {
   Accordion,
   AccordionContent,
@@ -108,8 +109,8 @@ export default function DashboardEvents() {
                 date={upcomingevents[5].date}
                 description={upcomingevents[5].description}
                 location={upcomingevents[5].location}
-                imageD={wgj26}
-                imageM={wgj26}
+                imageD={shrekathon}
+                imageM={shrekathon}
               />
 
             </AccordionContent>
