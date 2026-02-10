@@ -30,6 +30,7 @@ import zacharyworkshop from "assets/icons/zackaryworkshop.jpg";
 import darioworkshop from "assets/icons/Workshopwithdario.png";
 import rosieworkshop from "assets/icons/workshopwithrosie.png";
 import shrekathon from "assets/icons/Shrekathon.png";
+import gamenight from "assets/icons/gamenight-feb.png";
 import {
   Accordion,
   AccordionContent,
@@ -100,8 +101,8 @@ export default function DashboardEvents() {
                 date={upcomingevents[4].date}
                 description={upcomingevents[4].description}
                 location={upcomingevents[4].location}
-                imageD={gamenights}
-                imageM={gamenights}
+                imageD={gamenight}
+                imageM={gamenight}
               />
 
               <EventCard
