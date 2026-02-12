@@ -1,6 +1,13 @@
 [
   {
     "id": 0,
+    "title": "Learnathon ",
+    "date": "November 7-9, 2025",
+    "description": "Hosted by Concordia Game Dev Club, Learnathon is a hands-on event where participants can explore the basics of game development and start building their own projects. Click on the title for more info.",
+    "location": "Click on the title for more information."
+  },
+  {
+    "id": 1,
     "title": "Game Night",
     "date": "October 3rd, 2025",
     "location": "Visualization studio, Webster Library 3rd floor, Concordia SGW",
@@ -8,22 +15,21 @@
     "theme": "Mario Kart World - race, drift, and dodge those shells!, /nSuper Smash Bros. Ultimate - battle it out for glory!"
   },
   {
-    "id": 1,
+    "id": 2,
     "title": "Lizard Lounge",
     "date": "October 3rd, 2025",
     "location": "Reggies Bar",
     "description": "A social event hosted by Space Concordia in collaboration with the Concordia Game Development Club, themed around the Halo"
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "Meet & Geek",
     "date": "September 19th, 2025",
     "location": "JMSB 9th floor, Concordia SGW",
     "description": "Hosted by Concordia Game Developement Club, a social event where students can come together and meet the CGD team, learn about the club, and play some games!"
-    
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Game Night",
     "date": "August 31st, 2025",
     "location": "Visualization studio, Webster Library 3rd floor, Concordia SGW",
@@ -31,7 +37,7 @@
     "theme": "Mario Kart World - race, drift, and dodge those shells!, /nSuper Smash Bros. Ultimate - battle it out for glory!"
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Global Game Jam 2025",
     "jampage": "https://itch.io/jam/cgd-ggj-25",
     "date": "Jan 20-26, 2025",
@@ -62,7 +68,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "Global Game Jam 2024",
     "jampage": "https://itch.io/jam/cgd-jam-2024",
     "date": "Jan 26-28, 2024",
@@ -93,7 +99,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "CGD Jam Fall 2023",
     "jampage": "https://itch.io/jam/cgd-jam-2023",
     "date": "Nov 3-5, 2023",
@@ -124,14 +130,14 @@
     ]
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "Megamigs 2022",
     "date": "Oct 19-22, 2022",
     "description": "Megamigs is a 4-day event that brings together the video game industry and the public. It is a unique opportunity to meet and exchange with the people who make the video game industry shine.",
     "location": "Palais des Congrès de Montréal"
   },
   {
-    "id": 8,
+    "id": 9,
     "title": "CGD Jam Fall 2022",
     "jampage": "https://itch.io/jam/cgd-jam",
     "date": "Oct 14-16, 2022",

@@ -7,12 +7,6 @@
             "img": "assets/staff/hyhy.jpg"
         },
         {
-            "name": "Alexander “Saluggi” Salucci",
-            "position": "Events Coordinator",
-            "id": "14",
-            "img": "assets/staff/salluci.jpg"
-        },
-        {
             "name": "Minh Le",
             "position": "Events Coordinator",
             "id": "14",
@@ -23,6 +17,12 @@
             "position": "Events Coordinator",
             "id": "14",
             "img": "assets/staff/zaid.jpg"
+        },
+        {
+            "name": "Aditya Lingwal",
+            "position": "Events Member",
+            "id": "17",
+            "img": "assets/staff/pawelC-pink5.jpg"
         }
     ]
 }
