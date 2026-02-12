@@ -1,0 +1,16 @@
+{
+    "finance": [
+        {
+            "name": "Rimaza",
+            "position": "Head of Finance & Instagram Moderator",
+            "id": "12",
+            "img": "assets/staff/rimaza.jpeg"
+        },
+        {
+            "name": "Zaid Minhas",
+            "position": "Finance Member and Event Coordinator",
+            "id": "12",
+            "img": "assets/staff/zaid.jpg"
+        }
+    ]
+}

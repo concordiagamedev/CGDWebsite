@@ -160,10 +160,11 @@ export default function DashboardEvents() {
                 imageD={gamenightaugust25}
                 imageM={gamenightaugust25}
                 eventpictures={[
-                  "assets/events/gnsep25-1.jpg",
-                  "assets/events/gnsep25-2.jpg",
-                  "assets/events/gnsep25-3.jpg",
-                ]}
+                      "/assets/Events/gnsep25-1.jpg",
+                      "/assets/Events/gnsep25-2.jpg",
+                      "/assets/Events/gnsep25-3.jpg",
+                      ]}
+
               />
               <GameJamEvent
                 title={events[5].title}
