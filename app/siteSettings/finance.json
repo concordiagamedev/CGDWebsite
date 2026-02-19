@@ -1,34 +1,16 @@
 {
     "finance": [
         {
-            "name": "Ana Rostam",
-            "position": "Head of Tech",
+            "name": "Rimaza",
+            "position": "Head of Finance & Instagram Moderator",
             "id": "12",
-            "img": "assets/staff/ana.jpg"
+            "img": "assets/staff/rimaza.jpeg"
         },
         {
-            "name": "Jassim hussain Mahmood",
-            "position": "Developer",
-            "id": "13",
-            "img": "assets/staff/jassim.jpg"
-        },
-        {
-            "name": "Arman Emami",
-            "position": "Developer",
-            "id": "14",
-            "img": "assets/staff/armanEmami.jpg"
-        },
-        {
-            "name": "Nicolas Boyer",
-            "position": "Developer",
-            "id": "15",
-            "img": "assets/staff/nicolas.jpg"
-        },
-        {
-            "name": "Alyssa Garofalo",
-            "position": "Developer",
-            "id": "16",
-            "img": "assets/staff/pawelC-pink5.jpg"
+            "name": "Zaid Minhas",
+            "position": "Finance Member and Event Coordinator",
+            "id": "12",
+            "img": "assets/staff/zaid.jpg"
         }
     ]
 }
