@@ -35,6 +35,12 @@
             "position": "Graphic Designer",
             "id": "18",
             "img": "assets/staff/emily.jpg"
+        },
+        {
+            "name": "Ali Kazemidehaghi",
+            "position": "Graphic Designer",
+            "id": "18",
+            "img": "assets/staff/Ali.jpg"
         }
     ]
 }
