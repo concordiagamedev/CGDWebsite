@@ -3,44 +3,50 @@
     {
       "name": "Adam Farahat",
       "position": "President",
-      "id": "8",
+      "id": "1",
       "img": "assets/staff/adam.jpg"
-    },
-    {
-      "name": "Angelica",
-      "position": "Secretary",
-      "id": "6",
-      "img": "assets/staff/angelica.jpeg"
     },
     {
       "name": "Charles Partous",
       "position": "Chair",
-      "id": "1",
+      "id": "101",
       "img": "assets/staff/charles.jpg"
     },
     {
       "name": "Aria Tessler",
       "position": "Chair",
-      "id": "2",
+      "id": "102",
       "img": "assets/staff/aria.jpg"
     },
     {
       "name": "Keven Vaillancourt",
-      "position": "Chair & LinkedIn Moderator",
-      "id": "14",
+      "position": "Chair",
+      "id": "103",
       "img": "assets/staff/ough.png"
     },
     {
       "name": "Maxx Freund",
       "position": "Chair",
-      "id": "10",
+      "id": "104",
       "img": "assets/staff/maxx.png"
     },
     {
-            "name": "Jordan Bossou",
-            "position": "Chair",
-            "id": "11",
-            "img": "assets/staff/jo.jpg"
+      "name": "Jordan Bossou",
+      "position": "Chair",
+      "id": "105",
+      "img": "assets/staff/jo.jpg"
+    },
+    {
+      "name": "Sudhansu Mohanty",
+      "position": "Chair",
+      "id": "106",
+      "img": "assets/staff/Sudhansu.jpg"
+    },
+    {
+      "name": "Peter Tian",
+      "position": "Chair",
+      "id": "107",
+      "img": "assets/staff/Peter.jpg"
     }
   ]
 }
