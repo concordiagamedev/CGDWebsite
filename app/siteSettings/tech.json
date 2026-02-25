@@ -7,21 +7,27 @@
             "img": "assets/staff/ana.jpg"
         },
         {
-            "name": "Arman Emami",
+            "name": "Jassim hussain Mahmood",
             "position": "Developer",
             "id": "13",
-            "img": "assets/staff/arman.jpg"
+            "img": "assets/staff/Jassim.jpg"
+        },
+        {
+            "name": "Arman Emami",
+            "position": "Developer",
+            "id": "14",
+            "img": "assets/staff/armanEmami.jpg"
         },
         {
             "name": "Nicolas Boyer",
             "position": "Developer",
-            "id": "14",
-            "img": "assets/staff/nicolas.jpg"
+            "id": "15",
+            "img": "assets/staff/Nicolas.jpg"
         },
         {
             "name": "Alyssa Garofalo",
             "position": "Developer",
-            "id": "15",
+            "id": "16",
             "img": "assets/staff/pawelC-pink5.jpg"
         }
     ]
