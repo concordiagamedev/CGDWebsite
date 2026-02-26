@@ -1,43 +1,29 @@
 [
   {
     "id": 0,
-    "title": "Zaid Workshop: Introduction to Shaders",
-    "date": "Feb 6th, 5 to 8 PM ",
-    "description": " In this workshop, we will cover the fundamentals of shaders, including how to write and implement them in your projects. By the end of the workshop, you will have a solid understanding of shaders and be able to create your own custom effects.",
-    "location": "H962 Hall building, Sir George William Campus, 1455 Boul. de Maissoneuve O."
-  },
-  {
-    "id": 1,
     "title": "Procedural Generation with MGD President Zachary Shade",
     "date": " Feb 11, 18 & 25th, 6:00-8:30 PM",
     "description": "Learn how to generate dynamic environments using procedural techniques. Perfect if your into game dev, world-building, or want to make your scenes feel alive",
     "location": "Room H962, Hall Building 1455 Blvd. de Maisonneuve Ouest, Sir George William Campus"
   },
   {
-    "id": 2,
+    "id": 1,
     "title": "Workshop wtih Dario",
     "date": "February 2026",
     "description": "Upcoming Workshop",
     "location": "To be Announced"
   },
   {
-    "id": 3,
+    "id": 2,
     "title": "Worshop with Rosie",
     "date": "March 2026",
     "description": "Upcoming Workshop",
     "location": "To be Announced"
   },
   {
-    "id": 4,
-    "title": "Game Nights",
-    "date": "February 20 2026",
-    "location": "Visualization studio, Webster Library 3rd floor, Concordia SGW",
-    "description": "Hosted by Concordia Game Dev Club and SCS Concordia, Game Night is an event where students can come together to play games, meet new people, and have fun! All are welcome to join us for an evening of fun and games!"
-  },
-  {
-    "id": 5,
+    "id": 3,
     "title": "Shrekathon",
-    "date": "March 2, 2026",
+    "date": "March 20th - 22nd 2026",
     "description": "Hosted by Concordia Game Dev Club, Shrekathon is a 48-hour event GameJam. ",
     "location": "To be Announced"
   }
