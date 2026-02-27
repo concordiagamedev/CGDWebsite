@@ -25,7 +25,7 @@ import meetgeek25 from "assets/icons/meetgeek25.png";
 import gamenightoct2025 from "assets/icons/gamenightoct.jpg";
 import ZaidWorkshop from "assets/icons/zaidworkshop.png";
 import zacharyworkshop from "assets/icons/zackaryworkshop.jpg";
-import darioworkshop from "assets/icons/workshopwithdario.png";
+import darioworkshop from "assets/icons/Dario Workshop.png";
 import rosieworkshop from "assets/icons/workshopwithrosie.png";
 import shrekathon from "assets/icons/Shrekathonjam.jpg";
 import gamenight from "assets/icons/gamenight-feb.png";
@@ -158,10 +158,10 @@ export default function DashboardEvents() {
                 imageD={gamenightaugust25}
                 imageM={gamenightaugust25}
                 eventpictures={[
-                      "/assets/Events/gnsep25-1.jpg",
-                      "/assets/Events/gnsep25-2.jpg",
-                      "/assets/Events/gnsep25-3.jpg",
-                      ]}
+                  "/assets/Events/gnsep25-1.jpg",
+                  "/assets/Events/gnsep25-2.jpg",
+                  "/assets/Events/gnsep25-3.jpg",
+                ]}
 
               />
               <GameJamEvent
