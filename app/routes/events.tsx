@@ -108,6 +108,11 @@ export default function DashboardEvents() {
                 location={events[2].location}
                 imageD={gamenight}
                 imageM={gamenight}
+                eventpictures={[
+                  "/assets/Events/Gamenight1.jpg",
+                  "/assets/Events/Gamenight2.jpg",
+                  "/assets/Events/Gamenight3.jpg",
+                ]}
               />
               <EventCard
                 title={events[3].title}
