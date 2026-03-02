@@ -26,7 +26,7 @@ import gamenightoct2025 from "assets/icons/gamenightoct.jpg";
 import ZaidWorkshop from "assets/icons/zaidworkshop.png";
 import zacharyworkshop from "assets/icons/zackaryworkshop.jpg";
 import darioworkshop from "assets/icons/Dario Workshop.png";
-import rosieworkshop from "assets/icons/workshopwithrosie.png";
+import rosieworkshop from "assets/icons/Rose Workshop.png";
 import shrekathon from "assets/icons/Shrekathonjam.jpg";
 import gamenight from "assets/icons/gamenight-feb.png";
 import {
