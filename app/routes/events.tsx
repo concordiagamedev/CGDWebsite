@@ -67,14 +67,6 @@ export default function DashboardEvents() {
                 date={upcomingevents[0].date}
                 description={upcomingevents[0].description}
                 location={upcomingevents[0].location}
-                imageD={rosieworkshop}
-                imageM={rosieworkshop}
-              />
-              <EventCard
-                title={upcomingevents[1].title}
-                date={upcomingevents[1].date}
-                description={upcomingevents[1].description}
-                location={upcomingevents[1].location}
                 imageD={shrekathon}
                 imageM={shrekathon}
               />

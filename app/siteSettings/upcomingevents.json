@@ -1,13 +1,6 @@
 [
   {
     "id": 0,
-    "title": "Worshop with Rosie",
-    "date": "March 18th 2026 - 6:00 PM",
-    "description": "This workshop will be hosted by Rosie and will cover the basic of Unreal engine. It will be held in person and will be open to all students. The workshop will cover the basics of Unreal engine, including how to create a project, how to use the editor, and how to create a simple game.",
-    "location": "Hall building 962"
-  },
-  {
-    "id": 1,
     "title": "Shrekathon",
     "date": "March 20th - 22nd 2026",
     "description": "Hosted by Concordia Game Dev Club, Shrekathon is a 48-hour event GameJam. ",
