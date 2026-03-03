@@ -26,7 +26,7 @@ import gamenightoct2025 from "assets/icons/gamenightoct.jpg";
 import ZaidWorkshop from "assets/icons/zaidworkshop.png";
 import zacharyworkshop from "assets/icons/zackaryworkshop.jpg";
 import darioworkshop from "assets/icons/Dario Workshop.png";
-import rosieworkshop from "assets/icons/workshopwithrosie.png";
+import rosieworkshop from "assets/icons/Rose Workshop.png";
 import shrekathon from "assets/icons/Shrekathonjam.jpg";
 import gamenight from "assets/icons/gamenight-feb.png";
 import {
@@ -67,14 +67,6 @@ export default function DashboardEvents() {
                 date={upcomingevents[0].date}
                 description={upcomingevents[0].description}
                 location={upcomingevents[0].location}
-                imageD={rosieworkshop}
-                imageM={rosieworkshop}
-              />
-              <EventCard
-                title={upcomingevents[1].title}
-                date={upcomingevents[1].date}
-                description={upcomingevents[1].description}
-                location={upcomingevents[1].location}
                 imageD={shrekathon}
                 imageM={shrekathon}
               />
@@ -108,6 +100,11 @@ export default function DashboardEvents() {
                 location={events[2].location}
                 imageD={gamenight}
                 imageM={gamenight}
+                eventpictures={[
+                  "/assets/Events/Gamenight1.jpg",
+                  "/assets/Events/Gamenight2.jpg",
+                  "/assets/Events/Gamenight3.jpg",
+                ]}
               />
               <EventCard
                 title={events[3].title}

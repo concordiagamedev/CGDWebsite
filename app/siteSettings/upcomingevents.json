@@ -1,13 +1,6 @@
 [
   {
     "id": 0,
-    "title": "Worshop with Rosie",
-    "date": "March 2026",
-    "description": "Upcoming Workshop",
-    "location": "To be Announced"
-  },
-  {
-    "id": 1,
     "title": "Shrekathon",
     "date": "March 20th - 22nd 2026",
     "description": "Hosted by Concordia Game Dev Club, Shrekathon is a 48-hour event GameJam. ",
