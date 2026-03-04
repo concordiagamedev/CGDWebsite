@@ -32,13 +32,5 @@
         "img": "assets/NewEvents/Shrekathon_hrz.png",
         "link": "/events",
         "target": ""
-    },
-    {
-        "id": 4,
-        "title": "Workshop with Rosie",
-        "date": "March 18, 2026",
-        "img": "assets/NewEvents/rosie-workshop.png",
-        "link": "/events",
-        "target": ""
     }
 ]
