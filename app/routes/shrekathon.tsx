@@ -1,5 +1,6 @@
 import Timetable from "../components/shrekathon/timetable";
 import Venue from "../components/shrekathon/venue";
+import Judging from "../components/shrekathon/judgingprizes"
 
 export default function Shrekathon() {
   return (
@@ -9,6 +10,7 @@ export default function Shrekathon() {
       </h1>
         <Timetable />
         <Venue />
+        <Judging />
     </div>
     );
 }
