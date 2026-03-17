@@ -32,7 +32,7 @@ export default function Timetable() {
                       <span className="w-3 h-3 bg-white border-[3px] border-dark-purple rounded-full"></span>
                     </div>
 
-                    <div className="pl-4 text-gray-700 whitespace-pre-line">
+                    <div className="pl-4 text-gray-700">
                       {event.title}
                     </div>
                   </li>
@@ -45,4 +45,3 @@ export default function Timetable() {
     </section>
   );
 }
-
