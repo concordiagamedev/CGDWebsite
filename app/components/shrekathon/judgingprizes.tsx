@@ -10,7 +10,7 @@ export default function Judging() {
   ]
 
   const awardCategories = [
-    { name: "Overall Best Game (1st place only)", prize: "Winner Pins & Humble Bundle" },
+    { name: "Overall Best Game (1st place only)", prize: "Winner Pins & Humble Bundle?" },
     { name: "Best Theme Integration", prize: "Winner Pins" },
     { name: "Best Technical Innovation", prize: "Winner Pins" },
     { name: "Best Art Direction", prize: "Winner Pins" },
@@ -100,7 +100,14 @@ export default function Judging() {
               </li>
             ))}
           </ul>
-          <div>
+          
+
+
+          <div className="mt-16 flex-col items-center">
+            <h2 className="text-2xl font-semibold text-dark-purple mb-2">
+              🏆 Top 3 Winners
+            </h2>
+
             <svg width="100%" viewBox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
 
               {/* 2nd place */}
