@@ -23,6 +23,12 @@ export default function Judging() {
     { name: "Best Art Direction", winner: "To Be Announced" },
   ];
 
+  const podiumPlaces = [
+    { place: "2nd", x: 140, y: 160, height: 130, color: "bg-gray-300" },
+    { place: "1st", x: 300, y: 100, height: 190, color: "bg-yellow-400" },
+    { place: "3rd", x: 460, y: 210, height: 80,  color: "bg-orange-400" },
+  ];
+
   return (
     <section
       id="gameshowcase-judging"
@@ -78,7 +84,7 @@ export default function Judging() {
           </ul>
 
           <p className="text-sm text-gray-600 mt-4 italic">
-
+              <img src="/assets/Shrekathon/ShrekathonPin.png" alt="Pin" className="w-64 h-auto"></img>
           </p>
         </div>
 
@@ -94,6 +100,40 @@ export default function Judging() {
               </li>
             ))}
           </ul>
+          <div>
+            <svg width="100%" viewBox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
+
+              {/* 2nd place */}
+              <g className="group cursor-pointer">
+                <rect x="140" y="170" width="140" height="130" rx="4" fill="#D3D1C7" stroke="#5F5E5A" strokeWidth="0.5"/>
+                <rect x="150" y="175" width="120" height="30" rx="4" fill="white" stroke="#ccc" strokeWidth="0.5"/>
+                <text x="210" y="191" textAnchor="middle" dominantBaseline="central" fontSize="12">To Be Announced</text>
+              </g>
+
+              {/* 1st place */}
+              <g className="group cursor-pointer">
+                <rect x="300" y="110" width="140" height="190" rx="4" fill="#FAC775" stroke="#BA7517" strokeWidth="0.5"/>
+                <rect x="310" y="115" width="120" height="30" rx="4" fill="white" stroke="#ccc" strokeWidth="0.5"/>
+                <text x="370" y="131" textAnchor="middle" dominantBaseline="central" fontSize="12">To Be Announced</text>
+              </g>
+
+              {/* 3rd place */}
+              <g className="group cursor-pointer">
+                <rect x="460" y="220" width="140" height="80" rx="4" fill="#F5C4B3" stroke="#993C1D" strokeWidth="0.5"/>
+                <rect x="470" y="225" width="120" height="30" rx="4" fill="white" stroke="#ccc" strokeWidth="0.5"/>
+                <text x="530" y="241" textAnchor="middle" dominantBaseline="central" fontSize="12">To Be Announced</text>
+              </g>
+
+              {/* Base */}
+              <rect x="120" y="300" width="500" height="12" rx="3" fill="#ccc"/>
+
+              {/* Labels */}
+              <text x="210" y="158" textAnchor="middle" fontSize="12">2nd place</text>
+              <text x="370" y="98" textAnchor="middle" fontSize="12">1st place</text>
+              <text x="530" y="208" textAnchor="middle" fontSize="12">3rd place</text>
+            </svg>
+          </div>
+
         </div>
       </div>
     </section>
