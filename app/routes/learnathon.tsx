@@ -2,8 +2,8 @@ import type { MetaFunction } from "@remix-run/node";
 import cgdpink from "assets/icons/cgd-transp-pink.png";
 import learnathonBanner from "public/assets/Learnathon/learnathon.png";
 import { useState } from "react";
-import MentorsSection from "~/components/learnathon/MentorCard";
-import ShadowerSection from "~/components/learnathon/ShadowerCard";
+import MentorsSection from "~/components/Learnathon/MentorCard";
+import ShadowerSection from "~/components/Learnathon/ShadowerCard";
 
 export const meta: MetaFunction = () => {
   return [

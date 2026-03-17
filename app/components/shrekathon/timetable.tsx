@@ -1,5 +1,5 @@
 import react from 'react';
-import timetable from "~/siteSettings/timetable-Shrekathon.json";
+import timetable from "~/siteSettings/timetable-shrekathon.json";
 
 export default function Timetable() {
   return (
@@ -45,5 +45,4 @@ export default function Timetable() {
     </section>
   );
 }
-
 
