@@ -75,17 +75,30 @@ export default function Judging() {
             Winning Categories & Prizes
           </h3>
 
-          <ul className="space-y-2 text-gray-800">
-            {awardCategories.map((award) => (
-              <li key={award.name}>
-                • {award.name} – {award.prize}
-              </li>
-            ))}
-          </ul>
+          <div className="mt-4 flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+            <ul className="space-y-2 text-gray-800 md:max-w-xl">
+              {awardCategories.map((award) => (
+                <li key={award.name}>
+                  • {award.name} – {award.prize}
+                </li>
+              ))}
+            </ul>
 
-          <p className="text-sm text-gray-600 mt-4 italic">
-              <img src="/assets/Shrekathon/ShrekathonPin.png" alt="Pin" className="w-64 h-auto"></img>
-          </p>
+            <div className="flex justify-center md:justify-end md:min-w-[360px]">
+              <div className="relative h-[220px] w-[280px] sm:h-[240px] sm:w-[320px] md:h-[280px] md:w-[360px]">
+                <img
+                  src="/assets/Shrekathon/winnerprize.png"
+                  alt="Winner prize"
+                  className="absolute bottom-0 right-0 w-56 h-auto animate-float-soft-delayed sm:w-60 md:w-72"
+                />
+                <img
+                  src="/assets/Shrekathon/ShrekathonPin.PNG"
+                  alt="Shrekathon winner pin"
+                  className="absolute left-0 top-2 z-10 w-32 h-auto animate-float-soft sm:left-1 sm:top-0 sm:w-36 md:left-2 md:-top-2 md:w-40"
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="relative border-l-4 border-dark-purple pl-6 ml-2">
@@ -146,4 +159,3 @@ export default function Judging() {
     </section>
   );
 }
-
