@@ -10,8 +10,7 @@ import fb from "assets/icons/facebook.svg";
 import itch from "assets/icons/itch.svg";
 import ln from "assets/icons/linked.svg";
 import linktree from "assets/icons/linktree.svg";
-import { RiMenuFill } from "@react-icons/all-files/ri/RiMenuFill.js";
-import { RiCloseFill } from "@react-icons/all-files/ri/RiCloseFill.js";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -112,9 +111,9 @@ const Navbar = () => {
             className="hamburger flex self-center mr-4 md:hidden"
           >
             {open ? (
-              <RiCloseFill className="w-10 h-10 p-2" />
+              <X className="w-10 h-10 p-2" />
             ) : (
-              <RiMenuFill className="w-10 h-10 p-2" />
+              <Menu className="w-10 h-10 p-2" />
             )}
           </div>
         </div>
