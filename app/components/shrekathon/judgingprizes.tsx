@@ -94,7 +94,7 @@ export default function Judging() {
                 <img
                   src="/assets/Shrekathon/ShrekathonPin.PNG"
                   alt="Shrekathon winner pin"
-                  className="absolute left-0 top-2 z-10 w-32 h-auto animate-float-soft sm:left-1 sm:top-0 sm:w-36 md:left-2 md:-top-2 md:w-40"
+                  className="absolute left-0 top-2  w-32 h-auto animate-float-soft sm:left-1 sm:top-0 sm:w-36 md:left-2 md:-top-2 md:w-40"
                 />
               </div>
             </div>
@@ -102,55 +102,62 @@ export default function Judging() {
         </div>
 
         <div className="relative border-l-4 border-dark-purple pl-6 ml-2">
-          <h3 className="text-2xl font-semibold text-dark-purple mb-2">
+          {/* <h3 className="text-2xl font-semibold text-dark-purple mb-2">
             Winners
-          </h3>
+          </h3> */}
 
-          <ul className="space-y-2 text-gray-800">
+          {/* <ul className="space-y-2 text-gray-800">
             {winners.map((winners) => (
               <li key={winners.name}>
                 • {winners.name} – {winners.winner}
               </li>
             ))}
-          </ul>
+          </ul> */}
           
 
 
           <div className="mt-16 flex-col items-center">
             <h2 className="text-2xl font-semibold text-dark-purple mb-2">
-              🏆 Top 3 Winners
+              🏆 Top Winners
             </h2>
 
             <svg width="100%" viewBox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
 
               {/* 2nd place */}
               <g className="group cursor-pointer">
-                <rect x="140" y="170" width="140" height="130" rx="4" fill="#D3D1C7" stroke="#5F5E5A" strokeWidth="0.5"/>
-                <rect x="150" y="175" width="120" height="30" rx="4" fill="white" stroke="#ccc" strokeWidth="0.5"/>
-                <text x="210" y="191" textAnchor="middle" dominantBaseline="central" fontSize="12">To Be Announced</text>
+                <rect x="45" y="170" width="140" height="130" rx="4" fill="#D3D1C7" stroke="#5F5E5A" strokeWidth="0.5"/>
+                <rect x="58" y="175" width="120" height="30" rx="4" fill="white" stroke="#ccc" strokeWidth="0.5"/>
+                <text x="117" y="191" textAnchor="middle" dominantBaseline="central" fontSize="12">To Be Announced</text>
               </g>
 
               {/* 1st place */}
               <g className="group cursor-pointer">
-                <rect x="300" y="110" width="140" height="190" rx="4" fill="#FAC775" stroke="#BA7517" strokeWidth="0.5"/>
-                <rect x="310" y="115" width="120" height="30" rx="4" fill="white" stroke="#ccc" strokeWidth="0.5"/>
-                <text x="370" y="131" textAnchor="middle" dominantBaseline="central" fontSize="12">To Be Announced</text>
+                <rect x="210" y="110" width="140" height="190" rx="4" fill="#FAC775" stroke="#BA7517" strokeWidth="0.5"/>
+                <rect x="220" y="115" width="120" height="30" rx="4" fill="white" stroke="#ccc" strokeWidth="0.5"/>
+                <text x="280" y="131" textAnchor="middle" dominantBaseline="central" fontSize="12">To Be Announced</text>
               </g>
 
               {/* 3rd place */}
               <g className="group cursor-pointer">
-                <rect x="460" y="220" width="140" height="80" rx="4" fill="#F5C4B3" stroke="#993C1D" strokeWidth="0.5"/>
-                <rect x="470" y="225" width="120" height="30" rx="4" fill="white" stroke="#ccc" strokeWidth="0.5"/>
-                <text x="530" y="241" textAnchor="middle" dominantBaseline="central" fontSize="12">To Be Announced</text>
+                <rect x="370" y="170" width="140" height="130" rx="4" fill="#F5C4B3" stroke="#993C1D" strokeWidth="0.5"/>
+                <rect x="380" y="175" width="120" height="30" rx="4" fill="white" stroke="#ccc" strokeWidth="0.5"/>
+                <text x="440" y="191" textAnchor="middle" dominantBaseline="central" fontSize="12">To Be Announced</text>
+              </g>
+              {/* 4th place*/}
+              <g className="group cursor-pointer">
+                <rect x="530" y="170" width="140" height="130" rx="4" fill="#F5C4B3" stroke="#993C1D" strokeWidth="0.5"/>
+                <rect x="540" y="175" width="120" height="30" rx="4" fill="white" stroke="#ccc" strokeWidth="0.5"/>
+                <text x="600" y="191" textAnchor="middle" dominantBaseline="central" fontSize="12">To Be Announced</text>
               </g>
 
               {/* Base */}
-              <rect x="120" y="300" width="500" height="12" rx="3" fill="#ccc"/>
+              <rect x="30" y="300" width="730" height="12" rx="3" fill="#ccc"/>
 
               {/* Labels */}
-              <text x="210" y="158" textAnchor="middle" fontSize="12">2nd place</text>
-              <text x="370" y="98" textAnchor="middle" fontSize="12">1st place</text>
-              <text x="530" y="208" textAnchor="middle" fontSize="12">3rd place</text>
+              <text x="117" y="158" textAnchor="middle" fontSize="12">Best Technical Innovation</text>
+              <text x="280" y="98" textAnchor="middle" fontSize="12">Overall Best Game</text>
+              <text x="440" y="158" textAnchor="middle" fontSize="12">Best Theme Integration</text>
+              <text x="600" y="158" textAnchor="middle" fontSize="12">Best Art Direction</text>
             </svg>
           </div>
 
