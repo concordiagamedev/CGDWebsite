@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Melisa Panaccione & Zaid Minhas",
+        "role": "Software Engineering Master’s Student at Concordia University * Graduate Student at Concordia University",
+        "image": "assets/Learnathon/zaid-melisa.jpg",
+        "favoriteGame": "Poptropica",
+        "workshop": "Customization game focused on fashion, room decor, and creative design."
+    },
+    {
+        "name": "Youssef",
+        "role": "Software Engineering Student at Mcgill University",
+        "image": "assets/Learnathon/youssef.JPG",
+        "favoriteGame": "",
+        "workshop": ""
+    },
+    {
+        "name": "Massimo Gauthier",
+        "role": "Founder, Indie Game Studio",
+        "image": "assets/Learnathon/massimogauthier.png",
+        "favoriteGame": "Void Stranger",
+        "workshop": "Developing a 2D platformer with distinctive physics and stylized art — covering both programming and gameplay mechanics."
+    },
+    {
+        "name": "Taeif Ahmed",
+        "role": "VP of Social Events at SCS Concordia",
+        "image": "assets/Learnathon/taief.png",
+        "favoriteGame": "",
+        "workshop": ""
+    },
+    {
+        "name": "Simon A. Boudreault",
+        "role": "AAA Design Generalist",
+        "image": "assets/Learnathon/simonaboudreault.jpg",
+        "favoriteGame": "The Beginner’s Guide",
+        "workshop": "Hands-on sessions covering environment blocking, kitbashing, and visual prototyping techniques for immersive level design."
+    },
+    {
+        "name": "Brandon Toledano",
+        "role": "Bachelor of Engineering, Software Engineering at Concordia University",
+        "image": "assets/Learnathon/brandon.jpg",
+        "favoriteGame": "",
+        "workshop": ""
+    },
+    {
+        "name": "Kelly",
+        "role": "",
+        "image": "assets/Learnathon/kelly.png",
+        "favoriteGame": "",
+        "workshop": ""
+    },
+    {
+        "name": "Shubham",
+        "role": "",
+        "image": "assets/Learnathon/Shubham.png",
+        "favoriteGame": "",
+        "workshop": ""
+    },
+    {
+        "name": "Christopher Mathieu",
+        "role": "",
+        "image": "assets/Learnathon/Christopher Mathieu.png",
+        "favoriteGame": "",
+        "workshop": ""
+    },
+    {
+        "name": "Alexander Kosina",
+        "role": "",
+        "image": "assets/Learnathon/Alexander Kosina.png",
+        "favoriteGame": "",
+        "workshop": ""
+    }
+]

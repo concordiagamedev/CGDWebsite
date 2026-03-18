@@ -1,0 +1,26 @@
+[
+    {
+        "name": "To be Determined",
+        "logo": "/assets/sponsors/shrek-corp.png",
+        "link": "https://shrek.com",
+        "tier": "Gold"
+    },
+    {
+        "name": "To be Determined",
+        "logo": "/assets/sponsors/ogre-tech.png",
+        "link": "https://ogretech.com",
+        "tier": "Silver"
+    },
+    {
+        "name": "To be Determined",
+        "logo": "/assets/sponsors/swamp-studios.png",
+        "link": "https://swampstudios.com",
+        "tier": "Silver"
+    },
+    {
+        "name": "To be Determined",
+        "logo": "/assets/sponsors/donkey-media.png",
+        "link": "https://donkeymedia.com",
+        "tier": "Bronze"
+    }
+]
