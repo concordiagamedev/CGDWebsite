@@ -46,7 +46,8 @@ const SponsorsSection: React.FC = () => {
                         Sponsors & Collaborators
                     </h2>
                     <p className="mt-3 text-base text-gray-700 md:text-lg">
-                        Friendly faces helping make the swamp happen.
+
+                        
                     </p>
                 </div>
 

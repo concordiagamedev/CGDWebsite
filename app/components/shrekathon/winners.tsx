@@ -5,7 +5,7 @@ export default function Winners() {
       className="max-w-5xl mx-auto mb-20 text-center md:text-left font-corbert font-bold"
     >
       <h2 className="text-4xl font-bold text-dark-purple mb-6">
-        🏆 Top Winners
+        Top Winners 🏆
       </h2>
 
       <div className="max-w-4xl mx-auto">
