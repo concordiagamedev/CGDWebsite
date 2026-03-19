@@ -5,16 +5,12 @@ import { useState } from "react";
 import MentorsSection from "~/routes/MentorsCards";
 import SponsorsSection from "./SponsorCard";
 import CollabSection from "./CollabCard";
-
+import Judging from "../components/shrekathon/judgingprizes"
 
 export default function Shrekathon() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-
-
-
-
     <div className="min-h-screen pt-24 ">
 
       <header className="flex flex-col md:flex-row items-center justify-center gap-10 mb-24 max-w-6xl mx-auto">
@@ -84,6 +80,7 @@ export default function Shrekathon() {
 
       <Timetable />
       <Venue />
+      <Judging />
 
       <section
         id="shrekathon-rules"
