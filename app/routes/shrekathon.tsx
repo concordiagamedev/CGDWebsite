@@ -1,23 +1,33 @@
+import type { MetaFunction } from "@remix-run/node";
 import Timetable from "../components/shrekathon/timetable";
 import Venue from "../components/shrekathon/venue";
 import Shrekathonjam from "assets/icons/Shrekathonjam.jpg"
 import { useState } from "react";
 import MentorsSection from "~/routes/MentorsCards";
 import SponsorsSection from "./SponsorCard";
-import CollabSection from "./CollabCard";
 import Judging from "../components/shrekathon/judgingprizes"
+import Winners from "../components/shrekathon/winners";
 
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Shrekathon New | CGD" },
+    {
+      name: "description",
+      content: "Official Shrekathon New event page by Concordia Game Dev.",
+    },
+    { icon: "./favicon.ico" },
+  ];
+};
 export default function Shrekathon() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="min-h-screen pt-24 ">
-
+    <div className="relative px-4 py-32 bg-gradient-to-b from-bg-tl to-bg-br flex-grow overflow-hidden font-corbert">
       <header className="flex flex-col md:flex-row items-center justify-center gap-10 mb-24 max-w-6xl mx-auto">
         <div className="flex-shrink-0">
           <img
             src={Shrekathonjam}
-            alt="Shrekathon 2025 Poster"
+            alt="Shrekathon New Poster"
             className="w-64 md:w-80 rounded-2xl shadow-[0_10px_25px_rgba(0,0,0,0.35)] transform hover:scale-[1.03] transition-all duration-500 ease-out"
             onClick={() => setIsOpen(true)}
           />
@@ -25,16 +35,13 @@ export default function Shrekathon() {
 
         <div className="text-center md:text-left font-corbert font-bold">
           <h1 className="text-5xl sm:text-6xl font-bold text-dark-purple mb-4">
-            Shrekathon 2025
+            <span>Shrekathon 2026</span>
           </h1>
           <p className="text-xl text-gray-700 mb-2">
             March 20–22, 2026 • Concordia University, Montreal
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            March 20th 5:00 p.m. (EST)
-          </p>
-          <p className="text-lg text-gray-600 mb-6">
-            Check the Time Table for more details on the schedule of events down below!
+            March 20 at 5:00 p.m. - March 22 at 8:00 p.m. (EST)
           </p>
 
           <a
@@ -43,10 +50,29 @@ export default function Shrekathon() {
             rel="noopener noreferrer"
             className="inline-block bg-dark-purple hover:brightness-150 text-white text-lg font-semibold px-8 py-4 rounded-xl shadow-md transition"
           >
-            🎟️ Register on Zeffy (SOLD OUT)
+            🎟️ Register on Zeffy
           </a>
         </div>
       </header>
+
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+          onClick={() => setIsOpen(false)}
+        >
+          <img
+            src={Shrekathonjam}
+            alt="Shrekathon New Full Poster"
+            className="max-w-3xl w-11/12 rounded-2xl shadow-2xl transition-all duration-300"
+          />
+          <button
+            onClick={() => setIsOpen(false)}
+            className="absolute top-6 right-8 text-white text-3xl font-bold hover:text-gray-300"
+          >
+            ×
+          </button>
+        </div>
+      )}
 
       <section className="max-w-5xl mx-auto mb-20 text-center md:text-left font-corbert font-bold">
         <h2 className="text-3xl md:text-4xl font-bold text-dark-purple mb-6">
@@ -61,6 +87,9 @@ export default function Shrekathon() {
 
         </p>
       </section>
+
+      <Venue />
+      <Timetable />
 
       <section className="max-w-5xl mx-auto mb-24 text-center md:text-left font-corbert font-bold">
         <h2 className="text-3xl md:text-4xl font-bold text-dark-purple mb-6">
@@ -77,14 +106,9 @@ export default function Shrekathon() {
       </section>
       <MentorsSection />
 
-
-      <Timetable />
-      <Venue />
-      <Judging />
-
       <section
         id="shrekathon-rules"
-        className="max-w-5xl mx-auto mb-28 px-6 text-center md:text-left font-corbert font-bold"
+        className="max-w-5xl mx-auto mb-28 text-center md:text-left font-corbert font-bold"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
 
@@ -121,8 +145,10 @@ export default function Shrekathon() {
         </div>
       </section>
 
+      <Judging />
+      <Winners />
+
       <SponsorsSection />
-      <CollabSection />
     </div>
   );
 }
