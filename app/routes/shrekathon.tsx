@@ -83,6 +83,46 @@ export default function Shrekathon() {
 
       <Timetable />
       <Venue />
+
+      <section
+        id="shrekathon-rules"
+        className="max-w-5xl mx-auto mb-28 px-6 text-center md:text-left font-corbert font-bold"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+          
+          {/* Rules Column */}
+          <div>
+            <h2 className="text-4xl font-bold text-dark-purple mb-8">
+              Shrekathon Rules
+            </h2>
+            <ul className="space-y-4 text-gray-800 text-left text-lg list-disc list-outside ml-6">
+              <li><strong>No AI-generated art or music!!!</strong></li>
+              <li>Create an <a href="https://itch.io" target="_blank" rel="noreferrer" className="text-[#007bbf] underline decoration-2 underline-offset-2 hover:text-dark-purple">itch.io</a> page and submit your work on Sunday at 5PM</li>
+              <li>Credit your borrowed assets!</li>
+              <li>At least one member of the team has to present their project to the judges on-site</li>
+            </ul>
+            <p className="mt-10 text-sm text-gray-600 italic text-left border-t border-gray-300 pt-4">
+              Concordia Game Development Club acknowledges that this event takes place on unceded Indigenous lands.
+            </p>
+          </div>
+
+          {/* Modifiers Column */}
+          <div>
+            <h2 className="text-4xl font-bold text-dark-purple mb-8">
+              Modifiers
+            </h2>
+            <ul className="space-y-4 text-gray-800 text-left text-lg list-disc list-outside ml-6">
+              <li><strong>SHREK</strong> - 2pts</li>
+              <li><strong>One button control</strong> - 1pt</li>
+              <li><strong>Outside the swamp:</strong> No godot, unity or unreal - 1pt</li>
+              <li><strong>Put a shrek movie easter egg</strong> - 1pt</li>
+              <li><strong>Can you not be random for 5 minutes?:</strong> Has something random happened every 5 minutes - 1pt</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
       <SponsorsSection />
     </div>
   );
