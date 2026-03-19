@@ -1,72 +1,52 @@
 [
     {
         "name": "Melisa Panaccione & Zaid Minhas",
-        "role": "Software Engineering Master’s Student at Concordia University * Graduate Student at Concordia University",
-        "image": "assets/Learnathon/zaid-melisa.jpg",
-        "favoriteGame": "Poptropica",
-        "workshop": "Customization game focused on fashion, room decor, and creative design."
+        "role": "Unity,Godot / Unity,Art",
+        "image": "assets/Learnathon/zaid-melisa.jpg"
     },
     {
         "name": "Youssef",
-        "role": "Software Engineering Student at Mcgill University",
-        "image": "assets/Learnathon/youssef.JPG",
-        "favoriteGame": "",
-        "workshop": ""
+        "role": "Unity,Unreal, Programming",
+        "image": "assets/Learnathon/youssef.JPG"
     },
     {
         "name": "Massimo Gauthier",
-        "role": "Founder, Indie Game Studio",
-        "image": "assets/Learnathon/massimogauthier.png",
-        "favoriteGame": "Void Stranger",
-        "workshop": "Developing a 2D platformer with distinctive physics and stylized art — covering both programming and gameplay mechanics."
+        "role": "Programming (any engine)",
+        "image": "assets/Learnathon/massimogauthier.png"
     },
     {
         "name": "Taeif Ahmed",
-        "role": "VP of Social Events at SCS Concordia",
-        "image": "assets/Learnathon/taief.png",
-        "favoriteGame": "",
-        "workshop": ""
+        "role": "Unity,Programming, Blender",
+        "image": "assets/Learnathon/taief.png"
     },
     {
         "name": "Simon A. Boudreault",
-        "role": "AAA Design Generalist",
-        "image": "assets/Learnathon/simonaboudreault.jpg",
-        "favoriteGame": "The Beginner’s Guide",
-        "workshop": "Hands-on sessions covering environment blocking, kitbashing, and visual prototyping techniques for immersive level design."
+        "role": "Game Design",
+        "image": "assets/Learnathon/simonaboudreault.jpg"
     },
     {
         "name": "Brandon Toledano",
-        "role": "Bachelor of Engineering, Software Engineering at Concordia University",
-        "image": "assets/Learnathon/brandon.jpg",
-        "favoriteGame": "",
-        "workshop": ""
+        "role": "Unity,Unreal",
+        "image": "assets/Learnathon/brandon.jpg"
     },
     {
         "name": "Kelly",
-        "role": "",
-        "image": "assets/Learnathon/kelly.png",
-        "favoriteGame": "",
-        "workshop": ""
+        "role": "Unity,Art",
+        "image": "assets/Learnathon/kelly.png"
     },
     {
         "name": "Shubham",
-        "role": "",
-        "image": "assets/Learnathon/Shubham.png",
-        "favoriteGame": "",
-        "workshop": ""
+        "role": "Unreal Engine",
+        "image": "assets/Learnathon/Shubham.png"
     },
     {
         "name": "Christopher Mathieu",
-        "role": "",
-        "image": "assets/Learnathon/Christopher Mathieu.png",
-        "favoriteGame": "",
-        "workshop": ""
+        "role": "Unreal, Art",
+        "image": "assets/Learnathon/Christopher Mathieu.png"
     },
     {
         "name": "Alexander Kosina",
-        "role": "",
-        "image": "assets/Learnathon/Alexander Kosina.png",
-        "favoriteGame": "",
-        "workshop": ""
+        "role": "Unity Engine",
+        "image": "assets/Learnathon/Alexander Kosina.png"
     }
 ]

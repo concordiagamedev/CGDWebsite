@@ -5,16 +5,12 @@ interface MentorCardProps {
     name: string;
     role: string;
     image: string;
-    favoriteGame: string;
-    workshop: string;
 }
 
 const MentorCard: React.FC<MentorCardProps> = ({
     name,
     role,
     image,
-    favoriteGame,
-    workshop,
 }) => {
     return (
         <li className="group flex flex-col items-center bg-white/85 backdrop-blur-xl p-10 rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_15px_35px_rgba(0,0,0,0.25)]">
@@ -36,16 +32,6 @@ const MentorCard: React.FC<MentorCardProps> = ({
 
             <h3 className="text-2xl font-bold text-dark-purple mb-1">{name}</h3>
             <p className="text-gray-600 font-medium text-center mb-3">{role}</p>
-
-            <div className="text-left text-gray-700 leading-relaxed max-w-xs">
-                <p>
-                    <strong className="text-dark-purple">Favorite Game:</strong>{" "}
-                    {favoriteGame}
-                </p>
-                <p className="mt-2">
-                    <strong className="text-dark-purple">Workshop:</strong> {workshop}
-                </p>
-            </div>
         </li>
     );
 };
