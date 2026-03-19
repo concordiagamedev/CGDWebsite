@@ -37,7 +37,6 @@ const partnerStyles = [
 const SponsorsSection: React.FC = () => {
     return (
         <section className="relative max-w-6xl mx-auto mb-24 px-6 py-12 sm:px-8 md:px-12">
-            <div className="pointer-events-none absolute -left-12 top-8 h-36 w-36 rounded-full bg-[#b7df7a]/45 blur-3xl"></div>
             <div className="pointer-events-none absolute right-0 top-0 h-40 w-40 rounded-full bg-white/50 blur-3xl"></div>
             <div className="pointer-events-none absolute bottom-0 left-1/3 h-32 w-32 rounded-full bg-[#f5c4b3]/35 blur-3xl"></div>
 

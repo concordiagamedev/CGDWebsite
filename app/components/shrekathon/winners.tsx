@@ -4,14 +4,14 @@ export default function Winners() {
       id="shrekathon-winners"
       className="max-w-5xl mx-auto mb-20 text-center md:text-left font-corbert font-bold"
     >
-      <h2 className="text-4xl font-bold text-dark-purple mb-10">
+      <h2 className="text-4xl font-bold text-dark-purple mb-6">
         🏆 Top Winners
       </h2>
 
-      <div>
+      <div className="max-w-4xl mx-auto">
         <svg
           width="100%"
-          viewBox="0 0 680 360"
+          viewBox="0 70 680 250"
           xmlns="http://www.w3.org/2000/svg"
           className="font-corbert"
         >

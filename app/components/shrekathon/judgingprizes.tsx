@@ -16,6 +16,21 @@ export default function Judging() {
     { name: "Best Art Direction", prize: "Winner Pins" },
   ];
 
+  const rules = [
+    "No AI-generated art or music!!!",
+    "Create an itch.io page and submit your work on Sunday at 5PM",
+    "Credit your borrowed assets!",
+    "At least one member of the team has to present their project to the judges on-site",
+  ];
+
+  const modifiers = [
+    "SHREK - 2pts",
+    "One button control - 1pt",
+    "Outside the swamp: No godot, unity or unreal - 1pt",
+    "Put a shrek movie easter egg - 1pt",
+    "Can you not be random for 5 minutes?: Has something random happened every 5 minutes - 1pt",
+  ];
+
   return (
     <section
       id="gameshowcase-judging"
@@ -38,6 +53,50 @@ export default function Judging() {
           The participants will be stationed at a workstation at the end
           of the jam and the judges will go judge each team one by one.
         </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+          <div>
+            <h3 className="text-2xl font-semibold text-dark-purple mb-4">
+              Shrekathon Rules
+            </h3>
+            <ul className="space-y-4 text-gray-800 text-left text-lg list-disc list-outside ml-6">
+              {rules.map((rule) => (
+                <li key={rule}>
+                  {rule.includes("itch.io") ? (
+                    <>
+                      Create an{" "}
+                      <a
+                        href="https://itch.io"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-[#007bbf] underline decoration-2 underline-offset-2 hover:text-dark-purple"
+                      >
+                        itch.io
+                      </a>{" "}
+                      page and submit your work on Sunday at 5PM
+                    </>
+                  ) : (
+                    rule
+                  )}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-10 text-sm text-gray-600 italic text-left border-t border-gray-300 pt-4">
+              Concordia Game Development Club acknowledges that this event takes place on unceded Indigenous lands.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-semibold text-dark-purple mb-4">
+              Modifiers
+            </h3>
+            <ul className="space-y-4 text-gray-800 text-left text-lg list-disc list-outside ml-6">
+              {modifiers.map((modifier) => (
+                <li key={modifier}>{modifier}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
 
         <div className="relative border-l-4 border-dark-purple pl-6 ml-2">
           <h3 className="text-2xl font-semibold text-dark-purple mb-2">
