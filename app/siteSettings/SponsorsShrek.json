@@ -1,26 +1,42 @@
 [
     {
-        "name": "To be Determined",
-        "logo": "/assets/sponsors/shrek-corp.png",
-        "link": "https://shrek.com",
-        "tier": "Gold"
+        "name": "CURE",
+        "logo": "/assets/Shrekathon/Cure.png",
+        "link": "https://shrek.com"
     },
     {
-        "name": "To be Determined",
-        "logo": "/assets/sponsors/ogre-tech.png",
-        "link": "https://ogretech.com",
-        "tier": "Silver"
+        "name": "CCSL",
+        "logo": "/assets/Shrekathon/CCSL.png",
+        "link": "https://ogretech.com"
     },
     {
-        "name": "To be Determined",
-        "logo": "/assets/sponsors/swamp-studios.png",
-        "link": "https://swampstudios.com",
-        "tier": "Silver"
+        "name": "Celsius",
+        "logo": "/assets/Shrekathon/Cel.png",
+        "link": "https://ogretech.com"
     },
     {
-        "name": "To be Determined",
-        "logo": "/assets/sponsors/donkey-media.png",
-        "link": "https://donkeymedia.com",
-        "tier": "Bronze"
+        "name": "Chef on Call",
+        "logo": "/assets/Shrekathon/ChefOnCall.png",
+        "link": "https://swampstudios.com"
+    },
+    {
+        "name": "Dominos",
+        "logo": "/assets/Shrekathon/Domino.png",
+        "link": "https://donkeymedia.com"
+    },
+    {
+        "name": "Maison Burger",
+        "logo": "/assets/Shrekathon/MaisonBurger.png",
+        "link": "https://donkeymedia.com"
+    },
+    {
+        "name": "SCS",
+        "logo": "/assets/Shrekathon/SCS.png",
+        "link": "https://donkeymedia.com"
+    },
+    {
+        "name": "CASS",
+        "logo": "/assets/Shrekathon/CASS.png",
+        "link": "https://donkeymedia.com"
     }
 ]

@@ -24,7 +24,7 @@ const SponsorsSection: React.FC = () => {
                         key={index}
                         className="group flex flex-col items-center bg-white/85 backdrop-blur-xl p-6 rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.15)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_15px_35px_rgba(0,0,0,0.25)]"
                     >
-                        <div className="relative mb-4 w-32 h-32">
+                        <div className="relative mb-4 w-48 h-48">
                             <div
                                 className="absolute inset-0 rounded-full opacity-70 blur-2xl scale-110 transition-all duration-500 group-hover:opacity-100"
                                 style={{
