@@ -12,6 +12,7 @@ import ln from "assets/icons/linked.svg";
 import linktree from "assets/icons/linktree.svg";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import Tickets from "assets/icons/Tickets.png"
 
 const Navbar = () => {
   // page-links and social-menu
@@ -40,6 +41,12 @@ const Navbar = () => {
       img: sponsorsicon,
       alt: "icon that brings you to gamedev sponsor page",
     },
+    {
+      name: "Shrekathon 2026",
+      link: "/shrekathon",
+      img: Tickets,
+      alt: "icon that brings you to gamedev shrekathon page",
+    }
   ];
   let socials = [
     // {
@@ -91,9 +98,8 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar shadow-md fixed top-0 left-0 w-full z-20 backdrop-blur-md ${
-        open ? "menu-open" : ""
-      }`}
+      className={`navbar shadow-md fixed top-0 left-0 w-full z-20 backdrop-blur-md ${open ? "menu-open" : ""
+        }`}
     >
       <div className=" md:flex md:justify-between md:items-center w-full">
         {/* logo */}
@@ -119,9 +125,8 @@ const Navbar = () => {
         </div>
         {/* nav-links */}
         <ul
-          className={`page-links flex-col md:flex-row justify-center gap-3 md:gap-2 mx-16 md:mx-1 md:flex md:basis-4/6 2xl:basis-1/3 hidden ${
-            open ? "menu-open" : ""
-          }`}
+          className={`page-links flex-col md:flex-row justify-center gap-3 md:gap-2 mx-16 md:mx-1 md:flex md:basis-4/6 2xl:basis-1/3 hidden ${open ? "menu-open" : ""
+            }`}
         >
           {Links.map((link) => (
             <li key={link.name}>
@@ -137,9 +142,8 @@ const Navbar = () => {
         </ul>
         {/* socials-links */}
         <div
-          className={`socials-menu flex-shrink-0 md:items-center flex-row justify-center gap-x-5 md:justify-end my-6 hidden md:flex md:basis-1/6 md:pr-4 md:gap-x-2 lg:gap-x-4 2xl:basis-1/3 ${
-            open ? "menu-open" : ""
-          }`}
+          className={`socials-menu flex-shrink-0 md:items-center flex-row justify-center gap-x-5 md:justify-end my-6 hidden md:flex md:basis-1/6 md:pr-4 md:gap-x-2 lg:gap-x-4 2xl:basis-1/3 ${open ? "menu-open" : ""
+            }`}
         >
           {socials.map((social) => (
             <a
