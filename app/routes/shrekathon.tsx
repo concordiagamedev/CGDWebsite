@@ -4,6 +4,7 @@ import Shrekathonjam from "assets/icons/Shrekathonjam.jpg"
 import { useState } from "react";
 import MentorsSection from "~/routes/MentorsCards";
 import SponsorsSection from "./SponsorCard";
+import CollabSection from "./CollabCard";
 
 
 export default function Shrekathon() {
@@ -89,7 +90,7 @@ export default function Shrekathon() {
         className="max-w-5xl mx-auto mb-28 px-6 text-center md:text-left font-corbert font-bold"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-          
+
           {/* Rules Column */}
           <div>
             <h2 className="text-4xl font-bold text-dark-purple mb-8">
@@ -124,6 +125,7 @@ export default function Shrekathon() {
       </section>
 
       <SponsorsSection />
+      <CollabSection />
     </div>
   );
 }
