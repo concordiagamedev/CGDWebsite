@@ -1,0 +1,28 @@
+[{
+    "day": "Day 1: Friday",
+    "events": [
+        { "time": "5:00pm", "title": "Opening Ceremony" },
+        { "time": "5:30pm", "title": "Dev time" },
+        { "time": "6:00pm", "title": "Supper" },
+        { "time": "7:00pm", "title": "Dev time" },
+        {"time": "10:00pm", "title": "Doors Close"}
+    ]},
+    {"day": "Day 2: Saturday",
+    "events": [
+        { "time": "10:00am", "title": "Doors Open \n Dev Time" },
+        { "time": "12:00pm", "title": "Lunch" },
+        { "time": "1:00pm", "title": "Dev Time" },
+        { "time": "6:00pm", "title": "Supper" },
+        { "time": "7:00pm", "title": "Dev Time" },
+        {"time": "10:00pm", "title": "Doors Close"}]
+    },
+    {"day": "Day 3: Sunday",
+    "events": [
+        { "time": "10:00am", "title": "Doors Open \n Dev Time" },
+        { "time": "12:00pm", "title": "Lunch" },
+        { "time": "1:00pm", "title": "Dev Time" },
+        { "time": "5:00pm", "title": "Submission Deadline" },
+        {"time": "6:00pm", "title": "Showcase"},
+        {"time": "8:00pm", "title": "Closing Ceremony"}]
+    }
+]

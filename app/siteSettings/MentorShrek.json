@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Melisa Panaccione & Zaid Minhas",
+        "role": "Unity,Godot / Unity,Art",
+        "image": "assets/Learnathon/zaid-melisa.jpg"
+    },
+    {
+        "name": "Youssef",
+        "role": "Unity,Unreal, Programming",
+        "image": "assets/Learnathon/youssef.JPG"
+    },
+    {
+        "name": "Massimo Gauthier",
+        "role": "Programming (any engine)",
+        "image": "assets/Learnathon/massimogauthier.png"
+    },
+    {
+        "name": "Taeif Ahmed",
+        "role": "Unity,Programming, Blender",
+        "image": "assets/Learnathon/taief.png"
+    },
+    {
+        "name": "Simon A. Boudreault",
+        "role": "Game Design",
+        "image": "assets/Learnathon/simonaboudreault.jpg"
+    },
+    {
+        "name": "Brandon Toledano",
+        "role": "Unity,Unreal",
+        "image": "assets/Learnathon/brandon.jpg"
+    },
+    {
+        "name": "Kelly",
+        "role": "Unity,Art",
+        "image": "assets/Learnathon/kelly.png"
+    },
+    {
+        "name": "Shubham",
+        "role": "Unreal Engine",
+        "image": "assets/Learnathon/Shubham.png"
+    },
+    {
+        "name": "Christopher Mathieu",
+        "role": "Unreal, Art",
+        "image": "assets/Learnathon/Christopher Mathieu.png"
+    },
+    {
+        "name": "Alexander Kosina",
+        "role": "Unity Engine",
+        "image": "assets/Learnathon/Alexander Kosina.png"
+    }
+]

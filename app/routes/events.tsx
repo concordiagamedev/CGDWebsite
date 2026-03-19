@@ -29,6 +29,7 @@ import darioworkshop from "assets/icons/Dario Workshop.png";
 import rosieworkshop from "assets/icons/Rose Workshop.png";
 import shrekathon from "assets/icons/Shrekathonjam.jpg";
 import gamenight from "assets/icons/gamenight-feb.png";
+
 import {
   Accordion,
   AccordionContent,
@@ -69,6 +70,7 @@ export default function DashboardEvents() {
                 location={upcomingevents[0].location}
                 imageD={shrekathon}
                 imageM={shrekathon}
+                link="/shrekathon"
               />
             </AccordionContent>
           </AccordionItem>

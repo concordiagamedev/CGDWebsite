@@ -34,25 +34,42 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 5px;
+      gap: 0.35rem;
       text-decoration: none;
       position: relative;
-      padding: 7px;
+      padding: 0.45rem 0.55rem;
       border-radius: 7px;
       transition: background-color 0.2s ease-in-out;
 
       .nav-item {
+        display: flex;
+        align-items: baseline;
+        gap: 0.28rem;
+        white-space: nowrap;
         color: #fbe9f5;
         font-family: "Corbert", sans-serif;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 300;
+      }
+
+      .nav-accent {
+        color: #4e2f51;
+        font-family: "League Spartan", sans-serif;
+        font-size: 0.85em;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
       }
 
       .svg-icon {
         aspect-ratio: 1;
-        width: 28px;
+        width: 24px;
         filter: invert(19%) sepia(11%) saturate(2704%) hue-rotate(251deg)
           brightness(92%) contrast(88%);
+      }
+
+      .ticket-icon {
+        width: 28px;
       }
     }
 
