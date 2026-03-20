@@ -25,15 +25,15 @@ export default function Judging() {
 
   const modifiers = [
     "My kingdom, My rules. My fanfic, My delulus - 2pt",
-    "Could you be quiet for 5 minutes??!! - 1pt",
-    "Onion Control - 1pt",
-    "Built in the swamp - 2pt",
+    "Donkey Commentary Mode - 1pt",
+    "Onion Controls - 1pt",
+    "Built in the Swamp - 2pt",
     "Do the ROAR - 1pt",
-    "Knight in the shining confusion - 1pt",
-    "Shrek is love - 1pt",
-    "Swamp cortisol - 1pt",
-    "Far far away trade agreement - 1pt",
-    "Mirror mirror on the wall - 1pt"
+    "Knight in the Shining Confusion - 1pt",
+    "Shrek is Love - 1pt",
+    "Swamp Cortisol - 1pt",
+    "Far Far Away Trade Agreement - 1pt",
+    "True loves form - 1pt"
   ];
 
   return (
