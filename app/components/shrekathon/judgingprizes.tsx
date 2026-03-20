@@ -10,7 +10,7 @@ export default function Judging() {
   ]
 
   const awardCategories = [
-    { name: "Overall Best Game (1st place only)", prize: "Winner Pins & Humble Bundle?" },
+    { name: "Overall Best Game (1st place only)", prize: "Winner Pins & Humble Bundle" },
     { name: "Best Theme Integration", prize: "Winner Pins" },
     { name: "Best Technical Innovation", prize: "Winner Pins" },
     { name: "Best Art Direction", prize: "Winner Pins" },
@@ -24,11 +24,16 @@ export default function Judging() {
   ];
 
   const modifiers = [
-    "SHREK - 2pts",
-    "One button control - 1pt",
-    "Outside the swamp: No godot, unity or unreal - 1pt",
-    "Put a shrek movie easter egg - 1pt",
-    "Can you not be random for 5 minutes?: Has something random happened every 5 minutes - 1pt",
+    "MY KINGDOM, MY RULES. MY FANFIC, MY DELULUS - 2pt",
+    "COULD YOU BE QUIET FOR 5 MINUTES??!! - 1pt",
+    "ONION CONTROLS - 1pt",
+    "BUILT IN THE SWAMP - 2pt",
+    "DO THE ROAR - 1pt",
+    "KNIGHT IN SHINING CONFUSION - 2pt",
+    "SHREK IS LOVE - 1pt",
+    "SWAMP CORTISOL - 1pt",
+    "FAR FAR AWAY TRADE AGREEMENT - 3pt",
+    "MIRROR MIRROR ON THE WALL - 3pt"
   ];
 
   return (
