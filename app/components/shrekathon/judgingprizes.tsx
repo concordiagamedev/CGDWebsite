@@ -29,11 +29,11 @@ export default function Judging() {
     "Onion Control - 1pt",
     "Built in the swamp - 2pt",
     "Do the ROAR - 1pt",
-    "Knight in the shining confusion - 2pt",
+    "Knight in the shining confusion - 1pt",
     "Shrek is love - 1pt",
     "Swamp cortisol - 1pt",
-    "Far far away trade agreement - 3pt",
-    "Mirror mirror on the wall - 3pt"
+    "Far far away trade agreement - 1pt",
+    "Mirror mirror on the wall - 1pt"
   ];
 
   return (
