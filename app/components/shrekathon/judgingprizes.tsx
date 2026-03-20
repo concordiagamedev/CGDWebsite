@@ -24,16 +24,16 @@ export default function Judging() {
   ];
 
   const modifiers = [
-    "MY KINGDOM, MY RULES. MY FANFIC, MY DELULUS - 2pt",
-    "COULD YOU BE QUIET FOR 5 MINUTES??!! - 1pt",
-    "ONION CONTROLS - 1pt",
-    "BUILT IN THE SWAMP - 2pt",
-    "DO THE ROAR - 1pt",
-    "KNIGHT IN SHINING CONFUSION - 2pt",
-    "SHREK IS LOVE - 1pt",
-    "SWAMP CORTISOL - 1pt",
-    "FAR FAR AWAY TRADE AGREEMENT - 3pt",
-    "MIRROR MIRROR ON THE WALL - 3pt"
+    "My kingdom, My rules. My fanfic, My delulus - 2pt",
+    "Could you be quiet for 5 minutes??!! - 1pt",
+    "Onion Control - 1pt",
+    "Built in the swamp - 2pt",
+    "Do the ROAR - 1pt",
+    "Knight in the shining confusion - 2pt",
+    "Shrek is love - 1pt",
+    "Swamp cortisol - 1pt",
+    "Far far away trade agreement - 3pt",
+    "Mirror mirror on the wall - 3pt"
   ];
 
   return (
