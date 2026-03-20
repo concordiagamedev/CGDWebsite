@@ -75,21 +75,9 @@ const SponsorsSection: React.FC = () => {
 
                         return (
                             <li key={index} className="flex items-center justify-center">
-                                {partner.link ? (
-                                    <a
-                                        href={partner.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="group flex items-center justify-center"
-                                        aria-label={partner.name}
-                                    >
-                                        {content}
-                                    </a>
-                                ) : (
-                                    <div className="group flex items-center justify-center">
-                                        {content}
-                                    </div>
-                                )}
+                                <div className="group flex items-center justify-center">
+                                    {content}
+                                </div>
                             </li>
                         );
                     })}
