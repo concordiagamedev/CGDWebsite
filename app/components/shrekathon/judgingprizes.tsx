@@ -71,7 +71,7 @@ export default function Judging() {
                     <>
                       Create an{" "}
                       <a
-                        href="https://itch.io"
+                        href="https://itch.io/jam/shrekathon-2026/entries"
                         target="_blank"
                         rel="noreferrer"
                         className="text-[#007bbf] underline decoration-2 underline-offset-2 hover:text-dark-purple"
