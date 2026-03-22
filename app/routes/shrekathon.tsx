@@ -123,8 +123,7 @@ export default function Shrekathon() {
             <div className="mx-auto w-full max-w-[320px]">
               <div className="rounded-[2rem] bg-[#2b182d] p-3 shadow-[0_25px_55px_rgba(43,24,45,0.35)] ring-1 ring-white/20">
                 <div className="mb-3 flex items-center justify-between px-2 text-xs uppercase tracking-[0.24em] text-pink-100">
-                  <span>Reveal Video</span>
-                  <span>2026</span>
+                  
                 </div>
 
                 <video
