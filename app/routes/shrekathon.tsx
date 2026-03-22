@@ -103,9 +103,9 @@ export default function Shrekathon() {
               </p>
 
               <p className="mt-4 max-w-3xl text-lg leading-relaxed text-gray-700">
-                Ogres are like onions they have layers.... 
-                They stink??!!! 
-                Yeah.. NO NO.. They have layers!
+                - Ogres are like onions they have layers.... <br/>
+                - They stink??!!! <br /> 
+                - Yeah.. NO NO.. They have layers! <br />
               </p>
 
               <div className="mt-7 grid gap-3 md:grid-cols-3">
