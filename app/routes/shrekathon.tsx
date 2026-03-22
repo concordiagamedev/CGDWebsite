@@ -8,6 +8,14 @@ import SponsorsSection from "./SponsorCard";
 import Judging from "../components/shrekathon/judgingprizes"
 import Winners from "../components/shrekathon/winners";
 
+const themeRevealVideo = "/assets/Shrekathon/theme-reveal-2026.mp4";
+const themeLayersIdeas = [
+  "Programming",
+  "Art",
+  "Sound Design",
+  "Game Design"
+];
+
 export const meta: MetaFunction = () => {
   return [
     { title: "Shrekathon New | CGD" },
@@ -73,6 +81,67 @@ export default function Shrekathon() {
           </button>
         </div>
       )}
+
+      <section className="max-w-6xl mx-auto mb-24">
+        <div className="relative overflow-hidden rounded-[2rem] border border-white/70 bg-[linear-gradient(135deg,rgba(255,255,255,0.88),rgba(246,232,239,0.92),rgba(232,245,224,0.88))] shadow-[0_24px_80px_rgba(78,47,81,0.16)]">
+          <div className="absolute -left-20 top-8 h-44 w-44 rounded-full bg-[rgba(130,180,92,0.25)] blur-3xl" />
+          <div className="absolute -right-16 bottom-6 h-48 w-48 rounded-full bg-[rgba(255,196,126,0.24)] blur-3xl" />
+
+          <div className="relative grid items-start gap-10 px-6 pb-8 pt-9 sm:px-8 sm:pb-10 sm:pt-11 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-10">
+            <div className="text-center md:text-left lg:pt-4">
+              <h2 className="text-4xl sm:text-5xl font-bold text-dark-purple">
+                Theme Reveal
+              </h2>
+
+              <p className="mt-4 text-lg sm:text-xl leading-relaxed text-gray-700">
+                Here&apos;s the peak cinema reveal video: this
+                year&apos;s theme is{" "}
+                <span className="inline-block rounded-full bg-[rgba(130,180,92,0.18)] px-4 py-1 text-dark-purple">
+                  LAYERS 🧅
+                </span>
+                .
+              </p>
+
+              <p className="mt-4 max-w-3xl text-lg leading-relaxed text-gray-700">
+                Ogres are like onions they have layers.... 
+                They stink??!!! 
+                Yeah.. NO NO.. They have layers!
+              </p>
+
+              <div className="mt-7 grid gap-3 md:grid-cols-3">
+                {themeLayersIdeas.map((idea) => (
+                  <div
+                    key={idea}
+                    className="rounded-2xl border border-dark-purple/10 bg-white/70 px-4 py-4 text-base leading-relaxed text-gray-700 shadow-sm backdrop-blur-sm"
+                  >
+                    {idea}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mx-auto w-full max-w-[320px]">
+              <div className="rounded-[2rem] bg-[#2b182d] p-3 shadow-[0_25px_55px_rgba(43,24,45,0.35)] ring-1 ring-white/20">
+                <div className="mb-3 flex items-center justify-between px-2 text-xs uppercase tracking-[0.24em] text-pink-100">
+                  <span>Reveal Video</span>
+                  <span>2026</span>
+                </div>
+
+                <video
+                  controls
+                  playsInline
+                  preload="metadata"
+                  poster={Shrekathonjam}
+                  className="aspect-[9/16] w-full rounded-[1.4rem] bg-black object-cover shadow-inner"
+                >
+                  <source src={themeRevealVideo} type="video/mp4" />
+                  Your browser does not support the theme reveal video.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="max-w-5xl mx-auto mb-20 text-center md:text-left font-corbert font-bold">
         <h2 className="text-3xl md:text-4xl font-bold text-dark-purple mb-6">

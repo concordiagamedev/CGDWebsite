@@ -1,5 +1,11 @@
-
 export default function Venue() {
+  type Lab = {
+    room: string;
+    type: string;
+    footnoteMarker: string;
+    days?: string;
+  };
+
   const venueInfo = {
     university: "Concordia University",
     building: "Henry F. Hall Building",
@@ -24,7 +30,7 @@ export default function Venue() {
         type: "Unreal Workstation",
         footnoteMarker: "*",
       },
-    ],
+    ] satisfies Lab[],
     note:
       "Computer labs require ENCS accounts to log in. Let us know if you want to use one but have no account.",
     workstationFootnote:
