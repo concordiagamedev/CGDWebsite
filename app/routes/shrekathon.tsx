@@ -9,6 +9,17 @@ import Judging from "../components/shrekathon/judgingprizes"
 import Winners from "../components/shrekathon/winners";
 
 const themeRevealVideo = "/assets/Shrekathon/theme-reveal-2026.mp4";
+const galleryImages = [
+  "/assets/Shrekathon/Shrekathon1.jpeg",
+  "/assets/Shrekathon/Shrekathon2.jpeg",
+  "/assets/Shrekathon/Shrekathon3.jpeg",
+  "/assets/Shrekathon/Shrekathon4.jpeg",
+  "/assets/Shrekathon/Shrekathon5.jpeg",
+  "/assets/Shrekathon/Shrekathon6.jpeg",
+  "/assets/Shrekathon/Shrekathon7.jpeg",
+  "/assets/Shrekathon/Shrekathon8.jpeg",
+  "/assets/Shrekathon/Shrekathon9.jpeg",
+];
 const themeLayersIdeas = [
   "Programming",
   "Art",
@@ -174,6 +185,22 @@ export default function Shrekathon() {
       <Timetable />
       <Judging />
       <Winners />
+      <section className="max-w-6xl mx-auto mb-24 font-corbert font-bold">
+        <h2 className="text-3xl md:text-4xl font-bold text-dark-purple mb-6 text-center md:text-left">
+          Photo Gallery
+        </h2>
+
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {galleryImages.map((src, index) => (
+            <img
+              key={src}
+              src={src}
+              alt={`Shrekathon photo ${index + 1}`}
+              className="h-72 w-full rounded-2xl object-cover shadow-[0_16px_40px_rgba(78,47,81,0.16)]"
+            />
+          ))}
+        </div>
+      </section>
 
       <SponsorsSection />
     </div>
