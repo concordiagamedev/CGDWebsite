@@ -17,10 +17,10 @@ export default function Judging() {
   ];
 
   const winners = [
-    { name: "Overall Best Game", winner: "To Be Announced" },
-    { name: "Best Theme Integration", winner: "To Be Announced" },
-    { name: "Best Technical Innovation", winner: "To Be Announced" },
-    { name: "Best Art Direction", winner: "To Be Announced" },
+    { name: "Overall Best Game", winner: "JumpSHREK - Team Farquad" },
+    { name: "Best Theme Integration", winner: "7 layers - J y J Developers" },
+    { name: "Best Technical Innovation", winner: "Clause & Effect - Clause and Effect" },
+    { name: "Best Art Direction", winner: "Farsquaad - Farsquaad ink" },
   ];
 
   const podiumPlaces = [
@@ -127,27 +127,27 @@ export default function Judging() {
               <g className="group cursor-pointer">
                 <rect x="45" y="170" width="140" height="130" rx="4" fill="#D3D1C7" stroke="#5F5E5A" strokeWidth="0.5"/>
                 <rect x="58" y="175" width="120" height="30" rx="4" fill="white" stroke="#ccc" strokeWidth="0.5"/>
-                <text x="117" y="191" textAnchor="middle" dominantBaseline="central" fontSize="12">To Be Announced</text>
+                <text x="117" y="191" textAnchor="middle" dominantBaseline="central" fontSize="12">Clause and Effect</text>
               </g>
 
               {/* 1st place */}
               <g className="group cursor-pointer">
                 <rect x="210" y="110" width="140" height="190" rx="4" fill="#FAC775" stroke="#BA7517" strokeWidth="0.5"/>
                 <rect x="220" y="115" width="120" height="30" rx="4" fill="white" stroke="#ccc" strokeWidth="0.5"/>
-                <text x="280" y="131" textAnchor="middle" dominantBaseline="central" fontSize="12">To Be Announced</text>
+                <text x="280" y="131" textAnchor="middle" dominantBaseline="central" fontSize="12">JumpSHREK</text>
               </g>
 
               {/* 3rd place */}
               <g className="group cursor-pointer">
                 <rect x="370" y="170" width="140" height="130" rx="4" fill="#F5C4B3" stroke="#993C1D" strokeWidth="0.5"/>
                 <rect x="380" y="175" width="120" height="30" rx="4" fill="white" stroke="#ccc" strokeWidth="0.5"/>
-                <text x="440" y="191" textAnchor="middle" dominantBaseline="central" fontSize="12">To Be Announced</text>
+                <text x="440" y="191" textAnchor="middle" dominantBaseline="central" fontSize="12">7 layers</text>
               </g>
               {/* 4th place*/}
               <g className="group cursor-pointer">
                 <rect x="530" y="170" width="140" height="130" rx="4" fill="#F5C4B3" stroke="#993C1D" strokeWidth="0.5"/>
                 <rect x="540" y="175" width="120" height="30" rx="4" fill="white" stroke="#ccc" strokeWidth="0.5"/>
-                <text x="600" y="191" textAnchor="middle" dominantBaseline="central" fontSize="12">To Be Announced</text>
+                <text x="600" y="191" textAnchor="middle" dominantBaseline="central" fontSize="12">Farsquaad ink</text>
               </g>
 
               {/* Base */}
