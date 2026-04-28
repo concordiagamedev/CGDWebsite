@@ -127,27 +127,27 @@ export default function Judging() {
               <g className="group cursor-pointer">
                 <rect x="45" y="170" width="140" height="130" rx="4" fill="#D3D1C7" stroke="#5F5E5A" strokeWidth="0.5"/>
                 <rect x="58" y="175" width="120" height="30" rx="4" fill="white" stroke="#ccc" strokeWidth="0.5"/>
-                <text x="117" y="191" textAnchor="middle" dominantBaseline="central" fontSize="12">Clause and Effect</text>
+                <text x="117" y="191" textAnchor="middle" dominantBaseline="central" fontSize="12" ><a href="https://adglx.itch.io/clause-and-effect" style={{fill: "blue", textDecoration: "underline"}}>Clause and Effect</a></text>
               </g>
 
               {/* 1st place */}
               <g className="group cursor-pointer">
                 <rect x="210" y="110" width="140" height="190" rx="4" fill="#FAC775" stroke="#BA7517" strokeWidth="0.5"/>
                 <rect x="220" y="115" width="120" height="30" rx="4" fill="white" stroke="#ccc" strokeWidth="0.5"/>
-                <text x="280" y="131" textAnchor="middle" dominantBaseline="central" fontSize="12">JumpSHREK</text>
+                <text x="280" y="131" textAnchor="middle" dominantBaseline="central" fontSize="12"><a href="https://dudenameddarcy.itch.io/jumpshrek" style={{fill: "blue", textDecoration: "underline"}}>JumpSHREK</a></text>
               </g>
 
               {/* 3rd place */}
               <g className="group cursor-pointer">
                 <rect x="370" y="170" width="140" height="130" rx="4" fill="#F5C4B3" stroke="#993C1D" strokeWidth="0.5"/>
                 <rect x="380" y="175" width="120" height="30" rx="4" fill="white" stroke="#ccc" strokeWidth="0.5"/>
-                <text x="440" y="191" textAnchor="middle" dominantBaseline="central" fontSize="12">7 layers</text>
+                <text x="440" y="191" textAnchor="middle" dominantBaseline="central" fontSize="12"><a href="https://bbsupremeus.itch.io/7-layers" style={{fill: "blue", textDecoration: "underline"}}>7 layers</a></text>
               </g>
               {/* 4th place*/}
               <g className="group cursor-pointer">
                 <rect x="530" y="170" width="140" height="130" rx="4" fill="#F5C4B3" stroke="#993C1D" strokeWidth="0.5"/>
                 <rect x="540" y="175" width="120" height="30" rx="4" fill="white" stroke="#ccc" strokeWidth="0.5"/>
-                <text x="600" y="191" textAnchor="middle" dominantBaseline="central" fontSize="12">Farsquaad ink</text>
+                <text x="600" y="191" textAnchor="middle" dominantBaseline="central" fontSize="12"><a href="https://wonderfulnorah.itch.io/farsquaad-ink" style={{fill: "blue", textDecoration: "underline"}}>Farsquaad ink</a></text>
               </g>
 
               {/* Base */}
