@@ -1,5 +1,11 @@
-
 export default function Venue() {
+  type Lab = {
+    room: string;
+    type: string;
+    footnoteMarker: string;
+    days?: string;
+  };
+
   const venueInfo = {
     university: "Concordia University",
     building: "Henry F. Hall Building",
@@ -9,11 +15,26 @@ export default function Venue() {
       { day: "Sunday", room: "H.920" },
     ],
     labs: [
-      { room: "H.962", type: "Game Engines" },
-      { room: "H.966", type: "Game Engines" },
-    ],
+      {
+        room: "H.962",
+        type: "Game Engines",
+        footnoteMarker: "",
+      },
+      {
+        room: "H.966",
+        type: "Game Engines",
+        footnoteMarker: "",
+      },
+      {
+        room: "EV 5.635",
+        type: "Unreal Workstation",
+        footnoteMarker: "*",
+      },
+    ] satisfies Lab[],
     note:
       "Computer labs require ENCS accounts to log in. Let us know if you want to use one but have no account.",
+    workstationFootnote:
+      "* Unreal Workstation available only Saturday and Sunday with the help of Computation Arts Student Society.",
   };
 
   return (
@@ -62,10 +83,16 @@ export default function Venue() {
           <ul className="space-y-2 text-gray-800">
             {venueInfo.labs.map((lab) => (
               <li key={lab.room}>
-                • Lab Room {lab.room} ({lab.type})
+                • Lab Room {lab.room} ({lab.type}
+                {lab.days ? `, ${lab.days}` : ""}
+                {lab.footnoteMarker})
               </li>
             ))}
           </ul>
+
+          <p className="text-sm text-gray-600 mt-3 italic">
+            {venueInfo.workstationFootnote}
+          </p>
 
           <p className="text-sm text-gray-600 mt-4 italic">
             {venueInfo.note}
@@ -80,4 +107,3 @@ export default function Venue() {
     </section>
   );
 }
-

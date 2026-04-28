@@ -12,6 +12,7 @@ import ln from "assets/icons/linked.svg";
 import linktree from "assets/icons/linktree.svg";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import Tickets from "assets/icons/Tickets.svg"
 
 const Navbar = () => {
   // page-links and social-menu
@@ -40,6 +41,14 @@ const Navbar = () => {
       img: sponsorsicon,
       alt: "icon that brings you to gamedev sponsor page",
     },
+    {
+      name: "Shrekathon",
+      accent: "New",
+      link: "/shrekathon",
+      img: Tickets,
+      iconClass: "ticket-icon",
+      alt: "icon that brings you to gamedev shrekathon page",
+    }
   ];
   let socials = [
     // {
@@ -91,13 +100,12 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar shadow-md fixed top-0 left-0 w-full z-20 backdrop-blur-md ${
-        open ? "menu-open" : ""
-      }`}
+      className={`navbar shadow-md fixed top-0 left-0 w-full z-20 backdrop-blur-md ${open ? "menu-open" : ""
+        }`}
     >
-      <div className=" md:flex md:justify-between md:items-center w-full">
+      <div className="w-full max-w-[1440px] mx-auto lg:flex lg:items-center lg:justify-between lg:px-4">
         {/* logo */}
-        <div className="flex-shrink-0 flex flex-row justify-between md:basis-1/6 2xl:basis-1/3">
+        <div className="flex flex-row justify-between lg:flex-none lg:min-w-[88px]">
           <a href="/">
             <img
               src={CGDLogo}
@@ -108,7 +116,7 @@ const Navbar = () => {
           {/* menu logos */}
           <div
             onClick={toggleMenu}
-            className="hamburger flex self-center mr-4 md:hidden"
+            className="hamburger flex self-center mr-4 lg:hidden"
           >
             {open ? (
               <X className="w-10 h-10 p-2" />
@@ -119,27 +127,34 @@ const Navbar = () => {
         </div>
         {/* nav-links */}
         <ul
-          className={`page-links flex-col md:flex-row justify-center gap-3 md:gap-2 mx-16 md:mx-1 md:flex md:basis-4/6 2xl:basis-1/3 hidden ${
-            open ? "menu-open" : ""
-          }`}
+          className={`page-links flex-col lg:flex-row justify-center gap-3 lg:gap-1 xl:gap-2 mx-8 sm:mx-12 lg:mx-4 lg:flex lg:flex-1 hidden ${open ? "menu-open" : ""
+            }`}
         >
           {Links.map((link) => (
-            <li key={link.name}>
+            <li key={`${link.name}-${link.link}`}>
               <Link
                 to={link.link}
-                className="nav border border-light-pink md:border-transparent"
+                className="nav border border-light-pink lg:border-transparent"
               >
-                <img src={link.img} alt={link.alt} className="svg-icon" />
-                <h4 className="nav-item">{link.name}</h4>
+                <img
+                  src={link.img}
+                  alt={link.alt}
+                  className={`svg-icon ${"iconClass" in link ? link.iconClass : ""}`}
+                />
+                <h4 className="nav-item">
+                  <span>{link.name}</span>
+                  {"accent" in link && link.accent ? (
+                    <span className="nav-accent">{link.accent}</span>
+                  ) : null}
+                </h4>
               </Link>
             </li>
           ))}
         </ul>
         {/* socials-links */}
         <div
-          className={`socials-menu flex-shrink-0 md:items-center flex-row justify-center gap-x-5 md:justify-end my-6 hidden md:flex md:basis-1/6 md:pr-4 md:gap-x-2 lg:gap-x-4 2xl:basis-1/3 ${
-            open ? "menu-open" : ""
-          }`}
+          className={`socials-menu flex-shrink-0 xl:items-center flex-row justify-center gap-x-5 xl:justify-end my-6 hidden xl:flex xl:min-w-[88px] xl:pl-4 ${open ? "menu-open" : ""
+            }`}
         >
           {socials.map((social) => (
             <a
