@@ -173,7 +173,6 @@ export default function Shrekathon() {
       <Venue />
       <Timetable />
       <Judging />
-      <Winners />
 
       <SponsorsSection />
     </div>
