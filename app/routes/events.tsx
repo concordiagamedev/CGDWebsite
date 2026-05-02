@@ -29,6 +29,7 @@ import darioworkshop from "assets/icons/Dario Workshop.png";
 import rosieworkshop from "assets/icons/Rose Workshop.png";
 import shrekathon from "assets/icons/Shrekathonjam.jpg";
 import gamenight from "assets/icons/gamenight-feb.png";
+import GameSummit from "assets/icons/SGDS.jpg";
 
 import {
   Accordion,
@@ -63,14 +64,14 @@ export default function DashboardEvents() {
               Upcoming Events
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-5 w-full">
+
               <EventCard
                 title={upcomingevents[0].title}
                 date={upcomingevents[0].date}
                 description={upcomingevents[0].description}
                 location={upcomingevents[0].location}
-                imageD={shrekathon}
-                imageM={shrekathon}
-                link="/shrekathon"
+                imageD={GameSummit}
+                imageM={GameSummit}
               />
             </AccordionContent>
           </AccordionItem>
@@ -84,22 +85,31 @@ export default function DashboardEvents() {
                 date={events[0].date}
                 description={events[0].description}
                 location={events[0].location}
-                imageD={darioworkshop}
-                imageM={darioworkshop}
+                imageD={shrekathon}
+                imageM={shrekathon}
+                link="/shrekathon"
               />
               <EventCard
                 title={events[1].title}
                 date={events[1].date}
                 description={events[1].description}
                 location={events[1].location}
-                imageD={zacharyworkshop}
-                imageM={zacharyworkshop}
+                imageD={darioworkshop}
+                imageM={darioworkshop}
               />
               <EventCard
                 title={events[2].title}
                 date={events[2].date}
                 description={events[2].description}
                 location={events[2].location}
+                imageD={zacharyworkshop}
+                imageM={zacharyworkshop}
+              />
+              <EventCard
+                title={events[3].title}
+                date={events[3].date}
+                description={events[3].description}
+                location={events[3].location}
                 imageD={gamenight}
                 imageM={gamenight}
                 eventpictures={[
@@ -109,51 +119,51 @@ export default function DashboardEvents() {
                 ]}
               />
               <EventCard
-                title={events[3].title}
-                date={events[3].date}
-                description={events[3].description}
-                location={events[3].location}
-                imageD={ZaidWorkshop}
-                imageM={ZaidWorkshop}
-              />
-              <EventCard
                 title={events[4].title}
                 date={events[4].date}
                 description={events[4].description}
                 location={events[4].location}
-                imageD={learnathon25}
-                imageM={learnathon25}
-                link="/learnathon"
+                imageD={ZaidWorkshop}
+                imageM={ZaidWorkshop}
               />
               <EventCard
                 title={events[5].title}
                 date={events[5].date}
                 description={events[5].description}
                 location={events[5].location}
-                imageD={gamenightoct2025}
-                imageM={gamenightoct2025}
+                imageD={learnathon25}
+                imageM={learnathon25}
+                link="/learnathon"
               />
               <EventCard
                 title={events[6].title}
                 date={events[6].date}
                 description={events[6].description}
                 location={events[6].location}
-                imageD={lizard25}
-                imageM={lizard25}
+                imageD={gamenightoct2025}
+                imageM={gamenightoct2025}
               />
               <EventCard
                 title={events[7].title}
                 date={events[7].date}
                 description={events[7].description}
                 location={events[7].location}
-                imageD={meetgeek25}
-                imageM={meetgeek25}
+                imageD={lizard25}
+                imageM={lizard25}
               />
               <EventCard
                 title={events[8].title}
                 date={events[8].date}
                 description={events[8].description}
                 location={events[8].location}
+                imageD={meetgeek25}
+                imageM={meetgeek25}
+              />
+              <EventCard
+                title={events[9].title}
+                date={events[9].date}
+                description={events[9].description}
+                location={events[9].location}
                 imageD={gamenightaugust25}
                 imageM={gamenightaugust25}
                 eventpictures={[
@@ -164,18 +174,6 @@ export default function DashboardEvents() {
 
               />
               <GameJamEvent
-                title={events[9].title}
-                jampage={events[9].jampage}
-                date={events[9].date}
-                description={events[9].description}
-                theme={events[9].theme}
-                location={events[9].location}
-                winners={events[9].winners}
-                placeholder={ggj2025winner}
-                imageD={ggj25}
-                imageM={ggjM}
-              />
-              <GameJamEvent
                 title={events[10].title}
                 jampage={events[10].jampage}
                 date={events[10].date}
@@ -183,8 +181,8 @@ export default function DashboardEvents() {
                 theme={events[10].theme}
                 location={events[10].location}
                 winners={events[10].winners}
-                placeholder={ggj2024winner}
-                imageD={ggj}
+                placeholder={ggj2025winner}
+                imageD={ggj25}
                 imageM={ggjM}
               />
               <GameJamEvent
@@ -195,26 +193,38 @@ export default function DashboardEvents() {
                 theme={events[11].theme}
                 location={events[11].location}
                 winners={events[11].winners}
+                placeholder={ggj2024winner}
+                imageD={ggj}
+                imageM={ggjM}
+              />
+              <GameJamEvent
+                title={events[12].title}
+                jampage={events[12].jampage}
+                date={events[12].date}
+                description={events[12].description}
+                theme={events[12].theme}
+                location={events[12].location}
+                winners={events[12].winners}
                 placeholder={cgdjam2023winner}
                 imageD={cgd2023}
                 imageM={cgd2023M}
               />
               <EventCard
-                title={events[12].title}
-                date={events[12].date}
-                description={events[12].description}
-                location={events[12].location}
+                title={events[13].title}
+                date={events[13].date}
+                description={events[13].description}
+                location={events[13].location}
                 imageD={megamigs}
                 imageM={megamigsM}
               />
               <GameJamEvent
-                title={events[13].title}
-                jampage={events[13].jampage}
-                date={events[13].date}
-                description={events[13].description}
-                theme={events[13].theme}
-                location={events[13].location}
-                winners={events[12].winners}
+                title={events[14].title}
+                jampage={events[14].jampage}
+                date={events[14].date}
+                description={events[14].description}
+                theme={events[14].theme}
+                location={events[14].location}
+                winners={events[14].winners}
                 placeholder={cgdjam2022winner}
                 imageD={cgd2022}
                 imageM={cgd2022M}
