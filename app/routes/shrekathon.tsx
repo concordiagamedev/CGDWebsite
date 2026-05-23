@@ -208,7 +208,7 @@ export default function Shrekathon() {
             <img
               src={galleryImages[activeGalleryIndex]}
               alt={`Shrekathon photo ${activeGalleryIndex + 1}`}
-              className="h-[260px] w-full rounded-[1.5rem] object-cover shadow-[0_16px_40px_rgba(78,47,81,0.2)] sm:h-[380px] lg:h-[520px]"
+              className="h-[260px] w-full rounded-[1.5rem] bg-white object-contain shadow-[0_16px_40px_rgba(78,47,81,0.2)] sm:h-[380px] lg:h-[520px]"
             />
 
             <button
