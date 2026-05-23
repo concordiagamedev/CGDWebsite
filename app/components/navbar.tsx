@@ -40,14 +40,6 @@ const Navbar = () => {
       link: "/sponsor",
       img: sponsorsicon,
       alt: "icon that brings you to gamedev sponsor page",
-    },
-    {
-      name: "Shrekathon",
-      accent: "New",
-      link: "/shrekathon",
-      img: Tickets,
-      iconClass: "ticket-icon",
-      alt: "icon that brings you to gamedev shrekathon page",
     }
   ];
   let socials = [
@@ -143,9 +135,6 @@ const Navbar = () => {
                 />
                 <h4 className="nav-item">
                   <span>{link.name}</span>
-                  {"accent" in link && link.accent ? (
-                    <span className="nav-accent">{link.accent}</span>
-                  ) : null}
                 </h4>
               </Link>
             </li>
