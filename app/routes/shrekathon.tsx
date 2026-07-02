@@ -203,12 +203,12 @@ export default function Shrekathon() {
           Photo Gallery
         </h2>
 
-        <div className="overflow-hidden rounded-[2rem] border border-white/70 bg-[linear-gradient(135deg,rgba(255,255,255,0.9),rgba(246,232,239,0.9),rgba(232,245,224,0.88))] p-4 shadow-[0_24px_80px_rgba(78,47,81,0.16)] sm:p-6">
+        <div className="mx-auto max-w-4xl overflow-hidden rounded-[2rem] border border-white/70 bg-[linear-gradient(135deg,rgba(255,255,255,0.9),rgba(246,232,239,0.9),rgba(232,245,224,0.88))] p-4 shadow-[0_24px_80px_rgba(78,47,81,0.16)] sm:p-6">
           <div className="relative">
             <img
               src={galleryImages[activeGalleryIndex]}
               alt={`Shrekathon photo ${activeGalleryIndex + 1}`}
-              className="h-[260px] w-full rounded-[1.5rem] bg-white object-contain shadow-[0_16px_40px_rgba(78,47,81,0.2)] sm:h-[380px] lg:h-[520px]"
+              className="h-[220px] w-full rounded-[1.5rem] bg-white object-contain shadow-[0_16px_40px_rgba(78,47,81,0.2)] sm:h-[320px] lg:h-[440px]"
             />
 
             <button
