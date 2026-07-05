@@ -1,0 +1,81 @@
+.entire-thing {
+  width: clamp(220px, 25vw, 280px);
+  flex-shrink: 0;
+}
+
+.filters {
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.filters-title {
+  font-size: 2.5rem;
+  font-family: "Corbert", sans-serif;
+  font-weight: bold;
+  color: #4b3158;
+}
+
+.track-div,
+.level-div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.track-title,
+.level-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: "Corbert", sans-serif;
+  color: #4b3158;
+}
+
+.buttons-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-weight: bold;
+  font-family: "Corbert", sans-serif;
+}
+
+.buttons-filter button {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+
+  background-color: #eadfea;
+  color: #4b3158;
+
+  font-size: 1rem;
+  font-family: "Corbert", sans-serif;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.buttons-filter button:hover {
+  background-color: #bf5f7b;
+  color: #eadfea;
+}
+@media (max-width: 768px) {
+
+  .page-container {
+    padding: 0 1rem;
+  }
+
+  .header_box {
+    padding: 1rem;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+
+  .buttons-filter button {
+    width: 100%;
+  }
+}
