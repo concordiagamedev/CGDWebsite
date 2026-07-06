@@ -1,0 +1,23 @@
+.page-container {
+  width: min(1400px, 100%);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.content-layout {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+@media (max-width: 900px) {
+  .content-layout {
+    flex-direction: column;
+  }
+
+  .entire-thing {
+    width: 100%;
+  }
+}

@@ -1,0 +1,90 @@
+.get-started-container {
+  padding-top: 100px;
+}
+
+.header_box {
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.GetStartedHeader {
+  font-size: clamp(2.8rem, 5vw, 3.5rem);
+  font-weight: bold;
+  font-family: "Corbert", sans-serif;
+  color: #4b3158;
+}
+
+
+.description_header {
+  font-size: clamp(1.2rem, 2vw, 1.2rem);
+  color: #4b3158;
+  font-family: "Corbert", sans-serif;
+  
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 40px;
+  background-color: #eadfea;
+  font-size: 1rem;
+  font-family: "Corbert", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.buttons button:hover{
+    background-color: #bf5f7b;
+    color: #eadfea;
+}
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+@media (max-width: 700px) {
+  .button-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .buttons {
+    width: 100%;
+  }
+
+  .roadmap-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+.roadmap-button {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 40px;
+  background-color: rgba(83, 45, 83, 0.45) ;
+  color: #532D53;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Corbert", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.roadmap-button:hover {
+  background-color: #bf5f7b;
+  color: #eadfea;
+}
