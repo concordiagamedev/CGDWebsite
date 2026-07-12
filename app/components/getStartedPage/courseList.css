@@ -7,10 +7,16 @@
   }
 }
 
+.course-list-grid {
+  display: grid;
+  gap: 20px;
+  margin-top: 20px;
+}
+
 .course-list-title {
   font-size: clamp(2.5rem, 5vw, 3rem);
   font-family: "Nunito", sans-serif;
-    font-weight: 800;
+  font-weight: 800;
   color: #4b3158;
 }
 
@@ -40,6 +46,7 @@
 
 .course-info {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   color: #4b3158;
   font-weight: bold;
@@ -51,6 +58,16 @@
   text-align: right;
   font-size: 1.5rem;
   font-family: "Corbert", sans-serif;
-    font-weight: 700;
+  font-weight: 700;
   color: #4b3158;
+}
+
+.empty-state {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #f4f4f4;
+  color: #4b3158;
+  font-family: "Corbert", sans-serif;
+  font-weight: bold;
 }

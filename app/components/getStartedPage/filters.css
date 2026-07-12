@@ -61,6 +61,11 @@
   background-color: #bf5f7b;
   color: #eadfea;
 }
+
+.buttons-filter button.is-selected {
+  background-color: #bf5f7b;
+  color: #eadfea;
+}
 @media (max-width: 768px) {
 
   .page-container {

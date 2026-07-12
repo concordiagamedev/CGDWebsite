@@ -47,6 +47,12 @@
     background-color: #bf5f7b;
     color: #eadfea;
 }
+
+.buttons button.is-selected {
+  background-color: #bf5f7b;
+  color: #eadfea;
+}
+
 .button-row {
   display: flex;
   justify-content: space-between;
@@ -71,20 +77,23 @@
   }
 }
 .roadmap-button {
+  display: inline-flex;
+}
+
+.roadmap-button button {
   border: none;
   border-radius: 12px;
   padding: 12px 40px;
-  background-color: rgba(83, 45, 83, 0.45) ;
+  background-color: rgba(83, 45, 83, 0.45);
   color: #532D53;
   font-size: 1rem;
-  font-weight: bold;
   font-family: "Corbert", sans-serif;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.4s ease;
 }
 
-.roadmap-button:hover {
+.roadmap-button button:hover {
   background-color: #bf5f7b;
   color: #eadfea;
 }

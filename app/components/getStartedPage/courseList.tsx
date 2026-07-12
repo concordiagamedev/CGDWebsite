@@ -1,48 +1,52 @@
-import "./courseList.css"
+import "./courseList.css";
+import type { Course } from "./courseData";
 
-export default function CourseList(){
-    //course card template
-    let courseCard = {
-        name: "Course Name example",
-        link: "https://www.concordiagamedev.ca/", //filler link
-        prereqs: "Prereqs",
-        type: "Online",
-        level: "Beginner",
-        length: "8 weeks",
-        price: "$$"
-    }
+type CourseListProps = {
+  courses: Course[];
+};
 
+export default function CourseList({ courses }: CourseListProps){
     return(
         <div className="entire-thing-course">
             <div className="course-list-title">Course List</div>
-            <div className="course-card">
-                <h3 className="course-name">
-                    <a
-                        href={courseCard.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        {courseCard.name}
-                    </a>
-                </h3>
 
-                <p className="prereqs">{courseCard.prereqs}</p>
+            <div className="course-list-grid">
+                {courses.map((course) => (
+                    <div className="course-card" key={course.name}>
+                        <h3 className="course-name">
+                            <a
+                                href={course.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {course.name}
+                            </a>
+                        </h3>
 
-                <div className="course-info">
-                    <span>{courseCard.type}</span>
-                    <span>•</span>
-                    <span>{courseCard.level}</span>
-                    <span>•</span>
-                    <span>{courseCard.length}</span>
-                </div>
+                        <p className="prereqs">{course.prereqs}</p>
 
-                <div className="course-price">
-                    {courseCard.price}
-                </div>
-                
+                        <div className="course-info">
+                            <span>{course.type}</span>
+                            <span>•</span>
+                            <span>{course.track}</span>
+                            <span>•</span>
+                            <span>{course.level}</span>
+                            <span>•</span>
+                            <span>{course.length}</span>
+                        </div>
+
+                        <div className="course-price">
+                            {course.price}
+                        </div>
+                    </div>
+                ))}
             </div>
 
+            {courses.length === 0 ? (
+                <div className="empty-state">
+                    No courses match the selected filters.
+                </div>
+            ) : null}
         </div>
-
     );
 }
