@@ -80,7 +80,10 @@
   display: inline-flex;
 }
 
-.roadmap-button button {
+.roadmap-button a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   border-radius: 12px;
   padding: 12px 40px;
@@ -91,9 +94,10 @@
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.4s ease;
+  text-decoration: none;
 }
 
-.roadmap-button button:hover {
+.roadmap-button a:hover {
   background-color: #bf5f7b;
   color: #eadfea;
 }

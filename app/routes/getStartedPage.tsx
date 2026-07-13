@@ -55,6 +55,7 @@ export default function GetStarted() {
          <div className="page-container">
             <GetStartedHead
                 selectedCategory={filters.category}
+                selectedTrack={filters.track}
                 onCategoryChange={handleCategoryChange}
             />
             <div className="content-layout">
