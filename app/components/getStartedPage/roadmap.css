@@ -21,7 +21,7 @@
   background-color: rgba(247, 245, 247, 0.88);
   color: #4b3158;
   font-family: "Corbert", sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   font-weight: 700;
   text-decoration: none;
   transition:
@@ -54,8 +54,8 @@
 }
 
 .roadmap-title {
-  font-size: clamp(2.6rem, 4.8vw, 4.25rem);
-  line-height: 0.92;
+  font-size: clamp(2.2rem, 4vw, 3.45rem);
+  line-height: 0.96;
   font-family: "League Spartan", sans-serif;
   color: #4b3158;
 }
@@ -63,8 +63,8 @@
 .roadmap-subtitle {
   margin-top: 0.45rem;
   max-width: 36rem;
-  font-size: clamp(0.98rem, 1.5vw, 1.12rem);
-  line-height: 1.45;
+  font-size: clamp(0.92rem, 1.2vw, 1rem);
+  line-height: 1.5;
   color: #4b3158;
   font-family: "Corbert", sans-serif;
 }
@@ -90,7 +90,7 @@
   background-color: #f3dceb;
   color: #5b3563;
   font-family: "Corbert", sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   font-weight: 700;
   cursor: pointer;
   transition:
@@ -198,13 +198,13 @@
 
 .roadmap-progress-label {
   font-family: "League Spartan", sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #4b3158;
 }
 
 .roadmap-progress-duration-label {
   font-family: "Corbert", sans-serif;
-  font-size: 0.82rem;
+  font-size: 0.74rem;
   color: #5b3563;
 }
 
@@ -254,8 +254,8 @@
 }
 
 .roadmap-stage-title {
-  font-size: clamp(1.95rem, 3vw, 2.55rem);
-  line-height: 0.96;
+  font-size: clamp(1.65rem, 2.4vw, 2.1rem);
+  line-height: 1;
   color: #4b3158;
   font-family: "League Spartan", sans-serif;
 }
@@ -264,7 +264,7 @@
   margin-top: 0.35rem;
   color: #5b3563;
   font-family: "Corbert", sans-serif;
-  font-size: 1.02rem;
+  font-size: 0.9rem;
 }
 
 .roadmap-stage-items {
@@ -307,13 +307,13 @@
   margin-bottom: 0.6rem;
   color: #573a61;
   font-family: "Corbert", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   font-weight: 700;
 }
 
 .roadmap-item-title {
-  font-size: 1.2rem;
-  line-height: 1.05;
+  font-size: 1.02rem;
+  line-height: 1.1;
   color: #301537;
   font-family: "League Spartan", sans-serif;
 }
@@ -322,8 +322,8 @@
   margin-top: 0.5rem;
   color: #4b3158;
   font-family: "Corbert", sans-serif;
-  font-size: 0.95rem;
-  line-height: 1.45;
+  font-size: 0.86rem;
+  line-height: 1.5;
 }
 
 .roadmap-empty-state {
@@ -332,8 +332,8 @@
   padding: 0.95rem;
   color: #5b3563;
   font-family: "Corbert", sans-serif;
-  font-size: 0.95rem;
-  line-height: 1.45;
+  font-size: 0.85rem;
+  line-height: 1.5;
   min-height: 120px;
   display: flex;
   align-items: center;
@@ -354,8 +354,8 @@
 .roadmap-stage-status {
   color: #4b3158;
   font-family: "Corbert", sans-serif;
-  font-size: 0.95rem;
-  line-height: 1.4;
+  font-size: 0.88rem;
+  line-height: 1.45;
   text-align: center;
 }
 
@@ -367,7 +367,7 @@
   background-color: #5a2f5a;
   color: #fff8fd;
   font-family: "Corbert", sans-serif;
-  font-size: 0.92rem;
+  font-size: 0.86rem;
   font-weight: 700;
   cursor: pointer;
   transition:
@@ -400,8 +400,8 @@
 .roadmap-footer-note {
   color: #4b3158;
   font-family: "Corbert", sans-serif;
-  font-size: 0.95rem;
-  line-height: 1.45;
+  font-size: 0.86rem;
+  line-height: 1.5;
 }
 
 .roadmap-return-button {
@@ -413,7 +413,7 @@
   background-color: #5a2f5a;
   color: #fff8fd;
   font-family: "Corbert", sans-serif;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   font-weight: 700;
   text-decoration: none;
   transition:
@@ -460,7 +460,7 @@
   }
 
   .roadmap-title {
-    font-size: clamp(2.2rem, 10vw, 3rem);
+    font-size: clamp(1.95rem, 8vw, 2.5rem);
   }
 
   .roadmap-chip {
@@ -493,11 +493,11 @@
   }
 
   .roadmap-progress-label {
-    font-size: 0.92rem;
+    font-size: 0.84rem;
   }
 
   .roadmap-progress-duration-label {
-    font-size: 0.76rem;
+    font-size: 0.7rem;
   }
 
   .roadmap-stage-card {
