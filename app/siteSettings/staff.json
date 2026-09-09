@@ -13,6 +13,12 @@
       "img": "assets/staff/rimaza.jpeg"
     },
     {
+      "name": "Darcy Loane-Billings",
+      "position": "Chair, Operations, Secretary",
+      "id": "10",
+      "img": "assets/staff/darcy.jpg"
+    },
+    {
       "name": "Nicolas Boyer",
       "position": "Chair",
       "id": "3",
@@ -53,12 +59,6 @@
       "position": "Chair",
       "id": "9",
       "img": "assets/staff/maxx.png"
-    },
-    {
-      "name": "Darcy Loane-Billings",
-      "position": "Chair, Operations, Secretary",
-      "id": "10",
-      "img": "assets/staff/darcy.jpg"
     },
     {
       "name": "Zaid “Zaddy” Minhas",
