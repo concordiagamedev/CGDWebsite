@@ -9,6 +9,7 @@ import { comms } from "../siteSettings/comms.json";
 import { tech } from "../siteSettings/tech.json";
 import { eventsteam } from "../siteSettings/events-team.json";
 import { finance } from "../siteSettings/finance.json";
+import { projects } from "../siteSettings/projects.json";
 
 export const meta: MetaFunction = () => {
   return [
@@ -50,7 +51,7 @@ export default function DashboardAbout() {
         </div>
         <div className="ourteam-container md:my-20 my-10">
           <h2 className="ourteam sm:text-6xl text-4xl md:my-14 my-6 text-center md:text-left md:mx-10">
-            Meet Our Team: 2025-26
+            Meet Our Team: 2026-27
           </h2>
           <h3 className="ourteam sm:text-2xl text-2xl md:my-14 my-6 text-center md:text-left md:mx-10">
             The Final Bosses 👾
@@ -70,14 +71,33 @@ export default function DashboardAbout() {
             The Comms Team - Socials 🎨
           </h3>
           <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 lg:mx-32 lg:px-24 md:mx-20 md:px-20 px-6">
-            {comms.map((comms) => (
-              <Profile     
-                key={comms.id}
-                name={comms.name}
-                position={comms.position}
-                image={comms.img}
-              />
-            ))}
+            {comms
+              .filter((member) => member.position.toLowerCase().includes("social"))
+              .map((member) => (
+                <Profile
+                  key={member.id}
+                  name={member.name}
+                  position={member.position}
+                  image={member.img}
+                />
+              ))}
+          </div>
+          <h3 className="ourteam sm:text-2xl text-2xl md:my-14 my-6 text-center md:text-left md:mx-10">
+            The Graphics Team 🎨
+          </h3>
+          <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 lg:mx-32 lg:px-24 md:mx-20 md:px-20 px-6">
+            {comms
+              .filter((member) =>
+                member.position.toLowerCase().includes("graphic")
+              )
+              .map((member) => (
+                <Profile
+                  key={member.id}
+                  name={member.name}
+                  position={member.position}
+                  image={member.img}
+                />
+              ))}
           </div>
             {/* Event teams below */}
           <h3 className="ourteam sm:text-2xl text-2xl md:my-14 my-6 text-center md:text-left md:mx-10">
@@ -93,7 +113,8 @@ export default function DashboardAbout() {
               />
             ))}
           </div>
-          {/* Finance teams below */}
+          {/* Finance teams below - hidden for now; re-enable later if needed */}
+          {/*
           <h3 className="ourteam sm:text-2xl text-2xl md:my-14 my-6 text-center md:text-left md:mx-10">
             The Finance Team 💰
           </h3>
@@ -107,6 +128,7 @@ export default function DashboardAbout() {
               />
             ))}
           </div>
+          */}
           {/* Tech teams below */}
           <h3 className="ourteam sm:text-2xl text-2xl md:my-14 my-6 text-center md:text-left md:mx-10">
             The Tech Team 💻
@@ -118,6 +140,19 @@ export default function DashboardAbout() {
                 name={tech.name}
                 position={tech.position}
                 image={tech.img}
+              />
+            ))}
+          </div>
+          <h3 className="ourteam sm:text-2xl text-2xl md:my-14 my-6 text-center md:text-left md:mx-10">
+            The Projects Team 🧩
+          </h3>
+          <div className="staff-section grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 gap-8 lg:mx-32 lg:px-24 md:mx-20 md:px-20 px-6">
+            {projects.map((project) => (
+              <Profile
+                key={project.id}
+                name={project.name}
+                position={project.position}
+                image={project.img}
               />
             ))}
           </div>

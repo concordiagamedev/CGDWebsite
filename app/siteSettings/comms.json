@@ -1,46 +1,64 @@
 {
-    "comms": [
-        {
-            "name": "Nomaan",
-            "position": "Head of Socials",
-            "id": "14",
-            "img": "assets/staff/nomaan.jpg"
-        },
-        {
-            "name": "Ny Isabelle Huynh",
-            "position": "Graphic Designer",
-            "id": "14",
-            "img": "assets/staff/pawelC-pink5.jpg"
-        },
-        {
-            "name": "You Ran Wang",
-            "position": "Discord Moderator",
-            "id": "14",
-            "img": "assets/staff/you_ran.jpeg"
-        },
-        {
-            "name": "Emily Smelyansky",
-            "position": "Graphic Designer",
-            "id": "18",
-            "img": "assets/staff/emily.jpg"
-        },
-        {
-            "name": "Ali Kazemidehaghi",
-            "position": "LinkedIn Moderator",
-            "id": "18",
-            "img": "assets/staff/Ali.jpg"
-        },
-        {
-            "name": "Agelina Mai",
-            "position": "Graphic Designer",
-            "id": "14",
-            "img": "assets/staff/pawelC-pink5.jpg"
-        },
-        {
-            "name": "Arielle Wong",
-            "position": "Graphic Designer",
-            "id": "14",
-            "img": "assets/staff/arielle.jpg"
-        }
-    ]
+  "comms": [
+    {
+      "name": "You Ran Wang",
+      "position": "Head of Socials",
+      "id": "1",
+      "img": "assets/staff/you_ran.jpeg"
+    },
+    {
+      "name": "Jassim Hussain Mahmood",
+      "position": "Tech, Socials",
+      "id": "2",
+      "img": "assets/staff/Jassim.jpg"
+    },
+    {
+      "name": "Supitcha Chailom",
+      "position": "Socials",
+      "id": "3",
+      "img": "assets/staff/supitcha.png"
+    },
+    {
+      "name": "Hubert Sia",
+      "position": "Head of Graphics",
+      "id": "4",
+      "img": "assets/staff/hubertSia.jpg"
+    },
+    {
+      "name": "Brandon (Brian) Borosa",
+      "position": "Graphic Designer",
+      "id": "5",
+      "img": "assets/staff/brandonbarosa.png"
+    },
+    {
+      "name": "Ny Isabelle Huynh",
+      "position": "Graphic Designer",
+      "id": "6",
+      "img": "assets/staff/pawelC-pink2.jpg"
+    },
+    {
+      "name": "Angelina Mai",
+      "position": "Graphic Designer",
+      "id": "7",
+      "img": "assets/staff/pawelC-pink2.jpg"
+    },
+    {
+      "name": "Arielle Wong",
+      "position": "Graphic Designer",
+      "id": "8",
+      "img": "assets/staff/arielle.jpg"
+    },
+    {
+      "name": "Hei Yee Chloe Tso",
+      "position": "Graphic Designer",
+      "id": "9",
+      "img": "assets/staff/pawelC-pink2.jpg"
+    },
+    {
+      "name": "Nicole Isabella Covaliu",
+      "position": "Graphic Designer",
+      "id": "10",
+      "img": "assets/staff/pawelC-pink2.jpg"
+    }
+  ]
 }

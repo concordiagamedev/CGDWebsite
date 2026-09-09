@@ -78,7 +78,7 @@ const Navbar = () => {
     {
       name: "LinkTree",
       class: "linktree-icon",
-      href: "https://linktr.ee/concordiagamedevelopment",
+      href: "https://linktr.ee/concordiagamedev",
       target: "_blank",
       img: linktree,
       alt: "ln icon that brings you to game dev concordia linktree",
