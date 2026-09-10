@@ -65,6 +65,12 @@
       "position": "Chair",
       "id": "11",
       "img": "assets/staff/zaid.jpg"
+    },
+    {
+      "name": "Angelina Mai",
+      "position": "Chair",
+      "id": "12",
+      "img": "assets/staff/angelica.jpeg"
     }
   ]
 }

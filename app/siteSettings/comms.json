@@ -38,7 +38,7 @@
     },
     {
       "name": "Angelina Mai",
-      "position": "Graphic Designer",
+      "position": "Chair",
       "id": "7",
       "img": "assets/staff/pawelC-pink2.jpg"
     },
@@ -58,7 +58,7 @@
       "name": "Nicole Isabella Covaliu",
       "position": "Graphic Designer",
       "id": "10",
-      "img": "assets/staff/pawelC-pink2.jpg"
+      "img": "assets/staff/nicoleAvatar.webp"
     }
   ]
 }
