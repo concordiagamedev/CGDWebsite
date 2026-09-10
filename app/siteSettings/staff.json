@@ -7,46 +7,70 @@
       "img": "assets/staff/adam.jpg"
     },
     {
-      "name": "Charles Partous",
-      "position": "Chair",
-      "id": "101",
-      "img": "assets/staff/charles.jpg"
+      "name": "Rimaza Saleek",
+      "position": "Vice President",
+      "id": "2",
+      "img": "assets/staff/rimaza.jpeg"
     },
     {
-      "name": "Aria Tessler",
-      "position": "Chair",
-      "id": "102",
-      "img": "assets/staff/aria.jpg"
+      "name": "Darcy Loane-Billings",
+      "position": "Chair, Operations, Secretary",
+      "id": "10",
+      "img": "assets/staff/darcy.jpg"
     },
     {
-      "name": "Keven Vaillancourt",
+      "name": "Nicolas Boyer",
       "position": "Chair",
-      "id": "103",
-      "img": "assets/staff/ough.png"
-    },
-    {
-      "name": "Maxx Freund",
-      "position": "Chair",
-      "id": "104",
-      "img": "assets/staff/maxx.png"
-    },
-    {
-      "name": "Jordan Bossou",
-      "position": "Chair",
-      "id": "105",
-      "img": "assets/staff/jo.jpg"
+      "id": "3",
+      "img": "assets/staff/Nicolas.jpg"
     },
     {
       "name": "Sudhansu Mohanty",
       "position": "Chair",
-      "id": "106",
+      "id": "4",
       "img": "assets/staff/Sudhansu.jpg"
     },
     {
-      "name": "Peter Tian",
+      "name": "Jordan “Jo” Bossou",
       "position": "Chair",
-      "id": "107",
-      "img": "assets/staff/peter.jpg"
+      "id": "5",
+      "img": "assets/staff/jo.jpg"
+    },
+    {
+      "name": "Keven Vaillancourt",
+      "position": "Chair",
+      "id": "6",
+      "img": "assets/staff/ough.png"
+    },
+    {
+      "name": "Aria Tessler",
+      "position": "Chair",
+      "id": "7",
+      "img": "assets/staff/aria.jpg"
+    },
+    {
+      "name": "Charles Partous",
+      "position": "Chair",
+      "id": "8",
+      "img": "assets/staff/charles.jpg"
+    },
+    {
+      "name": "Maxx Freund",
+      "position": "Chair",
+      "id": "9",
+      "img": "assets/staff/maxx.png"
+    },
+    {
+      "name": "Zaid “Zaddy” Minhas",
+      "position": "Chair",
+      "id": "11",
+      "img": "assets/staff/zaid.jpg"
+    },
+    {
+      "name": "Angelina Mai",
+      "position": "Chair",
+      "id": "12",
+      "img": "assets/staff/angelica.jpeg"
     }
   ]
 }

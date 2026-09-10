@@ -1,22 +1,28 @@
 {
-    "eventsteam": [
-        {
-            "name": "Hỷ “HyHy” Khang Trần",
-            "position": "Head of Events",
-            "id": "1",
-            "img": "assets/staff/hyhy.jpg"
-        },
-        {
-            "name": "Minh Le",
-            "position": "Events Coordinator",
-            "id": "14",
-            "img": "assets/staff/Minh_le.jpeg"
-        },
-        {
-            "name": "Aditya Lingwal",
-            "position": "Events Member",
-            "id": "17",
-            "img": "assets/staff/pawelC-pink5.jpg"
-        }
-    ]
+  "eventsteam": [
+    {
+      "name": "Cheuk Ling “FayFay” Wong",
+      "position": "Head of Events",
+      "id": "1",
+      "img": "assets/staff/CheukLing.jpg"
+    },
+    {
+      "name": "Hỷ “HyHy” Khang Trần",
+      "position": "Event Coordinator",
+      "id": "2",
+      "img": "assets/staff/hyhy.jpg"
+    },
+    {
+      "name": "Minh Le",
+      "position": "Event Coordinator",
+      "id": "3",
+      "img": "assets/staff/Minh_le.jpeg"
+    },
+    {
+      "name": "Levon Tavitian",
+      "position": "Event Coordinator",
+      "id": "4",
+      "img": "assets/staff/LevonTavitian.jpg"
+    }
+  ]
 }
