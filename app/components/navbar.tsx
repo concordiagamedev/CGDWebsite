@@ -13,6 +13,7 @@ import linktree from "assets/icons/linktree.svg";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import Tickets from "assets/icons/Tickets.svg"
+import controllericon from "../components/getStartedPage/controller.png"
 
 const Navbar = () => {
   // page-links and social-menu
@@ -40,6 +41,11 @@ const Navbar = () => {
       link: "/sponsor",
       img: sponsorsicon,
       alt: "icon that brings you to gamedev sponsor page",
+    },
+    { name: "Get started in Game Dev",
+      link: "/getStartedPage",
+      img: controllericon,
+      alt: "icon that brings you to the gamedev get started page"
     }
   ];
   let socials = [
