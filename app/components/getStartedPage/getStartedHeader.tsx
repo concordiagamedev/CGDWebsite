@@ -32,13 +32,16 @@ export default function GetStartedHead({
         : "/roadmap";
 
     return(
-        <main className="get-started-container">
-      <div className="header_box"> 
-        <div className="GetStartedHeader">Get Started in Game Development</div>
-        <div className="description_header">Explore courses to start learning game development</div>
+      <header className="get-started-hero">
+        <div className="get-started-heading-copy">
+          <h1 className="get-started-title">Get Started in Game Development</h1>
+          <p className="get-started-description">
+            Explore courses and resources to start learning game development.
+          </p>
+        </div>
         
-        <div className="button-row">
-            <div className="buttons">
+        <div className="get-started-actions">
+            <div className="category-buttons" aria-label="Course type">
                 {CATEGORIES.map((category) => (
                     <button
                         key={category}
@@ -56,8 +59,6 @@ export default function GetStartedHead({
                 <Link to={roadmapHref}>Roadmap</Link>
             </div>
         </div>
-      </div>
-      
-    </main>
+      </header>
     );
 }

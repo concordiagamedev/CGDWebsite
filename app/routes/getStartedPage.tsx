@@ -23,7 +23,7 @@ export default function GetStarted() {
         const matchesCategory =
             filters.category === "All" || course.type === filters.category;
         const matchesTrack =
-            filters.track === null || course.track === filters.track;
+            filters.track === null || course.tracks.includes(filters.track);
         const matchesLevel =
             filters.level === null || course.level === filters.level;
 
@@ -52,7 +52,7 @@ export default function GetStarted() {
     };
 
     return(
-         <div className="page-container">
+         <main className="get-started-page">
             <GetStartedHead
                 selectedCategory={filters.category}
                 selectedTrack={filters.track}
@@ -67,6 +67,6 @@ export default function GetStarted() {
                 />
                 <CourseList courses={filteredCourses} />
             </div>
-        </div>
+        </main>
     );
 }

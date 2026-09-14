@@ -1,4 +1,7 @@
 import {
+  courses,
+  type Course,
+  type CourseLevel,
   type CourseCategory,
   type CourseTrack,
 } from "./courseData";
@@ -7,7 +10,8 @@ export type RoadmapStageId = "foundation" | "build" | "portfolio";
 
 export type RoadmapItem = {
   title: string;
-  description: string;
+  description?: string;
+  prereqs?: string;
   kind: "Course" | "Practice" | "Milestone";
   formats: CourseCategory[];
   link?: string;
@@ -16,27 +20,20 @@ export type RoadmapItem = {
 export type RoadmapStage = {
   id: RoadmapStageId;
   title: string;
-  duration: string;
+  summary: string;
   items: RoadmapItem[];
 };
 
-export const roadmapStagesByTrack: Record<CourseTrack, RoadmapStage[]> = {
+const roadmapPracticeByTrack: Record<CourseTrack, RoadmapStage[]> = {
   Programming: [
     {
       id: "foundation",
       title: "Foundation",
-      duration: "0-2 months",
+      summary: "Core skills",
       items: [
         {
-          title: "Intro to Game Programming",
-          description: "Get comfortable with engines, scripting, and how game loops are structured.",
-          kind: "Course",
-          formats: ["Online"],
-          link: "https://www.concordiagamedev.ca/",
-        },
-        {
-          title: "C# syntax and logic reps",
-          description: "Practice variables, conditions, functions, and debugging until writing scripts feels natural.",
+          title: "Practice programming fundamentals",
+          description: "Practice variables, conditions, functions, and debugging in the language used by your course or engine.",
           kind: "Practice",
           formats: ["Online", "Concordia"],
         },
@@ -51,15 +48,8 @@ export const roadmapStagesByTrack: Record<CourseTrack, RoadmapStage[]> = {
     {
       id: "build",
       title: "Build",
-      duration: "2-5 months",
+      summary: "Applied projects",
       items: [
-        {
-          title: "Gameplay Systems in Unity",
-          description: "Move from isolated scripts to reusable systems, states, and interactions.",
-          kind: "Course",
-          formats: ["Online"],
-          link: "https://www.concordiagamedev.ca/",
-        },
         {
           title: "Recreate one core mechanic",
           description: "Copy a combat, puzzle, or movement loop from a game you admire to study structure.",
@@ -76,8 +66,8 @@ export const roadmapStagesByTrack: Record<CourseTrack, RoadmapStage[]> = {
     },
     {
       id: "portfolio",
-      title: "Portfolio",
-      duration: "5-8 months",
+      title: "Specialize",
+      summary: "Advanced work & portfolio",
       items: [
         {
           title: "Ship two polished prototypes",
@@ -104,7 +94,7 @@ export const roadmapStagesByTrack: Record<CourseTrack, RoadmapStage[]> = {
     {
       id: "foundation",
       title: "Foundation",
-      duration: "0-2 months",
+      summary: "Core skills",
       items: [
         {
           title: "Analyze your favorite games",
@@ -118,27 +108,13 @@ export const roadmapStagesByTrack: Record<CourseTrack, RoadmapStage[]> = {
           kind: "Milestone",
           formats: ["Online", "Concordia"],
         },
-        {
-          title: "Learn encounter flow basics",
-          description: "Study pacing, feedback, and why challenge ramps feel fair or frustrating.",
-          kind: "Course",
-          formats: ["Online"],
-          link: "https://www.concordiagamedev.ca/",
-        },
       ],
     },
     {
       id: "build",
       title: "Build",
-      duration: "2-5 months",
+      summary: "Applied projects",
       items: [
-        {
-          title: "Level Design Studio",
-          description: "Practice layout, wayfinding, metrics, and how spaces support mechanics.",
-          kind: "Course",
-          formats: ["Concordia"],
-          link: "https://www.concordiagamedev.ca/",
-        },
         {
           title: "Document one complete feature",
           description: "Create a concise design doc with goals, references, risks, and success criteria.",
@@ -155,16 +131,9 @@ export const roadmapStagesByTrack: Record<CourseTrack, RoadmapStage[]> = {
     },
     {
       id: "portfolio",
-      title: "Portfolio",
-      duration: "5-8 months",
+      title: "Specialize",
+      summary: "Advanced work & portfolio",
       items: [
-        {
-          title: "Systems Design for Competitive Games",
-          description: "Learn to tune balance, retention loops, and decision depth with intention.",
-          kind: "Course",
-          formats: ["Online"],
-          link: "https://www.concordiagamedev.ca/",
-        },
         {
           title: "Publish case studies",
           description: "Show your design process, not just final screenshots or maps.",
@@ -184,15 +153,8 @@ export const roadmapStagesByTrack: Record<CourseTrack, RoadmapStage[]> = {
     {
       id: "foundation",
       title: "Foundation",
-      duration: "0-2 months",
+      summary: "Core skills",
       items: [
-        {
-          title: "2D Art Foundations for Games",
-          description: "Build shape, color, readability, and asset consistency for production art.",
-          kind: "Course",
-          formats: ["Concordia"],
-          link: "https://www.concordiagamedev.ca/",
-        },
         {
           title: "Create a small asset sheet",
           description: "Design UI icons, props, and pickups that feel like they belong in one world.",
@@ -210,7 +172,7 @@ export const roadmapStagesByTrack: Record<CourseTrack, RoadmapStage[]> = {
     {
       id: "build",
       title: "Build",
-      duration: "2-5 months",
+      summary: "Applied projects",
       items: [
         {
           title: "Build a style guide",
@@ -234,16 +196,9 @@ export const roadmapStagesByTrack: Record<CourseTrack, RoadmapStage[]> = {
     },
     {
       id: "portfolio",
-      title: "Portfolio",
-      duration: "5-8 months",
+      title: "Specialize",
+      summary: "Advanced work & portfolio",
       items: [
-        {
-          title: "Character Art Pipeline",
-          description: "Refine concept-to-final workflow and present process alongside final renders.",
-          kind: "Course",
-          formats: ["Concordia"],
-          link: "https://www.concordiagamedev.ca/",
-        },
         {
           title: "Prepare polished breakdown sheets",
           description: "Show exploration, iterations, callouts, and how assets function in-game.",
@@ -259,4 +214,45 @@ export const roadmapStagesByTrack: Record<CourseTrack, RoadmapStage[]> = {
       ],
     },
   ],
+};
+
+const stageByLevel: Record<CourseLevel, RoadmapStageId> = {
+  Beginner: "foundation",
+  Intermediate: "build",
+  Advanced: "portfolio",
+};
+
+function toRoadmapItem(course: Course): RoadmapItem {
+  return {
+    title: course.name,
+    description: course.description,
+    prereqs: course.prereqs,
+    kind: "Course",
+    formats: [course.type],
+    link: course.link,
+  };
+}
+
+function buildTrackStages(track: CourseTrack): RoadmapStage[] {
+  // The current COMP course numbers put prerequisites before their dependents
+  // within each stage (e.g. COMP 248 before 249, and COMP 371 before 376).
+  const trackCourses = courses
+    .filter((course) => course.tracks.includes(track))
+    .sort((first, second) => first.name.localeCompare(second.name));
+
+  return roadmapPracticeByTrack[track].map((stage) => ({
+    ...stage,
+    items: [
+      ...trackCourses
+        .filter((course) => stageByLevel[course.level ?? "Beginner"] === stage.id)
+        .map(toRoadmapItem),
+      ...stage.items,
+    ],
+  }));
+}
+
+export const roadmapStagesByTrack: Record<CourseTrack, RoadmapStage[]> = {
+  Programming: buildTrackStages("Programming"),
+  Design: buildTrackStages("Design"),
+  Art: buildTrackStages("Art"),
 };

@@ -179,7 +179,7 @@ export default function RoadmapContent({
   }, [activeCategory, activeStageId, activeTrack, visibleStages]);
 
   return (
-    <div className="roadmap-page">
+    <main className="roadmap-page">
       <div className="roadmap-shell">
         {showBackLink ? (
           <div className="roadmap-topbar">
@@ -193,8 +193,9 @@ export default function RoadmapContent({
           <div className="roadmap-heading-copy">
             <h1 className="roadmap-title">Learning Roadmap</h1>
             <p className="roadmap-subtitle">
-              Explore a suggested path to start learning game development and
-              build toward a portfolio.
+              Explore Concordia courses and online resources for your track,
+              then apply what you learn to projects and a portfolio. Progress at
+              your own pace and complete each course’s prerequisites first.
             </p>
           </div>
 
@@ -204,6 +205,7 @@ export default function RoadmapContent({
                 <button
                   key={track}
                   type="button"
+                  aria-pressed={activeTrack === track}
                   className={
                     activeTrack === track
                       ? "roadmap-chip is-active"
@@ -221,6 +223,7 @@ export default function RoadmapContent({
                 <button
                   key={category}
                   type="button"
+                  aria-pressed={activeCategory === category}
                   className={
                     activeCategory === category
                       ? "roadmap-chip roadmap-chip-secondary is-active"
@@ -262,8 +265,8 @@ export default function RoadmapContent({
                 >
                   <span className="roadmap-progress-node" />
                   <span className="roadmap-progress-label">{stage.title}</span>
-                  <span className="roadmap-progress-duration-label">
-                    {stage.duration}
+                  <span className="roadmap-progress-summary-label">
+                    {stage.summary}
                   </span>
                 </button>
               );
@@ -288,7 +291,7 @@ export default function RoadmapContent({
             >
               <div className="roadmap-stage-head">
                 <h2 className="roadmap-stage-title">{stage.title}</h2>
-                <p className="roadmap-stage-duration">{stage.duration}</p>
+                <p className="roadmap-stage-summary">{stage.summary}</p>
               </div>
 
               <div className="roadmap-stage-items">
@@ -308,9 +311,16 @@ export default function RoadmapContent({
                           </span>
                         </div>
                         <h3 className="roadmap-item-title">{item.title}</h3>
-                        <p className="roadmap-item-description">
-                          {item.description}
-                        </p>
+                        {item.description ? (
+                          <p className="roadmap-item-description">
+                            {item.description}
+                          </p>
+                        ) : null}
+                        {item.prereqs ? (
+                          <p className="roadmap-item-description">
+                            <strong>Prerequisites:</strong> {item.prereqs}
+                          </p>
+                        ) : null}
                       </>
                     );
 
@@ -375,14 +385,15 @@ export default function RoadmapContent({
 
         <div className="roadmap-footer">
           <p className="roadmap-footer-note">
-            Use this as a starting path, then mix and match with the course
-            list on the Get Started page.
+            Choose courses that fit your goals. Design and Art courses may
+            require foundations listed in the Programming track. Find all courses
+            and prerequisites on the Get Started page.
           </p>
           <Link className="roadmap-return-button" to="/getStartedPage">
             Explore courses
           </Link>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

@@ -7,38 +7,41 @@ type CourseListProps = {
 
 export default function CourseList({ courses }: CourseListProps){
     return(
-        <div className="entire-thing-course">
-            <div className="course-list-title">Course List</div>
+        <section className="course-results" aria-labelledby="course-list-title">
+            <h2 className="course-list-title" id="course-list-title">Course List</h2>
 
             <div className="course-list-grid">
                 {courses.map((course) => (
-                    <div className="course-card" key={course.name}>
+                    <article className="course-card" key={course.name}>
                         <h3 className="course-name">
-                            <a
+                            {course.link ? <a
                                 href={course.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 {course.name}
-                            </a>
+                            </a> : course.name}
                         </h3>
 
-                        <p className="prereqs">{course.prereqs}</p>
+                        {course.prereqs ? (
+                            <p className="prereqs">Prerequisites: {course.prereqs}</p>
+                        ) : null}
+                        {course.description ? (
+                            <p className="prereqs">{course.description}</p>
+                        ) : null}
 
                         <div className="course-info">
                             <span>{course.type}</span>
                             <span>•</span>
-                            <span>{course.track}</span>
-                            <span>•</span>
-                            <span>{course.level}</span>
-                            <span>•</span>
-                            <span>{course.length}</span>
+                            <span>{course.tracks.join(" / ")}</span>
+                            {course.level ? (
+                                <>
+                                    <span>•</span>
+                                    <span>{course.level}</span>
+                                </>
+                            ) : null}
                         </div>
-
-                        <div className="course-price">
-                            {course.price}
-                        </div>
-                    </div>
+                    </article>
                 ))}
             </div>
 
@@ -47,6 +50,6 @@ export default function CourseList({ courses }: CourseListProps){
                     No courses match the selected filters.
                 </div>
             ) : null}
-        </div>
+        </section>
     );
 }

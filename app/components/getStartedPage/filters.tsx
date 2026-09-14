@@ -20,12 +20,12 @@ export default function Filters({
   onLevelChange,
 }: FiltersProps){
     return(
-        <div className="entire-thing">
-            <div className="filters">
-                <div className="filters-title">Filters</div>
+        <aside className="course-filters" aria-label="Course filters">
+            <div className="filters-panel">
+                <h2 className="filters-title">Filters</h2>
                 
                 <div className="track-div">
-                    <div className="track-title">Track</div>
+                    <h3 className="filter-group-title">Track</h3>
                     <div className="buttons-filter">
                         {TRACKS.map((track) => (
                             <button
@@ -41,7 +41,7 @@ export default function Filters({
                     </div>
                 </div>
                 <div className="level-div">
-                    <div className="level-title">Level</div>
+                    <h3 className="filter-group-title">Level</h3>
                     <div className="buttons-filter">
                         {LEVELS.map((level) => (
                             <button
@@ -57,6 +57,6 @@ export default function Filters({
                     </div>
                 </div>
             </div>
-        </div>
+        </aside>
     );
 }

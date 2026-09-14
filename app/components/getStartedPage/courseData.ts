@@ -10,13 +10,12 @@ export type FilterCategory = (typeof CATEGORIES)[number];
 
 export type Course = {
   name: string;
-  link: string;
-  prereqs: string;
+  link?: string;
+  prereqs?: string;
+  description?: string;
   type: CourseCategory;
-  track: CourseTrack;
-  level: CourseLevel;
-  length: string;
-  price: string;
+  tracks: CourseTrack[];
+  level?: CourseLevel;
 };
 
 export type CourseFilters = {
@@ -27,63 +26,103 @@ export type CourseFilters = {
 
 export const courses: Course[] = [
   {
-    name: "Intro to Game Programming",
-    link: "https://www.concordiagamedev.ca/",
-    prereqs: "No prior coding experience required",
-    type: "Online",
-    track: "Programming",
-    level: "Beginner",
-    length: "6 weeks",
-    price: "Free",
-  },
-  {
-    name: "Gameplay Systems in Unity",
-    link: "https://www.concordiagamedev.ca/",
-    prereqs: "Comfortable with C# basics",
-    type: "Online",
-    track: "Programming",
+    name: "COMP 376: Introduction to Game Development",
+    prereqs: "COMP 371 Computer Graphics",
+    type: "Concordia",
+    tracks: ["Programming", "Design"],
     level: "Intermediate",
-    length: "8 weeks",
-    price: "$$",
   },
   {
-    name: "Level Design Studio",
-    link: "https://www.concordiagamedev.ca/",
-    prereqs: "A small playable project or design sample",
+    name: "COMP 371: Computer Graphics",
+    prereqs: "COMP 232 Mathematics for Computer Science, COMP 352 Data Structures and Algorithms",
     type: "Concordia",
-    track: "Design",
+    tracks: ["Programming", "Art"],
     level: "Intermediate",
-    length: "12 weeks",
-    price: "$$$",
   },
   {
-    name: "Systems Design for Competitive Games",
-    link: "https://www.concordiagamedev.ca/",
-    prereqs: "Experience building or documenting game systems",
-    type: "Online",
-    track: "Design",
-    level: "Advanced",
-    length: "10 weeks",
-    price: "$$",
-  },
-  {
-    name: "2D Art Foundations for Games",
-    link: "https://www.concordiagamedev.ca/",
-    prereqs: "Sketchbook practice recommended",
+    name: "COMP 232: Mathematics for Computer Science",
+    prereqs: "MATH 203 or CEGEP Math",
     type: "Concordia",
-    track: "Art",
+    tracks: ["Programming"],
     level: "Beginner",
-    length: "8 weeks",
-    price: "$$",
   },
   {
-    name: "Character Art Pipeline",
-    link: "https://www.concordiagamedev.ca/",
-    prereqs: "Portfolio with anatomy or illustration basics",
+    name: "COMP 352: Data Structures and Algorithms",
+    prereqs: "COMP 232 Mathematics for Computer Science, COMP 249 Object Oriented Programming II",
     type: "Concordia",
-    track: "Art",
+    tracks: ["Programming"],
+    level: "Intermediate",
+  },
+  {
+    name: "COMP 249: Object Oriented Programming II",
+    prereqs: "MATH 203 or CEGEP Math, COMP 248 Object Oriented Programming I",
+    type: "Concordia",
+    tracks: ["Programming"],
+    level: "Beginner",
+  },
+  {
+    name: "COMP 248: Object Oriented Programming I",
+    prereqs: "MATH 204 or CEGEP Mathematics",
+    type: "Concordia",
+    tracks: ["Programming"],
+    level: "Beginner",
+  },
+  {
+    name: "COMP 476: Advanced Game Development",
+    prereqs: "COMP 361 Elementary Numerical Methods or ENGR 391 Numerical Methods in Engineering",
+    type: "Concordia",
+    tracks: ["Programming", "Design"],
     level: "Advanced",
-    length: "14 weeks",
-    price: "$$$",
+  },
+  {
+    name: "COMP 361: Numerical Methods",
+    prereqs: "COMP 232 Mathematics for Computer Science, COMP 249 Object Oriented Programming",
+    type: "Concordia",
+    tracks: ["Programming"],
+    level: "Intermediate",
+  },
+  {
+    name: "COMP 477: Animation for Computer Games",
+    prereqs: "COMP 361 Elementary Numerical Methods or ENGR 391 Numerical Methods for Engineering, COMP 371 Computer Graphics",
+    type: "Concordia",
+    tracks: ["Programming", "Art"],
+    level: "Advanced",
+  },
+  {
+    name: "COMP 475: Immersive Technologies",
+    prereqs: "COMP 371 Computer Graphics",
+    type: "Concordia",
+    tracks: ["Programming", "Design"],
+    level: "Advanced",
+  },
+  {
+    name: "COMP 472: Artificial Intelligence",
+    prereqs: "COMP 352 Data Structures and Algorithms or COEN 352 Data Structures and Algorithms",
+    type: "Concordia",
+    tracks: ["Programming"],
+    level: "Advanced",
+  },
+  {
+    name: "Unity Learn",
+    link: "https://learn.unity.com",
+    description: "Unity courses and learning resources.",
+    type: "Online",
+    tracks: ["Programming", "Design", "Art"],
+  },
+  {
+    name: "Unreal Engine 5: The Complete Beginner's Course",
+    link: "https://www.concordia.ca/it/services/udemy.html",
+    description: "Udemy Concordia · David Nixon",
+    type: "Online",
+    tracks: ["Programming", "Design"],
+    level: "Beginner",
+  },
+  {
+    name: "Jumpstart to 2D Game Development: Godot 4 for Beginners",
+    link: "https://www.concordia.ca/it/services/udemy.html",
+    description: "Udemy Concordia",
+    type: "Online",
+    tracks: ["Programming", "Design"],
+    level: "Beginner",
   },
 ];
