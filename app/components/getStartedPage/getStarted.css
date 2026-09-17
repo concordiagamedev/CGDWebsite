@@ -1,0 +1,28 @@
+.get-started-page {
+  width: min(1440px, 100%);
+  margin: 0 auto;
+  padding: clamp(7.5rem, 9vw, 9rem) clamp(1rem, 4vw, 4rem)
+    clamp(4rem, 6vw, 6rem);
+  flex: 1;
+}
+
+.content-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  margin-top: clamp(2rem, 4vw, 3.5rem);
+  align-items: flex-start;
+}
+
+@media (max-width: 900px) {
+  .content-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .get-started-page {
+    padding-inline: 1rem;
+    padding-top: 7rem;
+  }
+}

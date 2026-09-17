@@ -1,0 +1,94 @@
+.course-filters {
+  width: 100%;
+}
+
+.filters-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  background-color: rgba(241, 241, 241, 0.72);
+  border: 1px solid rgba(191, 70, 102, 0.18);
+  border-radius: 1.25rem;
+  box-shadow: 0 12px 36px rgba(78, 47, 81, 0.06);
+}
+
+.filters-title {
+  margin: 0;
+  color: #4e2f51;
+  font-family: "League Spartan", sans-serif;
+  font-size: clamp(1.65rem, 2.75vw, 2rem);
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.track-div,
+.level-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.filter-group-title {
+  margin: 0;
+  color: #4e2f51;
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.buttons-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  font-family: "Corbert", sans-serif;
+  font-weight: 700;
+}
+
+.buttons-filter button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  background-color: #eadfea;
+  color: #4e2f51;
+  font-family: "Corbert", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.buttons-filter button:hover {
+  background-color: #c95d79;
+  color: #fbe9f5;
+  transform: translateY(-1px);
+}
+
+.buttons-filter button.is-selected {
+  background-color: #c95d79;
+  color: #fbe9f5;
+}
+
+.buttons-filter button:focus-visible {
+  outline: 3px solid rgba(78, 47, 81, 0.35);
+  outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .buttons-filter {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .buttons-filter {
+    grid-template-columns: 1fr;
+  }
+}

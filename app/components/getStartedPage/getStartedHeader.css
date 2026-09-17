@@ -1,0 +1,111 @@
+.get-started-hero {
+  width: 100%;
+  box-sizing: border-box;
+  padding: clamp(1.5rem, 4vw, 3.5rem);
+  background-color: rgba(241, 241, 241, 0.72);
+  border: 1px solid rgba(191, 70, 102, 0.18);
+  border-radius: 1.5rem;
+  box-shadow: 0 18px 50px rgba(78, 47, 81, 0.08);
+}
+
+.get-started-heading-copy {
+  max-width: 60rem;
+}
+
+.get-started-title {
+  margin: 0;
+  color: #4e2f51;
+  font-family: "League Spartan", sans-serif;
+  font-size: clamp(2.5rem, 5.25vw, 4.5rem);
+  font-weight: 700;
+  line-height: 0.96;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.get-started-description {
+  margin: clamp(0.75rem, 2vw, 1.25rem) 0 0;
+  color: #532d53;
+  font-family: "Corbert", sans-serif;
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.category-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.category-buttons button,
+.roadmap-button a {
+  min-height: 3rem;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  background-color: #eadfea;
+  color: #4e2f51;
+  font-family: "Corbert", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.category-buttons button:hover,
+.roadmap-button a:hover {
+  background-color: #c95d79;
+  color: #fbe9f5;
+  transform: translateY(-1px);
+}
+
+.category-buttons button.is-selected {
+  background-color: #c95d79;
+  color: #fbe9f5;
+}
+
+.category-buttons button:focus-visible,
+.roadmap-button a:focus-visible {
+  outline: 3px solid rgba(78, 47, 81, 0.35);
+  outline-offset: 3px;
+}
+
+.get-started-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.roadmap-button {
+  display: inline-flex;
+}
+
+.roadmap-button a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4e2f51;
+  color: #fbe9f5;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .get-started-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .category-buttons,
+  .roadmap-button,
+  .category-buttons button,
+  .roadmap-button a {
+    width: 100%;
+  }
+}
