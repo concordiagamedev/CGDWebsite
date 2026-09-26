@@ -17,6 +17,12 @@
       "position": "Developer",
       "id": "3",
       "img": "assets/staff/armanEmami.jpg"
+    },
+    {
+      "name": "Marcel Taveau",
+      "position": "Developer",
+      "id": "4",
+      "img": "assets/staff/Marcel.png"
     }
   ]
 }
