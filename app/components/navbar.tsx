@@ -96,6 +96,10 @@ const Navbar = () => {
     setOpen(!open);
   };
 
+  const closeMenu = () => {
+    setOpen(false);
+  };
+
   return (
     <div
       className={`navbar shadow-md fixed top-0 left-0 w-full z-20 backdrop-blur-md ${open ? "menu-open" : ""
@@ -104,13 +108,13 @@ const Navbar = () => {
       <div className="w-full max-w-[1440px] mx-auto lg:flex lg:items-center lg:justify-between lg:px-4">
         {/* logo */}
         <div className="flex flex-row justify-between lg:flex-none lg:min-w-[88px]">
-          <a href="/">
+          <Link to="/" onClick={closeMenu}>
             <img
               src={CGDLogo}
               alt="Concordia-Game-Dev club logo"
               className="cgd-logo h-16 w-16 p-3"
             />
-          </a>
+          </Link>
           {/* menu logos */}
           <div
             onClick={toggleMenu}
@@ -132,6 +136,7 @@ const Navbar = () => {
             <li key={`${link.name}-${link.link}`}>
               <Link
                 to={link.link}
+                onClick={closeMenu}
                 className="nav border border-light-pink lg:border-transparent"
               >
                 <img
@@ -156,6 +161,7 @@ const Navbar = () => {
               key={social.name}
               href={social.href}
               target={social.target}
+              onClick={closeMenu}
               className={`nav-social-icons ${social.class} svg`}
             >
               <img src={social.img} alt={social.alt} className="menu-svg"></img>
