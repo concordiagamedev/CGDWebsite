@@ -31,6 +31,7 @@ import shrekathon from "assets/icons/Shrekathonjam.jpg";
 import gamenight from "assets/icons/gamenight-feb.png";
 import GameSummit from "assets/icons/SGDS.jpg";
 import CosmicJam from "assets/icons/CosmicJam.png";
+import recurringevents from "~/siteSettings/recurringevents.json";
 
 import {
   Accordion,
@@ -58,7 +59,7 @@ export default function DashboardEvents() {
         <Accordion
           type="multiple"
           className="w-full "
-          defaultValue={["upcoming-events", "past-events"]}
+          defaultValue={["upcoming-events", "recurring-events", "past-events"]}
         >
           <AccordionItem value="upcoming-events">
             <AccordionTrigger className="text-3xl md:text-5xl text-dark-purple uppercase">
@@ -75,11 +76,28 @@ export default function DashboardEvents() {
                 imageM={CosmicJam}
               />
             </AccordionContent>
+
+
           </AccordionItem>
+            <AccordionItem value="recurring-events">
+    <AccordionTrigger className="text-3xl md:text-5xl text-dark-purple uppercase">
+
+      Recurring Events
+    </AccordionTrigger>
+
+    <AccordionContent className="flex flex-col gap-5 w-full">
+      <EventCard
+        title={recurringevents[0].title}
+        date={recurringevents[0].date}
+        description={recurringevents[0].description}
+        location={recurringevents[0].location}
+        imageD={gamenight}
+        imageM={gamenight}
+      />
+    </AccordionContent>
+  </AccordionItem>
           <AccordionItem value="past-events">
             <AccordionTrigger className="text-3xl md:text-5xl text-dark-purple uppercase">
-
-
               Past Events
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-5 w-full">
