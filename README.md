@@ -2,6 +2,10 @@
 
 - [Remix Docs](https://remix.run/docs)
 
+## Initial Setup
+Clone the repository to your local drive.
+In an integrated terminal on the root folder of the repository, run `npm install`. Make sure you have node installed on your machine beforehand.
+
 ## Development
 
 From your terminal:
