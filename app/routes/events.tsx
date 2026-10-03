@@ -67,11 +67,13 @@ export default function DashboardEvents() {
             </AccordionTrigger>
             <AccordionContent className="flex flex-col gap-5 w-full">
 
-              <EventCard
+              <GameJamEvent
                 title={upcomingevents[0].title}
+                jampage={upcomingevents[0].jampage}
                 date={upcomingevents[0].date}
                 description={upcomingevents[0].description}
                 location={upcomingevents[0].location}
+                theme={upcomingevents[0].theme}
                 imageD={CosmicJam}
                 imageM={CosmicJam}
               />
