@@ -59,7 +59,7 @@ const GameJamEvent: React.FC<EventProps> = ({
           <img
             src={imageD}
             alt={title}
-            className="object-contain aspect-[3/2] hidden md:block w-36 h-24 shrink-0 rounded-md"
+            className="object-contain aspect-{3/2} hidden md:block w-36 rounded-md h-fit"
           />
           <div className="flex flex-col justify-center gap-4">
             <div>
@@ -113,13 +113,11 @@ const GameJamEvent: React.FC<EventProps> = ({
                   </div>
                 </h3>
               </div>
-              {placeholder && (
-                <img
-                  src={placeholder}
-                  alt={title}
-                  className="object-contain aspect-[2/3] hidden md:block md:w-56 xl:w-64 3xl:w-72 rounded-md place-self-end"
-                />
-              )}
+              <img
+                src={placeholder}
+                alt={title}
+                className="object-contain aspect-{2/3} hidden md:block md:w-56 xl:w-64 3xl:w-72 rounded-md h-fit place-self-end"
+              />
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -134,7 +132,7 @@ const GameJamEvent: React.FC<EventProps> = ({
             <img
               src={imageM}
               alt={title}
-              className="object-contain aspect-[3/2] md:hidden rounded-md"
+              className="object-contain aspect-{3/2} md:hidden rounded-md"
             />
             {/* Drawer for mobile View */}
             <div className="flex flex-col gap-5">

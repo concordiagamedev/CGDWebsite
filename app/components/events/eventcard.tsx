@@ -53,7 +53,7 @@ const EventCard: React.FC<EventProps> = ({
           <img
             src={imageD}
             alt={title}
-            className="object-contain aspect-[3/2] hidden md:block w-36 h-24 shrink-0 rounded-md"
+            className="object-contain aspect-{3/2} hidden md:block w-36 rounded-md h-fit"
           />
           <div className="flex flex-col justify-center gap-4">
             <div>
@@ -130,7 +130,7 @@ const EventCard: React.FC<EventProps> = ({
             <img
               src={imageM}
               alt={title}
-              className="object-contain aspect-[3/2] md:hidden rounded-md"
+              className="object-contain aspect-{3/2} md:hidden rounded-md"
             />
             {/* Drawer for mobile View */}
             <div className="flex flex-col gap-5">
