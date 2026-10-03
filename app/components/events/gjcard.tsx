@@ -59,7 +59,7 @@ const GameJamEvent: React.FC<EventProps> = ({
           <img
             src={imageD}
             alt={title}
-            className="object-contain aspect-[3/2] hidden md:block w-36 h-24 shrink-0 rounded-md"
+            className="object-contain aspect-[3/2] hidden md:block w-36 rounded-md h-fit"
           />
           <div className="flex flex-col justify-center gap-4">
             <div>
@@ -117,7 +117,7 @@ const GameJamEvent: React.FC<EventProps> = ({
                 <img
                   src={placeholder}
                   alt={title}
-                  className="object-contain aspect-[2/3] hidden md:block md:w-56 xl:w-64 3xl:w-72 rounded-md place-self-end"
+                  className="object-contain aspect-[2/3] hidden md:block md:w-56 xl:w-64 3xl:w-72 rounded-md h-fit place-self-end"
                 />
               )}
             </AccordionContent>
