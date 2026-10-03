@@ -11,7 +11,16 @@
         "target": ""
     },
     {
+        
         "id": 1,
+        "title": "Meet and Geek",
+        "date": "September 8, 2026",
+        "img": "assets/NewEvents/MeetAndGeek2026.jpg",
+        "link": "/events",
+        "target": ""
+    },
+    {
+        "id": 2,
         "title": "Game Night",
         "date": "September 25, 2026",
         "img": "assets/NewEvents/game_night_sep25.jpg",
