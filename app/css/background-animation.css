@@ -13,6 +13,21 @@
   z-index: -40;
 }
 
+.cosmic-jam-page .background {
+  z-index: 0;
+  pointer-events: none;
+}
+
+.navbar {
+  z-index: 40;
+}
+
+.cosmic-jam-page ~ .footer {
+  position: relative;
+  z-index: 30;
+  background-color: hsl(343 61% 59%);
+}
+
 .background span {
   backface-visibility: hidden;
   position: fixed;
