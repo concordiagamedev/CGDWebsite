@@ -66,7 +66,7 @@ export default function DashboardEvents() {
             <AccordionTrigger className="text-3xl md:text-5xl text-dark-purple uppercase">
               Upcoming Events
             </AccordionTrigger>
-            <AccordionContent className="flex flex-col gap-5 w-full">
+            <AccordionContent className="flex flex-col gap-6 w-full px-4 sm:px-6 pt-4 pb-8">
               <GameJamEvent
                 title={upcomingevents[0].title}
                 jampage={upcomingevents[0].jampage}
@@ -84,7 +84,7 @@ export default function DashboardEvents() {
               Recurring Events
             </AccordionTrigger>
 
-            <AccordionContent className="flex flex-col gap-5 w-full">
+            <AccordionContent className="flex flex-col gap-6 w-full px-4 sm:px-6 pt-4 pb-8">
               <EventCard
                 title={recurringevents[0].title}
                 date={recurringevents[0].date}
@@ -99,7 +99,7 @@ export default function DashboardEvents() {
             <AccordionTrigger className="text-3xl md:text-5xl text-dark-purple uppercase">
               Past Events
             </AccordionTrigger>
-            <AccordionContent className="flex flex-col gap-5 w-full">
+            <AccordionContent className="flex flex-col gap-6 w-full px-4 sm:px-6 pt-4 pb-8">
               <EventCard
                 title={events[0].title}
                 date={events[0].date}
