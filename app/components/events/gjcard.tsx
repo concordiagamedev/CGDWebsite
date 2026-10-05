@@ -51,6 +51,7 @@ const GameJamEvent: React.FC<EventProps> = ({
   winners,
 }) => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isExternalJamPage = jampage?.startsWith("http");
   const frameColorD = useAverageColor(imageD);
   const frameColorM = useAverageColor(imageM || imageD);
 
@@ -72,7 +73,11 @@ const GameJamEvent: React.FC<EventProps> = ({
           <div className="flex flex-col justify-center gap-4 text-left">
             <div>
               <h2 className="title text-3xl 2xl:text-4xl text-cgd-pink/85 text-left hover:underline uppercase">
-                <a href={jampage} target="_blank">
+                <a
+                  href={jampage}
+                  target={isExternalJamPage ? "_blank" : undefined}
+                  rel={isExternalJamPage ? "noopener noreferrer" : undefined}
+                >
                   {title}
                 </a>
               </h2>
@@ -270,7 +275,8 @@ const GameJamEvent: React.FC<EventProps> = ({
                         variant: "ghost",
                       })} w-full rounded-md font-corbert text-base font-extrabold text-dark-purple active:bg-wh`}
                       to={jampage ? jampage : `#`}
-                      target="_blank"
+                      target={isExternalJamPage ? "_blank" : undefined}
+                      rel={isExternalJamPage ? "noopener noreferrer" : undefined}
                     >
                       See more
                     </Link>

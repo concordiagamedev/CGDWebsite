@@ -1,16 +1,6 @@
 import React from "react";
-import rawSponsors from "app/siteSettings/SponsorsShrek.json";
-import rawCollaborators from "app/siteSettings/CollabShrek.json";
-
-interface Partner {
-    name: string;
-    logo: string;
-    link?: string;
-}
-
-const sponsors: Partner[] = rawSponsors as unknown as Partner[];
-const collaborators: Partner[] = rawCollaborators as unknown as Partner[];
-const partners = [...sponsors, ...collaborators];
+import { shrekathonPartners } from "~/components/game-jam/config";
+import type { Partner } from "~/components/game-jam/types";
 const partnerStyles = [
     {
         shell: "h-28 w-28 sm:h-32 sm:w-32 md:h-36 md:w-36",
@@ -34,7 +24,9 @@ const partnerStyles = [
     },
 ];
 
-const SponsorsSection: React.FC = () => {
+const PartnersSection: React.FC<{ partners?: Partner[] }> = ({
+    partners = shrekathonPartners,
+}) => {
     return (
         <section className="relative max-w-6xl mx-auto mb-24 px-6 py-12 sm:px-8 md:px-12">
             <div className="pointer-events-none absolute right-0 top-0 h-40 w-40 rounded-full bg-white/50 blur-3xl"></div>
@@ -43,7 +35,7 @@ const SponsorsSection: React.FC = () => {
             <div className="relative">
                 <div className="relative max-w-5xl mx-auto mb-10 text-center md:text-left">
                     <h2 className="text-3xl md:text-4xl font-bold text-dark-purple">
-                        Sponsors & Collaborators
+                        Sponsors & Partners
                     </h2>
                     <p className="mt-3 text-base text-gray-700 md:text-lg">
 
@@ -87,4 +79,4 @@ const SponsorsSection: React.FC = () => {
     );
 };
 
-export default SponsorsSection;
+export default PartnersSection;

@@ -1,15 +1,19 @@
-import react from 'react';
-import timetable from "~/siteSettings/timetable-shrekathon.json";
+import { shrekathonSchedule } from "~/components/game-jam/config";
+import type { ScheduleDay } from "~/components/game-jam/types";
 
-export default function Timetable() {
+export default function Timetable({ schedule = shrekathonSchedule }: { schedule?: ScheduleDay[] }) {
   return (
     <section className="max-w-5xl mx-auto mb-32 text-center md:text-left font-corbert font-bold">
       <h2 className="text-4xl font-bold text-dark-purple mb-12">
         TIME TABLE
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-20 text-left">
-        {timetable.map((day) => (
+      <div
+        className={`grid grid-cols-1 ${
+          schedule.length === 2 ? "md:grid-cols-2" : "md:grid-cols-3"
+        } gap-20 text-left`}
+      >
+        {schedule.map((day) => (
           <div key={day.day} className="flex flex-col items-center">
             <h3 className="text-2xl font-bold text-dark-purple mb-10 text-center">
               {day.day}

@@ -1,42 +1,61 @@
 import type { MetaFunction } from "@remix-run/node";
+import "app/css/background-animation.css";
+import "app/css/cosmic-jam.css";
 import Timetable from "../components/game-jam/Timetable";
 import Venue from "../components/game-jam/Venue";
-import Shrekathonjam from "assets/icons/Shrekathonjam.jpg"
 import { useState } from "react";
+import cgdpink from "assets/icons/cgd-transp-pink.png";
 import MentorsSection from "~/components/game-jam/MentorsSection";
 import PartnersSection from "~/components/game-jam/PartnersSection";
 import Judging from "../components/game-jam/Judging"
 import Winners from "../components/game-jam/Winners";
 import PhotoGallery from "~/components/game-jam/PhotoGallery";
-import { shrekathonGallery } from "~/components/game-jam/config";
+import {
+  cosmicJamGallery,
+  cosmicJamJudging,
+  cosmicJamMentors,
+  cosmicJamPartners,
+  cosmicJamSchedule,
+  cosmicJamVenue,
+  cosmicJamWinners,
+} from "~/components/game-jam/config";
 
+const cosmicJamPoster = "/assets/NewEvents/CosmicJam_Square.png";
 const themeRevealVideo = "/assets/Shrekathon/theme-reveal-2026.mp4";
 const themeLayersIdeas = [
-  "Programming",
-  "Art",
-  "Sound Design",
-  "Game Design"
+  "TBD",
+  "TBD",
+  "TBD",
+  "TBD"
 ];
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Shrekathon New | CGD" },
+    { title: "Cosmic Jam 2026 | CGD" },
     {
       name: "description",
-      content: "Official Shrekathon New event page by Concordia Game Dev.",
+      content: "Official Cosmic Jam 2026 event page by Concordia Game Dev.",
     },
     { icon: "./favicon.ico" },
   ];
 };
-export default function Shrekathon() {
+export default function CosmicJam() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="relative px-4 py-32 bg-gradient-to-b from-bg-tl to-bg-br flex-grow overflow-hidden font-corbert">
-      <header className="flex flex-col md:flex-row items-center justify-center gap-10 mb-24 max-w-6xl mx-auto">
+    <div className="cosmic-jam-page relative px-4 py-32 bg-[linear-gradient(180deg,#050006_0%,#260018_52%,#080042_100%)] flex-grow overflow-hidden font-corbert">
+      <div className="background h-full" aria-hidden="true">
+        {Array.from({ length: 5 }, (_, index) => (
+          <span key={index}>
+            <img src={cgdpink} alt="" className="floaties" />
+          </span>
+        ))}
+      </div>
+      <div className="relative z-10">
+      <header className="relative z-20 flex flex-col md:flex-row items-center justify-center gap-10 mb-24 max-w-6xl mx-auto">
         <div className="flex-shrink-0">
           <img
-            src={Shrekathonjam}
-            alt="Shrekathon New Poster"
+            src={cosmicJamPoster}
+            alt="Cosmic Jam 2026 Poster"
             className="w-64 md:w-80 rounded-2xl shadow-[0_10px_25px_rgba(0,0,0,0.35)] transform hover:scale-[1.03] transition-all duration-500 ease-out"
             onClick={() => setIsOpen(true)}
           />
@@ -44,22 +63,22 @@ export default function Shrekathon() {
 
         <div className="text-center md:text-left font-corbert font-bold">
           <h1 className="text-5xl sm:text-6xl font-bold text-dark-purple mb-4">
-            <span>Shrekathon 2026</span>
+            <span>Cosmic Jam 2026</span>
           </h1>
           <p className="text-xl text-gray-700 mb-2">
-            March 20–22, 2026 • Concordia University, Montreal
+            October 9–11, 2026 • Concordia University, Montreal
           </p>
           <p className="text-lg text-gray-600 mb-6">
-            March 20 at 5:00 p.m. - March 22 at 8:00 p.m. (EST)
+            October 9 at 5:00 p.m. - October 11 at 8:00 p.m. (EST)
           </p>
 
           <a
-            href="https://www.zeffy.com/en-CA/ticketing/shrekathon"
+            href="https://itch.io/jam/cosmic-jam-2026"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-dark-purple hover:brightness-150 text-white text-lg font-semibold px-8 py-4 rounded-xl shadow-md transition"
           >
-            🎟️ Register on Zeffy
+            🚀 Join Cosmic Jam on itch.io
           </a>
         </div>
       </header>
@@ -70,8 +89,8 @@ export default function Shrekathon() {
           onClick={() => setIsOpen(false)}
         >
           <img
-            src={Shrekathonjam}
-            alt="Shrekathon New Full Poster"
+            src={cosmicJamPoster}
+            alt="Cosmic Jam 2026 Full Poster"
             className="max-w-3xl w-11/12 rounded-2xl shadow-2xl transition-all duration-300"
           />
           <button
@@ -95,18 +114,17 @@ export default function Shrekathon() {
               </h2>
 
               <p className="mt-4 text-lg sm:text-xl leading-relaxed text-gray-700">
-                Here&apos;s the peak cinema reveal video: this
-                year&apos;s theme is{" "}
+                Cosmic Jam&apos;s theme reveal will be announced soon. The
+                theme is currently{" "}
                 <span className="inline-block rounded-full bg-[rgba(130,180,92,0.18)] px-4 py-1 text-dark-purple">
-                  LAYERS 🧅
+                  TBD ✨
                 </span>
                 .
               </p>
 
               <p className="mt-4 max-w-3xl text-lg leading-relaxed text-gray-700">
-                - Ogres are like onions they have layers.... <br/>
-                - They stink??!!! <br /> 
-                - Yeah.. NO NO.. They have layers! <br />
+                We&apos;ll update this section with the Cosmic Jam theme and modifiers reveal
+                and related details once they are ready.
               </p>
 
               <div className="mt-7 grid gap-3 md:grid-cols-3">
@@ -131,7 +149,7 @@ export default function Shrekathon() {
                   controls
                   playsInline
                   preload="metadata"
-                  poster={Shrekathonjam}
+                  poster={cosmicJamPoster}
                   className="aspect-[9/16] w-full rounded-[1.4rem] bg-black object-cover shadow-inner"
                 >
                   <source src={themeRevealVideo} type="video/mp4" />
@@ -148,7 +166,7 @@ export default function Shrekathon() {
           Description
         </h2>
         <p className="text-lg text-gray-700 leading-relaxed">
-          Welcome to Shrekathon, Concordia Game Development Club’s Shrek-themed 48-hour game jam happening from March 20th to March 22nd!
+          Welcome to Cosmic Jam, Concordia Game Development Club’s 48-hour game jam happening from October 9th to October 11th!
 
 
 
@@ -164,19 +182,18 @@ export default function Shrekathon() {
 
         <p className="text-lg text-gray-700 leading-relaxed">
           Our mentors are industry professionals and creators who will guide you
-          through every stage of the development process — from concept and
-          design to final implementation. Throughout the weekend, you’ll follow
-          their curated workshops to learn core skills, build individual game
-          components, and bring them together into your final playable project.
+          through every stage of the development process: from concept and
+          design to final implementation. Stuck on a problem? Need feedback on your game idea? Our mentors are here to help you succeed and make the most of your Cosmic Jam experience.
         </p>
       </section>
-      <MentorsSection />
-      <Venue />
-      <Timetable />
-      <Judging />
-      <Winners />
-      <PhotoGallery gallery={shrekathonGallery} />
-      <PartnersSection />
+      <MentorsSection mentors={cosmicJamMentors} />
+      <Venue venue={cosmicJamVenue} />
+      <Timetable schedule={cosmicJamSchedule} />
+      <Judging judging={cosmicJamJudging} />
+      <Winners winners={cosmicJamWinners} />
+        <PhotoGallery gallery={cosmicJamGallery} />
+        <PartnersSection partners={cosmicJamPartners} />
+      </div>
     </div>
   );
 }
