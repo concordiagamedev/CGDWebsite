@@ -21,7 +21,7 @@ import {
 } from "~/components/game-jam/config";
 
 const cosmicJamPoster = "/assets/NewEvents/CosmicJam_Square.png";
-const themeRevealVideo = "/assets/Shrekathon/theme-reveal-2026.mp4";
+const themeRevealVideo = "/assets/CosmicJam/HellDiver_Parody_CMJ.mp4";
 const themeLayersIdeas = [
   "TBD",
   "TBD",
@@ -76,9 +76,22 @@ export default function CosmicJam() {
             href="https://itch.io/jam/cosmic-jam-2026"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-dark-purple hover:brightness-150 text-white text-lg font-semibold px-8 py-4 rounded-xl shadow-md transition"
+            className="inline-block bg-dark-purple hover:brightness-100 text-white text-lg font-semibold px-8 py-4 rounded-xl shadow-md transition"
           >
             🚀 Join Cosmic Jam on itch.io
+          </a>
+
+          <p className="text-lg text-gray-600 mb-6">
+            
+          </p>
+          
+          <a
+            href="https://www.twitch.tv/concordiagamedevelopment"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-dark-purple hover:brightness-100 text-white text-lg font-semibold px-8 py-4 rounded-xl shadow-md transition"
+          >
+            📺 Follow Concordia Game Development on Twitch
           </a>
         </div>
       </header>
