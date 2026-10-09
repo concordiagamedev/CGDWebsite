@@ -23,10 +23,16 @@ import {
 const cosmicJamPoster = "/assets/NewEvents/CosmicJam_Square.png";
 const themeRevealVideo = "/assets/CosmicJam/HellDiver_Parody_CMJ.mp4";
 const themeLayersIdeas = [
-  "TBD",
-  "TBD",
-  "TBD",
-  "TBD"
+  "67 THOUSAND YEARS LATER... [1]",
+  "THE GROUND IS OPTIONAL [2]",
+  "PLANETARY ALIGNMENT [2]",
+  "AURA FARMING? [1]",
+  "ALL ROADS LEAD TO THE BLACK HOLE [1]",
+  "THE DROID WE'RE LOOKING FOR [2]",
+  "HYPERSPACE JUMP! [1]",
+  "COSMICJAM❌ COSMIC BOOGEYMAN✅ [1]",
+  "WHO NEEDS ROADS WHEN YOU HAVE HOLES? [1]",
+  "IT'S 9 PLANETS, RIGHT? [2]"
 ];
 
 export const meta: MetaFunction = () => {
@@ -127,17 +133,15 @@ export default function CosmicJam() {
               </h2>
 
               <p className="mt-4 text-lg sm:text-xl leading-relaxed text-gray-700">
-                Cosmic Jam&apos;s theme reveal will be announced soon. The
-                theme is currently{" "}
+                Cosmic Jam&apos;s theme is {" "}
                 <span className="inline-block rounded-full bg-[rgba(130,180,92,0.18)] px-4 py-1 text-dark-purple">
-                  TBD ✨
+                  ORBIT 🛰️
                 </span>
                 .
               </p>
 
               <p className="mt-4 max-w-3xl text-lg leading-relaxed text-gray-700">
-                We&apos;ll update this section with the Cosmic Jam theme and modifiers reveal
-                and related details once they are ready.
+                Below are some modifiers to the theme that you can use to inspire your game ideas. You can use one, some, or all of them in your game jam submission! You will be awarded bonus points for their successful implementation in your game. The modifiers are:
               </p>
 
               <div className="mt-7 grid gap-3 md:grid-cols-3">
